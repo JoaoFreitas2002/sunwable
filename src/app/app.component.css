@@ -22,10 +22,11 @@
   .nav-link, .dropdown-item {
     text-transform: uppercase;
     color: white !important;
+    text-align: left;
   }
 
   .dropdown-item:hover {
-    background-color: #E43D30;
+    background-color: #C83D30;
   }
 
   .navbar-nav {
@@ -277,7 +278,7 @@
 
   #container3 span {
     background-color: transparent;
-    font-size: 1.3rem;
+    font-size: 1.15rem;
     color: white;
     padding: 0;
   }
@@ -289,7 +290,7 @@
     background-color: transparent;
     border-radius: 15px;
     border: 0.2rem solid white;
-    width: 30%;
+    width: 25%;
     position: absolute;
   }
 
@@ -406,7 +407,7 @@
     background-color: transparent;
     border-radius: 15px;
     border: 0.2rem solid #E43D30;
-    width: 23%;
+    width: 25%;
     position: absolute;
   }
 
