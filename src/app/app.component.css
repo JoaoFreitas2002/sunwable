@@ -124,7 +124,7 @@
     height: 70%;
     width: 26.6%;
     text-align: center;
-    color: red;
+    color: #E43D30;
   }
 
   h4:first-letter, p:first-letter {
@@ -132,7 +132,7 @@
   }
 
   #container1 .col-sm p {
-    color: grey;
+    color: #706F6F;
     width: 50%;
     margin: 0 auto;
   }
@@ -172,7 +172,7 @@
     height: 5%;
     text-align: center;
     text-transform: uppercase;
-    color: grey;
+    color: #706F6F;
     margin: 3.5% 0 1.5% 0;
     padding: 0;
   }
@@ -209,11 +209,11 @@
     max-width: 48%;
     max-height: 48%;
     height: 100%;
-    color: grey;
+    color: #706F6F;
   }
 
   #container2\.1 .col h5 {
-    color: red;
+    color: #E43D30;
     width: 60%;
   }
 
@@ -234,17 +234,76 @@
   #container3 {
     margin: 0;
     padding: 0;
+    height: 450px;
+    background: #E43D30;
+    max-width: 100%;
+  }
+
+  #container3 .row {
+    height: 100%;
+    width: 100%;
+    color: white;
+    text-align: left;
+  }
+
+  #container3 .col-6 {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+
+  #container3 h4 {
+    width: 70%;
+    height: 20%;
+    margin-top: 20%;
+    font-size: 2rem;
+  }
+
+  #container3 p {
+    width: 78%;
+    margin-bottom: 0;
+    font-size: 1.1rem;
+  }
+
+  #container3 span {
+    background-color: transparent;
+    font-size: 1.3rem;
+    color: white;
+    padding: 0;
+  }
+
+  #container3 button {
+    float: right;
+    height: 15%;
+    margin: 25% 0 50% 30%;
+    background-color: transparent;
+    border-radius: 15px;
+    border: 0.2rem solid white;
+    width: 30%;
+    position: absolute;
+  }
+
+  #container3 img {
+    height: 100%;
+    float: right;
+    width: auto;
+  }
+
+  /*  container4*/
+  #container4 {
+    margin: 0;
+    padding: 0;
     height: 435px;
     background: rgb(255, 255, 255);
     max-width: 100%;
   }
 
-  #container3 .row {
+  #container4 .row {
     margin: 0 10%;
     height: 100%;
   }
 
-  #container3 .row h4 {
+  #container4 .row h4 {
     width: 100%;
     max-width: 100%;
     height: 5%;
@@ -255,29 +314,29 @@
     padding: 0;
   }
 
-  #container3 h3 {
+  #container4 h3 {
     margin: 0;
   }
 
-  #container3 .col-sm {
+  #container4 .col-sm {
     margin: 3% auto auto auto;
     height: 80%;
     width: 26.6%;
     text-align: center;
-    color: grey;
+    color: #706F6F;
   }
 
   h4:first-letter, p:first-letter {
     text-transform: uppercase;
   }
 
-  #container3 .col-sm p {
-    color: grey;
+  #container4 .col-sm p {
+    color: #706F6F;
     width: 50%;
     margin: 0 auto;
   }
 
-  #container3 .icon img {
+  #container4 .icon img {
     height: 96px;
     width: 100px;
     text-align: center;
@@ -286,56 +345,136 @@
     box-sizing: unset;
   }
 
-  /*  container4*/
-  #container4 {
+  /*  container5*/
+  #container5 {
     margin: 0;
     padding: 0;
     height: 450px;
-    background: red;
+    /*background: #F6F6F6;*/
+    background: white;
     max-width: 100%;
   }
 
-  #container4 .row {
-    margin: 0 10%;
+  #container5 .row {
     height: 100%;
-    color: white;
+    width: 100%;
+    color: #706F6F;
     text-align: left;
   }
 
-  #container4 .col-6 {
+  #container5 .col-6 {
     margin: 0;
     padding: 0;
     height: 100%;
   }
 
-  #container4 h4 {
-    width: 70%;
-    height: 30%;
-    margin-top: 20%;
+  #container5 h4 {
+    width: 50%;
+    height: 10%;
+    margin-bottom: 2%;
+    margin-top: 25%;
     font-size: 2rem;
   }
 
-  #container4 p {
-    width: 80%;
+  #container5 p {
+    width: 60%;
     margin-bottom: 0;
     font-size: 1.1rem;
   }
 
-  #container4 span {
+  #container5 span {
     background-color: transparent;
-    font-size: 1.5rem;
-    color: white;
+    font-size: 1.3rem;
+    color: #E43D30;
+    font-weight: bold;
+    padding: 0;
   }
 
-  #container4 button {
+  #container5 button {
     float: right;
     height: 15%;
-    margin: 35% 0 50% 50%;
+    margin: 25% 0 50% 35%;
     background-color: transparent;
     border-radius: 15px;
-    border: 0.2rem solid white;
-    width: 50%;
+    border: 0.2rem solid #E43D30;
+    width: 23%;
+    position: absolute;
   }
+
+  #container5 img {
+    height: 100%;
+    width: auto;
+    margin-left: 35%;
+  }
+
+  /*  container6*/
+  #container6 {
+    background-color: #F6F6F6;
+    height: 390px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  #container6 .row {
+    padding: 0;
+    margin: 0 10% 0 10%;
+    height: 100%;
+    width: 80%;
+  }
+
+  #container6 .col-4 {
+    padding: 0;
+    margin: auto;
+    height: 100%;
+    text-align: left;
+  }
+
+  #container6 .icons {
+    padding: 0;
+    margin-top: 10%;
+  }
+
+  #container6 .icons img {
+    margin-right: 2%;
+    width: 7%;
+    height: 7%;
+  }
+
+  #container6 h6 {
+    margin-bottom: 5%;
+    margin-top: 30%;
+    color: #E43D30;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  #container6 p {
+    color: #706F6F;
+    padding: 0;
+    margin: 0;
+  }
+
+  #container6 a {
+    color: #706F6F;
+  }
+
+  #container6 .contact-info2 {
+    margin-top: 10%;
+  }
+
+  #container6 ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  #container6 li {
+    padding: 0;
+    margin-bottom: 5%;
+    margin-left: 30%;
+  }
+
 }
 
 /*Large devices (desktops, 992px and up)*/
