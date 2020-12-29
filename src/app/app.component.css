@@ -9,13 +9,14 @@
 @media (min-width: 768px) {
   /*Navbar*/
   nav {
-    background: transparent !important;
     padding-top: 1rem;
+    transition: 750ms ease;
+    background: transparent !important;
   }
 
   .nv img {
-    height: 100px;
-    width: 250px;
+    height: 50px;
+    width: 150px;
   }
 
   .nav-link, .dropdown-item {
@@ -24,7 +25,7 @@
   }
 
   .dropdown-item:hover {
-    background-color: red;
+    background-color: #E43D30;
   }
 
   .navbar-nav {
@@ -37,7 +38,7 @@
   }
 
   .pt {
-    color: red !important;
+    color: #E43D30 !important;
   }
 
   .nav-link .img2 {
@@ -53,7 +54,7 @@
   }
 
   .dropdown-menu {
-    background-color: red;
+    background-color: #E43D30;
     display: none;
     line-height: 1.5rem;
     text-align: center;
@@ -64,9 +65,18 @@
   }
 
   /*Carousel*/
-  .carousel-item img {
-    width: 100%;
+  .carousel-item #span1 {
     height: 736px;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.9) 10%, rgba(0, 0, 0, 0.70) 40%,
+    rgba(0, 0, 0, 0.50) 60%, rgba(0, 0, 0, 0.30) 80%, rgba(0, 0, 0, 0) 100%), url('../assets/images/hero_1.jpg');
+    background-size: 100%;
+  }
+
+  .carousel-item #span2 {
+    height: 736px;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.9) 10%, rgba(0, 0, 0, 0.70) 40%,
+    rgba(0, 0, 0, 0.50) 60%, rgba(0, 0, 0, 0.30) 80%, rgba(0, 0, 0, 0) 100%), url('../assets/images/about_1.jpg');
+    background-size: 100%;
   }
 
   .carousel-control-next, .carousel-control-prev {
@@ -408,7 +418,7 @@
 
   /*  container6*/
   #container6 {
-    background-color: #F6F6F6;
+    background-color: white;
     height: 390px;
     margin: 0;
     padding: 0;
