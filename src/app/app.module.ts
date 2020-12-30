@@ -1,14 +1,14 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { HomeComponent } from './home/home.component';
-import { SolarModulesComponent } from './solar-modules/solar-modules.component';
-import { InvertersComponent } from './inverters/inverters.component';
-import { BatteriesComponent } from './batteries/batteries.component';
-import { StructuresComponent } from './structures/structures.component';
+import {AppRoutingModule} from './app-routing.module';
+import {AppComponent} from './app.component';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import {HomeComponent} from './home/home.component';
+import {SolarModulesComponent} from './solar-modules/solar-modules.component';
+import {InvertersComponent} from './inverters/inverters.component';
+import {BatteriesComponent} from './batteries/batteries.component';
+import {StructuresComponent} from './structures/structures.component';
 
 @NgModule({
   declarations: [
@@ -27,4 +27,5 @@ import { StructuresComponent } from './structures/structures.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
