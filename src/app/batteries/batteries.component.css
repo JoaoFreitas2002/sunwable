@@ -122,23 +122,12 @@
     max-width: 100%;
   }
 
-  #container2 h2 {
-    width: 100%;
-    max-width: 100%;
-    height: 5%;
-    text-align: center;
-    text-transform: uppercase;
-    color: #706F6F;
-    margin: 3.5% 0 1.5% 0;
-    padding: 0;
-  }
-
   #container2 h1 {
     width: 100%;
     text-align: center;
     padding: 0;
     height: 10%;
-    margin: -10% auto 0 auto;
+    margin: 10% auto 0 auto;
     color: #E43D30;
     text-transform: uppercase;
     font-size: 3rem;

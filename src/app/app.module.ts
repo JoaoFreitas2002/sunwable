@@ -10,6 +10,10 @@ import {InvertersComponent} from './inverters/inverters.component';
 import {BatteriesComponent} from './batteries/batteries.component';
 import {StructuresComponent} from './structures/structures.component';
 
+import { CountUpModule } from 'ngx-countup';
+import {HttpClientModule} from '@angular/common/http';
+import {FormsModule} from "@angular/forms";
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +26,10 @@ import {StructuresComponent} from './structures/structures.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    CountUpModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

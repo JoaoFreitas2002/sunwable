@@ -10,8 +10,8 @@
   /*Navbar*/
   nav {
     padding-top: 1rem;
-    transition: 750ms ease;
-    background: transparent !important;
+    transition: 1000ms ease;
+    background: transparent;
   }
 
   .nv img {
@@ -21,7 +21,7 @@
 
   .nav-link, .dropdown-item {
     text-transform: uppercase;
-    color: white !important;
+    color: white;
     text-align: left;
   }
 
@@ -36,10 +36,6 @@
 
   .navbar-nav li {
     margin: auto;
-  }
-
-  .pt {
-    color: #C83D30 !important;
   }
 
   .nav-link .img2 {
@@ -286,9 +282,8 @@
   #container3 button {
     float: right;
     height: 15%;
-    margin: 25% 0 50% 30%;
+    margin: 25% 0 50% 35%;
     background-color: transparent;
-    border-radius: 15px;
     border: 0.2rem solid white;
     width: 25%;
     position: absolute;
@@ -405,7 +400,6 @@
     height: 15%;
     margin: 25% 0 50% 35%;
     background-color: transparent;
-    border-radius: 15px;
     border: 0.2rem solid #E43D30;
     width: 25%;
     position: absolute;

@@ -1,4 +1,4 @@
-<nav class="navbar fixed-top navbar-expand-lg">
+<nav class="navbar fixed-top navbar-expand-lg old_bc" id="nav">
   <div class="container-fluid">
     <a class="nv" routerLink="">
       <img src="assets/images/logo.svg" alt="">
@@ -31,14 +31,14 @@
           <a class="nav-link">contact</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link pt">pt</a>
+          <a class="nav-link" id="pt" style="color: #C83D30">pt</a>
         </li>
       </ul>
     </div>
   </div>
 </nav>
-<div id="carouselExampleControls" class="carousel slide carousel-fade" data-bs-ride="carousel"
-     data-bs-interval="10000" data-bs-keyboard="false" data-bs-pause="false" data-bs-slide="true">
+<div id="carouselExampleControls" class="carousel slide carousel-fade" data-ride="carousel"
+     data-interval="3500" data-keyboard="false" data-pause="false">
   <div class="carousel-inner">
     <div class="carousel-item active">
       <span class="d-block w-100" id="span1"></span>
@@ -49,7 +49,7 @@
     </div>
     <div class="carousel-item">
       <span class="d-block w-100" id="span2"></span>
-      <div class="text-hover-carousel" style="width: 45%;left: 27%">
+      <div class="text-hover-carousel" style="width: 45%;left: 29%">
         <h5>High performance and quality</h5>
         <p>15 years manufacturer's warranty</p>
       </div>
@@ -86,7 +86,7 @@
       <div class="icon">
         <img src="assets/images/icons/third.svg" alt="">
       </div>
-      <h4>why Sunwable</h4>
+      <h4>why Us</h4>
       <p>Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto</p>
     </div>
   </div>
@@ -128,7 +128,7 @@
 </div>
 <div class="container" id="container3">
   <div class="row">
-    <div class="col-5" style="margin-left: 10%;padding: 0;height: 100%">
+    <div class="col-5" style="margin-left: 7%;padding: 0;height: 100%">
       <h4>we are not just a supplier, we are a partner!</h4>
       <p>Increase your business with at SUNWABLE.</p>
       <p>We have more than 10 years of experience and knowledge in the development of energy solutions.We invite you to
@@ -147,28 +147,29 @@
       <div class="icon">
         <img src="assets/images/icons/watts.svg" alt="">
       </div>
-      <h3>12000</h3>
+      <h3 *ngIf="countUp" [countUp]="12000" [options]="options2"></h3>
       <p>installed watts</p>
     </div>
     <div class="col-sm">
       <div class="icon">
         <img src="assets/images/icons/projects.svg" alt="">
       </div>
-      <h3><span data-toggle="counter-up">300</span></h3>
+      <h3 *ngIf="countUp" [countUp]="300" [options]="options"></h3>
       <p>completed projects</p>
     </div>
     <div class="col-sm">
       <div class="icon">
         <img src="assets/images/icons/costumers.svg" alt="">
       </div>
-      <h3>96%</h3>
+      <h3 style="float: left;width: 20%;margin-left: 40%" *ngIf="countUp" [countUp]="90" [options]="options"></h3><span
+      style="margin-left: -45%;font-size: 1.45rem;font-weight: bold">%</span>
       <p>satisfied customers</p>
     </div>
   </div>
 </div>
 <div class="container" id="container5">
   <div class="row">
-    <div class="col-5" style="margin-left: 10%;padding: 0;height: 100%">
+    <div class="col-5" style="margin-left: 7%;padding: 0;height: 100%">
       <h4>Get in touch!</h4>
       <p>For further information or any other contact please send us a email.</p>
     </div>
@@ -213,8 +214,8 @@
 <div class="container" id="footer">
   <div class="row">
     <div class="copyright">
-      <h6 style="width: 45%;margin-left: 20%">Copyright ©2020 All rights reserved | by </h6>
-      <h6 style="width: 20%">Paleta3</h6>
+      <h6 style="margin-left: 23%">Copyright ©2020 All rights reserved | by </h6>
+      <h6 style="margin-left: 1%">Paleta3</h6>
     </div>
   </div>
 </div>
