@@ -14,6 +14,7 @@ import {CountUpModule} from 'ngx-countup';
 import {HttpClientModule} from '@angular/common/http';
 import {FormsModule} from '@angular/forms';
 import {ProductDetailComponent} from './product-detail/product-detail.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import {ProductDetailComponent} from './product-detail/product-detail.component'
     InvertersComponent,
     BatteriesComponent,
     StructuresComponent,
-    ProductDetailComponent
+    ProductDetailComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

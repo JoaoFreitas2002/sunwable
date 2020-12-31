@@ -18,17 +18,26 @@
             <img class="img1" src="assets/arrows/dropdown_arrow_down.png" alt="menu">
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2" id="dropdown1">
-            <li><a routerLink="/solar_modules" class="dropdown-item">solar Modules</a></li>
-            <li><a routerLink="/inverters" class="dropdown-item">inverters</a></li>
-            <li><a routerLink="/batteries" class="dropdown-item">batteries</a></li>
-            <li><a routerLink="/structures" class="dropdown-item">structures</a></li>
+            <li><a routerLink="/solar_modules" class="dropdown-item">Solar Modules</a></li>
+            <li><a routerLink="/inverters" class="dropdown-item">Inverters</a></li>
+            <li><a routerLink="/batteries" class="dropdown-item">Batteries</a></li>
+            <li><a routerLink="/structures" class="dropdown-item">Structures</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown" id="seconddrop">
+          <a class="nav-link" href="#" id="navbarDropdownMenuLink2" role="button"
+             data-bs-toggle="dropdown" aria-expanded="false">
+            suporte
+            <img class="img1" src="assets/arrows/dropdown_arrow_down.png" alt="menu">
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2" id="dropdown2">
+            <li><a class="dropdown-item">Metódo</a></li>
+            <li><a class="dropdown-item">Instalação</a></li>
+            <li><a class="dropdown-item">Downloads</a></li>
           </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link">downloads</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link">contact</a>
+          <a routerLink="/contact" class="nav-link">contact</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" id="pt" style="color: #C83D30">pt</a>
@@ -68,7 +77,7 @@
   <div class="row">
     <div class="col-sm">
       <div class="icon">
-        <img src="assets/images/icons/first.svg" alt="">
+        <img src="assets/images/icons/container1/mission.svg" alt="">
       </div>
       <h4>mission</h4>
       <p>meio ambiente</p>
@@ -76,7 +85,7 @@
     </div>
     <div class="col-sm">
       <div class="icon">
-        <img src="assets/images/icons/second.svg" alt="">
+        <img src="assets/images/icons/container1/focus.svg" alt="">
       </div>
       <h4>focus</h4>
       <p>distribuição</p>
@@ -84,7 +93,7 @@
     </div>
     <div class="col-sm">
       <div class="icon">
-        <img src="assets/images/icons/third.svg" alt="">
+        <img src="assets/images/icons/container1/why%20us.svg" alt="">
       </div>
       <h4>why Us</h4>
       <p>Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto</p>
@@ -101,23 +110,23 @@
       <div class="container" id="container2.1">
         <div class="row">
           <div class="col" style="margin-bottom: 1%;margin-right: 1%">
-            <img src="assets/images/icons/col_1.svg" alt="">
+            <img src="assets/images/icons/container2.1/col_1.svg" alt="">
             <h5>Polycrystalline and Monocrystalline cells</h5>
             <p>Texto texto texto texto Texto texto texto texto Texto texto texto texto</p>
           </div>
           <div class="col" style="margin-bottom: 1%;margin-left: 1%">
-            <img src="assets/images/icons/col_2.svg" alt="">
+            <img src="assets/images/icons/container2.1/col_2.svg" alt="">
             <h5>PV High-performance</h5>
             <p>Texto texto texto texto Texto texto texto texto Texto texto texto texto</p>
           </div>
           <div class="w-100 d-none d-md-block"></div>
           <div class="col" style="margin-top: 1%;margin-right: 1%">
-            <img src="assets/images/icons/col_3.svg" alt="">
+            <img src="assets/images/icons/container2.1/col_3.svg" alt="">
             <h5>Green Energy</h5>
             <p>Texto texto texto texto Texto texto texto texto Texto texto texto texto</p>
           </div>
           <div class="col" style="margin-top: 1%;margin-left: 1%">
-            <img src="assets/images/icons/col_4.svg" alt="">
+            <img src="assets/images/icons/container2.1/col_4.svg" alt="">
             <h5>25 years linear performance guarantee</h5>
             <p>Texto texto texto texto Texto texto texto texto Texto texto texto texto</p>
           </div>
@@ -136,7 +145,7 @@
     </div>
     <div class="col" style="padding: 0;height: 100%">
       <button><span>become an installer</span></button>
-      <img src="assets/images/become_installer.svg" alt="">
+      <img src="assets/images/container3_image.svg" alt="">
     </div>
   </div>
 </div>
@@ -145,21 +154,21 @@
     <h4>our numbers</h4>
     <div class="col-sm">
       <div class="icon">
-        <img src="assets/images/icons/watts.svg" alt="">
+        <img src="assets/images/icons/container4/watts.svg" alt="">
       </div>
       <h3 *ngIf="countUp" [countUp]="12000" [options]="options2"></h3>
       <p>installed watts</p>
     </div>
     <div class="col-sm">
       <div class="icon">
-        <img src="assets/images/icons/projects.svg" alt="">
+        <img src="assets/images/icons/container4/projects.svg" alt="">
       </div>
       <h3 *ngIf="countUp" [countUp]="300" [options]="options"></h3>
       <p>completed projects</p>
     </div>
     <div class="col-sm">
       <div class="icon">
-        <img src="assets/images/icons/costumers.svg" alt="">
+        <img src="assets/images/icons/container4/costumers.svg" alt="">
       </div>
       <h3 style="float: left;width: 20%;margin-left: 40%" *ngIf="countUp" [countUp]="90" [options]="options"></h3>
       <span *ngIf="countUp" style="margin-left: -45%;font-size: 1.45rem;font-weight: bold">%</span>
@@ -175,7 +184,7 @@
     </div>
     <div class="col" style="padding: 0;height: 100%">
       <button><span>send</span></button>
-      <img src="assets/images/send_container5.svg" alt="">
+      <img src="assets/images/container5_icon.svg" alt="">
     </div>
   </div>
 </div>
@@ -186,9 +195,9 @@
       <p>SUNWABLE</p>
       <p>Solutions Unipessoal, Lda</p>
       <div class="icons">
-        <a><img src="assets/images/icons/social_facebook.svg" alt=""></a>
-        <a><img src="assets/images/icons/social_in.svg" alt=""></a>
-        <a><img src="assets/images/icons/social_instagram.svg" alt=""></a>
+        <a><img src="assets/images/icons/social/social_facebook.svg" alt=""></a>
+        <a><img src="assets/images/icons/social/social_in.svg" alt=""></a>
+        <a><img src="assets/images/icons/social/social_instagram.svg" alt=""></a>
       </div>
     </div>
     <div class="col-4">

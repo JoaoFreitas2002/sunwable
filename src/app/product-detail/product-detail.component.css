@@ -72,97 +72,207 @@
     padding: 0;
     width: 100%;
     max-width: 100%;
-    height: 500px;
+    height: 1040px;
   }
 
   #container1 .row {
     height: 100%;
-    width: 100%;
+    padding: 0;
+    margin: 7% 10%;
+    color: #706F6F;
+  }
+
+  #container1 .col {
     padding: 0;
     margin: 0;
   }
 
-  .mapouter {
-    position: relative;
-    text-align: right;
-    height: 100%;
-    width: 100%;
-    max-width: 100%;
+  #container1 .row .img1 {
+    width: 15%;
+    height: 10%;
+    padding: 0;
+    margin: 4% 0 0 0;
   }
 
-  .gmap_canvas {
-    overflow: hidden;
-    background: none !important;
-    height: 100%;
-    width: 100%;
-    max-width: 100%;
+  #container1 .row .img2 {
+    float: right;
+    width: 55%;
+    height: 60%;
+    margin: -5% 5% 0 0;
   }
 
-  #gmap_canvas {
-    height: 100%;
-    width: 100%;
+  #container1 .row h5 {
+    font-size: 3rem;
+    padding: 0;
+    margin: -3% 0 0 0;
+    text-transform: uppercase;
+    color: #E43D30;
   }
+
+  #container1 .row p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: left;
+    width: 70%;
+    padding: 0;
+    margin: 2% 0 0 0;
+  }
+
+  #container1 .row button {
+    width: 20%;
+    height: 7%;
+    padding: 0;
+    margin: 9% 0 0 0;
+    background: #E43D30;
+    border: 0 solid white;
+  }
+
+  #container1 .row button span {
+    color: white;
+  }
+
 
   /*  container 2*/
   #container2 {
     margin: 0;
     padding: 0;
-    height: 1185px;
+    height: 790px;
     background: white;
     max-width: 100%;
   }
 
   #container2 .row {
-    margin: 5% 10%;
-    height: 100%;
+    margin: 0 0;
+    max-width: 100%;
   }
 
-  #container2 .col-4 {
+  /*container2.1*/
+  #container2\.1 {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    margin: 0;
     padding: 0;
-    height: 100%;
-    color: #706F6F;
   }
 
-  #container2 .col-8 {
+  #container2\.1 .row {
+    max-width: 100%;
+    height: 100%;
+    margin: 0 5%;
+  }
+
+  #container2\.1 .row .col-4 .img1 {
+    width: 10%;
+    height: 5%;
     padding: 0;
-    height: 100%;
-    color: #706F6F;
-  }
-
-  #container2 h2 {
-    color: #E43D30;
-  }
-
-  #container2 .escritorio h5, #container2 .horario_atendimento {
-    margin: 20% 0 0 0;
-  }
-
-  #container2 .col-8 h2 {
-    margin: 13% 0 0 0;
-  }
-
-  #container2 .coordenadas {
-    margin: 10% 0 0 0;
-  }
-
-  #container2 p {
     margin: 0;
   }
 
-  #container2 .p1 {
-    margin-top: 10%;
+  #container2\.1 .row #col1, #col2, #col3 {
+    margin: 5% 0 0 0;
   }
 
-  #container2 span {
+  #container2\.1 .row #col4, #col5, #col6 {
+    margin-top: -7%;
+  }
+
+  #container2\.1 .row .col-4 .img2 {
+    float: right;
+    width: 55%;
+    height: 60%;
+    margin: -5% 5% 0 0;
+  }
+
+  #container2\.1 .row .col-4 h5 {
+    width: 20%;
+    height: 5%;
+    padding: 0;
+    margin: 3% 0 0 0;
     text-transform: uppercase;
+    color: #E43D30;
   }
 
-  #container2 form {
-    height: 80%;
+  #container2\.1 .row .col-4 p {
+    text-align: left;
+    width: 39%;
+    height: 20%;
+    padding: 0;
+    margin: 2% 0 0 0;
+  }
+
+  #container2\.1 .row .col-4 button {
+    width: 20%;
+    height: 7%;
+    padding: 0;
+    margin: 9% 0 0 0;
+    background: #E43D30;
+    border: 0 solid white;
+  }
+
+  #container2\.1 .row .col-4 button span {
+    color: white;
   }
 
   /*  container3*/
   #container3 {
+    margin: 0;
+    padding: 0;
+    height: 450px;
+    background: #E43D30;
+    max-width: 100%;
+  }
+
+  #container3 .row {
+    height: 100%;
+    width: 100%;
+    color: white;
+    text-align: left;
+  }
+
+  #container3 .col-6 {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+
+  #container3 h4 {
+    width: 70%;
+    height: 20%;
+    margin-top: 20%;
+    font-size: 2rem;
+  }
+
+  #container3 p {
+    width: 78%;
+    margin-bottom: 0;
+    font-size: 1.1rem;
+  }
+
+  #container3 span {
+    background-color: transparent;
+    font-size: 1.15rem;
+    color: white;
+    padding: 0;
+  }
+
+  #container3 button {
+    float: right;
+    height: 15%;
+    margin: 25% 0 50% 30%;
+    background-color: transparent;
+    border: 0.2rem solid white;
+    width: 25%;
+    position: absolute;
+  }
+
+  #container3 img {
+    height: 100%;
+    float: right;
+    width: auto;
+  }
+
+  /*  container4*/
+  #container4 {
     background-color: white;
     height: 390px;
     margin: 0;
@@ -171,32 +281,32 @@
     max-width: 100%;
   }
 
-  #container3 .row {
+  #container4 .row {
     padding: 0;
     margin: 0 10% 0 10%;
     height: 100%;
     width: 80%;
   }
 
-  #container3 .col-4 {
+  #container4 .col-4 {
     padding: 0;
     margin: auto;
     height: 100%;
     text-align: left;
   }
 
-  #container3 .icons {
+  #container4 .icons {
     padding: 0;
     margin-top: 10%;
   }
 
-  #container3 .icons img {
+  #container4 .icons img {
     margin-right: 2%;
     width: 7%;
     height: 7%;
   }
 
-  #container3 h6 {
+  #container4 h6 {
     margin-bottom: 5%;
     margin-top: 30%;
     color: #E43D30;
@@ -204,26 +314,26 @@
     font-weight: bold;
   }
 
-  #container3 p {
+  #container4 p {
     color: #706F6F;
     padding: 0;
     margin: 0;
   }
 
-  #container3 a {
+  #container4 a {
     color: #706F6F;
   }
 
-  #container3 .contact-info2 {
+  #container4 .contact-info2 {
     margin-top: 10%;
   }
 
-  #container3 ul {
+  #container4 ul {
     list-style-type: none;
     padding: 0;
   }
 
-  #container3 li {
+  #container4 li {
     padding: 0;
     margin-bottom: 5%;
     margin-left: 30%;

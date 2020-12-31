@@ -6,6 +6,7 @@ import {InvertersComponent} from './inverters/inverters.component';
 import {BatteriesComponent} from './batteries/batteries.component';
 import {StructuresComponent} from './structures/structures.component';
 import {ProductDetailComponent} from './product-detail/product-detail.component';
+import {ContactComponent} from './contact/contact.component';
 
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
@@ -14,7 +15,8 @@ const routes: Routes = [
   {path: 'inverters', component: InvertersComponent},
   {path: 'batteries', component: BatteriesComponent},
   {path: 'structures', component: StructuresComponent},
-  {path: 'product_detail', component: ProductDetailComponent}
+  {path: 'product_detail', component: ProductDetailComponent},
+  {path: 'contact', component: ContactComponent}
 ];
 
 @NgModule({

@@ -24,11 +24,20 @@
             <li><a routerLink="/structures" class="dropdown-item">structures</a></li>
           </ul>
         </li>
-        <li class="nav-item">
-          <a class="nav-link">downloads</a>
+        <li class="nav-item dropdown" id="seconddrop">
+          <a class="nav-link" href="#" id="navbarDropdownMenuLink2" role="button"
+             data-bs-toggle="dropdown" aria-expanded="false">
+            suporte
+            <img class="img1" src="assets/arrows/dropdown_arrow_down.png" alt="menu">
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2" id="dropdown2">
+            <li><a class="dropdown-item">metódo</a></li>
+            <li><a class="dropdown-item">instalação & manutenção</a></li>
+            <li><a class="dropdown-item">downloads</a></li>
+          </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link">contact</a>
+          <a routerLink="/contact" class="nav-link">contact</a>
         </li>
         <li class="nav-item">
           <a class="nav-link pt">pt</a>
@@ -39,68 +48,97 @@
 </nav>
 <div class="container" id="container1">
   <div class="row">
-    <div class="mapouter">
-      <div class="gmap_canvas">
-        <iframe id="gmap_canvas"
-                src="https://maps.google.com/maps?q=N306%2030%2C%204755-056%20Barcelinhos&t=&z=17&ie=UTF8&iwloc=&output=embed">
-        </iframe>
-      </div>
+    <div class="col">
+      <img class="img1" src="assets/images/solar%20modules/solarmodules2.svg" alt="">
+      <h5>Mercury</h5>
+      <p>Módulo fotovoltaicode policristalino 60 células.</p>
+      <p style="color: #E43D30;font-size: 1.2rem;margin-top: 15%">POTÊNCIA: 285 – 300 WATT</p>
+      <p>Os módulos fotovoltaicos policristalinos de 60 células da série Mercury são produtos adequados para qualquer
+        tipo de utilização. Desde instalações residenciais a projetos comerciais ou públicos, graças à sua alta
+        eficiência, estes painéis solares oferecem um ótimo desempenho em diversas condições climáticas. A série Mercury
+        é instalada numa estrutura de alumínio anodizado de 35 mm. Uma combinação que garante uma alta resistência e um
+        peso razoável. O vidro antirreflexo de 3.2 mm otimiza o desempenho da radiação solar em todo o painel.</p>
+      <!--    <button routerLink="/product_detail"><span>+ Info</span></button>-->
     </div>
+    <div class="col"></div>
   </div>
 </div>
 <div class="container" id="container2">
   <div class="row">
-    <div class="col-4">
-      <div class="escritorio">
-        <h2>Onde estamos</h2>
-        <h5><span>escritório</span></h5>
-        <p style="width: 60%;margin-bottom: 0">Rua B rito limpo, nº31, 1º drt. 4750-056 Barcelinhos - BCL
-          <span>portugal</span></p>
-        <p>geral@sunwable.com</p>
+  </div>
+  <div class="container" id="container2.1">
+    <div class="row">
+      <div class="col-4" id="col1">
+        <img class="img2" src="assets/images/solar%20modules/solar_exemplo.svg" alt="">
+        <img class="img1" src="assets/images/solar%20modules/solarmodules2.svg" alt="">
+        <h5>Mercury</h5>
+        <p>Módulo fotovoltaicode policristalino 60 células.</p>
+        <button routerLink="/product_detail"><span>+ Info</span></button>
       </div>
-      <div class="coordenadas">
-        <h5>Coordenadas <span>gps</span>:</h5>
-        <p style="width: 40%">41º31'31.6"N 8º37'18.8"W</p>
+      <div class="col-4" id="col2">
+        <img class="img2" src="assets/images/solar%20modules/solar_exemplo.svg" alt="">
+        <img class="img1" src="assets/images/solar%20modules/solarmodules2.svg" alt="">
+        <h5>Mercury</h5>
+        <p>Módulo fotovoltaicode policristalino 60 células.</p>
+        <button><span>+ Info</span></button>
       </div>
-      <div class="horario_atendimento">
-        <h5 style="margin-bottom: 0"><span>horário de atendimento</span></h5>
-        <p>segunda a sexta-feira</p>
-        <p class="p1">Logística</p>
-        <p>Descargas: 08h30 às 12h00</p>
-        <p>Cargas: 13h30-17h00</p>
-        <p class="p1">Apoio Técnico</p>
-        <p>08h30 às 12h30 | 13h30 às 17h30</p>
-        <p class="p1">Departamento Comercial</p>
-        <p>08h30 às 12h30 | 13h30 às 17h30</p>
-        <p class="p1">Serviços Administrativos</p>
-        <p>08h30 às 12h30 | 13h30 às 17h30</p>
+      <div class="col-4" id="col3">
+        <img class="img2" src="assets/images/solar%20modules/solar_exemplo.svg" alt="">
+        <img class="img1" src="assets/images/solar%20modules/solarmodules2.svg" alt="">
+        <h5>Mercury</h5>
+        <p>Módulo fotovoltaicode policristalino 60 células.</p>
+        <button><span>+ Info</span></button>
       </div>
-    </div>
-    <div class="col-8">
-      <h2>Contacte-nos</h2>
-      <form>
-        <div class="form-group">
-          <label for="name">Nome <span>*</span></label>
-          <input type="text" class="form-control" id="name">
-        </div>
-        <div class="form-group">
-          <label for="company">Empresa</label>
-          <input type="text" class="form-control" id="company">
-        </div>
-      </form>
+      <div class="w-100"></div>
+      <div class="col-4" id="col4">
+        <img class="img2" src="assets/images/solar%20modules/solar_exemplo.svg" alt="">
+        <img class="img1" src="assets/images/solar%20modules/solarmodules2.svg" alt="">
+        <h5>Mercury</h5>
+        <p>Módulo fotovoltaicode policristalino 60 células.</p>
+        <button><span>+ Info</span></button>
+      </div>
+      <div class="col-4" id="col5">
+        <img class="img2" src="assets/images/solar%20modules/solar_exemplo.svg" alt="">
+        <img class="img1" src="assets/images/solar%20modules/solarmodules2.svg" alt="">
+        <h5>Mercury</h5>
+        <p>Módulo fotovoltaicode policristalino 60 células.</p>
+        <button><span>+ Info</span></button>
+      </div>
+      <div class="col-4" id="col6">
+        <img class="img2" src="assets/images/solar%20modules/solar_exemplo.svg" alt="">
+        <img class="img1" src="assets/images/solar%20modules/solarmodules2.svg" alt="">
+        <h5>Mercury</h5>
+        <p>Módulo fotovoltaicode policristalino 60 células.</p>
+        <button><span>+ Info</span></button>
+      </div>
     </div>
   </div>
 </div>
 <div class="container" id="container3">
+  <div class="row">
+    <div class="col-5" style="margin-left: 10%;padding: 0;height: 100%">
+      <h4>we are not just a supplier, we are a partner!</h4>
+      <p>Increase your business with at SUNWABLE.</p>
+      <p>We have more than 10 years of experience and knowledge in the development of energy solutions.We invite you
+        to
+        be a part of it.</p>
+    </div>
+    <div class="col" style="padding: 0;height: 100%">
+      <button><span>become an installer</span></button>
+      <img src="assets/images/container3_image.svg" alt="">
+    </div>
+  </div>
+</div>
+<div class="container" id="container4">
   <div class="row">
     <div class="col-4">
       <h6>company</h6>
       <p>SUNWABLE</p>
       <p>Solutions Unipessoal, Lda</p>
       <div class="icons">
-        <a><img src="assets/images/icons/social_facebook.svg" alt=""></a>
-        <a><img src="assets/images/icons/social_in.svg" alt=""></a>
-        <a><img src="assets/images/icons/social_instagram.svg" alt=""></a>
+        <a><img src="assets/images/icons/social/social_facebook.svg" alt=""></a>
+        <a><img src="assets/images/icons/social/social_in.svg" alt=""></a>
+        <a><img src="assets/images/icons/social/social_instagram.svg" alt=""></a>
       </div>
     </div>
     <div class="col-4">

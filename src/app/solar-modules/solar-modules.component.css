@@ -30,6 +30,10 @@
     background-color: #C83D30;
   }
 
+  .dropdown-item {
+    text-transform: none;
+  }
+
   .navbar-nav {
     margin-left: auto;
     width: 55%;
