@@ -1,5 +1,5 @@
 import {BrowserModule} from '@angular/platform-browser';
-import {NgModule} from '@angular/core';
+import {LOCALE_ID, NgModule} from '@angular/core';
 
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
@@ -10,9 +10,10 @@ import {InvertersComponent} from './inverters/inverters.component';
 import {BatteriesComponent} from './batteries/batteries.component';
 import {StructuresComponent} from './structures/structures.component';
 
-import { CountUpModule } from 'ngx-countup';
+import {CountUpModule} from 'ngx-countup';
 import {HttpClientModule} from '@angular/common/http';
-import {FormsModule} from "@angular/forms";
+import {FormsModule} from '@angular/forms';
+import {ProductDetailComponent} from './product-detail/product-detail.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import {FormsModule} from "@angular/forms";
     SolarModulesComponent,
     InvertersComponent,
     BatteriesComponent,
-    StructuresComponent
+    StructuresComponent,
+    ProductDetailComponent
   ],
   imports: [
     BrowserModule,
@@ -31,7 +33,7 @@ import {FormsModule} from "@angular/forms";
     HttpClientModule,
     FormsModule
   ],
-  providers: [],
+  providers: [{provide: LOCALE_ID, useValue: 'pt-PT'}],
   bootstrap: [AppComponent]
 })
 export class AppModule {

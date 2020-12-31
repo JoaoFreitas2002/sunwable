@@ -5,6 +5,7 @@ import {SolarModulesComponent} from './solar-modules/solar-modules.component';
 import {InvertersComponent} from './inverters/inverters.component';
 import {BatteriesComponent} from './batteries/batteries.component';
 import {StructuresComponent} from './structures/structures.component';
+import {ProductDetailComponent} from './product-detail/product-detail.component';
 
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
@@ -12,11 +13,14 @@ const routes: Routes = [
   {path: 'solar_modules', component: SolarModulesComponent},
   {path: 'inverters', component: InvertersComponent},
   {path: 'batteries', component: BatteriesComponent},
-  {path: 'structures', component: StructuresComponent}
+  {path: 'structures', component: StructuresComponent},
+  {path: 'product_detail', component: ProductDetailComponent}
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, {
+    scrollPositionRestoration: 'top'
+  })],
   exports: [RouterModule]
 })
 export class AppRoutingModule {
