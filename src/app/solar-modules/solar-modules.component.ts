@@ -13,23 +13,17 @@ export class SolarModulesComponent implements OnInit {
   constructor(private productSrv: ProductsService) {
   }
 
-  // products: Product[] = [];
-  // product: Product;
+  products: Product[] = [];
 
   ngOnInit(): void {
+    this.All();
   }
 
-  // All() {
-  //   this.productSrv.getAll().subscribe(dados => {
-  //     // @ts-ignore
-  //     console.log(dados.records);
-  //     // @ts-ignore
-  //     console.log(dados.records.length.field_1);
-  //     // this.product.name = dados.records.field_1;
-  //     // @ts-ignore
-  //     const name = dados.records.field_1;
-  //     console.log(name);
-  //   });
-  // }
+  All() {
+    this.productSrv.getAll().subscribe(dados => {
+      // @ts-ignore
+      console.log(dados.records);
+    });
+  }
 
 }

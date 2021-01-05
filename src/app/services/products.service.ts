@@ -16,10 +16,6 @@ export class ProductsService {
     'X-Knack-REST-API-KEY': '06632f5d-9de1-4e7c-8e85-491e950f2733'
   };
 
-  requestOptions = {
-    headers: new Headers(this.headers)
-  };
-
   constructor(private http: HttpClient) {
   }
 

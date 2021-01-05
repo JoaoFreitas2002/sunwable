@@ -1,3 +1,4 @@
 export class Product {
-  name: string;
+  // tslint:disable-next-line:variable-name
+  field_1: string;
 }
