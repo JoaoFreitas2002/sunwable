@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 
 import {ProductsService} from '../services/products.service';
-import {Product} from '../services/product';
+import {SolarModule} from '../services/solarModule';
 
 @Component({
   selector: 'app-solar-modules',
@@ -13,17 +13,22 @@ export class SolarModulesComponent implements OnInit {
   constructor(private productSrv: ProductsService) {
   }
 
-  products: Product[] = [];
+  solarModules: SolarModule[] = [];
 
-  ngOnInit(): void {
-    this.All();
+  ngOnInit() {
+    this.AllSolarModules();
+    this.ChangeHeigh();
   }
 
-  All() {
-    this.productSrv.getAll().subscribe(dados => {
-      // @ts-ignore
-      console.log(dados.records);
-    });
+  AllSolarModules() {
+    this.productSrv.getAllSolarModules().subscribe(data => this.solarModules = data);
+  }
+
+  ChangeHeigh() {
+    if (this.solarModules.length > 3 && this.solarModules.length < 7) {
+      document.getElementById('container2').style.height = '700px';
+      document.getElementById('product').style.height = '55%';
+    }
   }
 
 }

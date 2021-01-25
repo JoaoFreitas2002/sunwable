@@ -7,69 +7,6 @@
 
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
-  /*Navbar*/
-  nav {
-    padding-top: 1rem;
-    transition: 750ms ease;
-    background: #E43D30 !important;
-    height: 80px;
-  }
-
-  .nv img {
-    height: 50px;
-    width: 150px;
-  }
-
-  .nav-link, .dropdown-item {
-    text-transform: uppercase;
-    color: white !important;
-    text-align: left;
-  }
-
-  .dropdown-item:hover {
-    background-color: #C83D30;
-  }
-
-  .dropdown-item {
-    text-transform: none;
-  }
-
-  .navbar-nav {
-    margin-left: auto;
-    width: 55%;
-  }
-
-  .navbar-nav li {
-    margin: auto;
-  }
-
-  .pt {
-    color: black !important;
-  }
-
-  .nav-link .img2 {
-    height: 6%;
-    width: 6%;
-    margin-right: 2%;
-  }
-
-  .nav-link .img1 {
-    height: 13%;
-    width: 13%;
-    margin: 0 0 3% 2%;
-  }
-
-  .dropdown-menu {
-    background-color: #E43D30;
-    display: none;
-    line-height: 1.5rem;
-    text-align: center;
-  }
-
-  #firstdrop:hover #dropdown1, #seconddrop:hover #dropdown2 {
-    display: block;
-  }
-
   /*  container1*/
   #container1 {
     margin: 0;
@@ -115,61 +52,51 @@
   #container2 {
     margin: 0;
     padding: 0;
-    height: 1185px;
+    height: 500px;
     background: white;
     max-width: 100%;
   }
 
   #container2 .row {
-    margin: 0 0;
-    max-width: 100%;
-  }
-
-  /*container2.1*/
-  #container2\.1 {
-    width: 100%;
-    max-width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-  }
-
-  #container2\.1 .row {
-    max-width: 100%;
-    height: 100%;
     margin: 0 5%;
+    max-width: 100%;
+    height: 100%;
   }
 
-  #container2\.1 .row .col-4 .img1 {
+  #container2 .col-4 {
+    height: 77%;
+  }
+
+  #container2 .row .col-4 .img1 {
     width: 10%;
     height: 5%;
     padding: 0;
     margin: 0;
   }
 
-  #container2\.1 .row #col1, #col2, #col3 {
+  #container2 .row #col1, #col2, #col3 {
     height: 40%;
     margin: 5% 0 0 0;
   }
 
-  #container2\.1 .row #col4, #col5, #col6 {
+  #container2 .row #col4, #col5, #col6 {
     height: 40%;
     margin-top: -7%;
   }
 
-  #container2\.1 .row #col7, #col8, #col9 {
+  #container2 .row #col7, #col8, #col9 {
     height: 40%;
     margin-top: -7%;
   }
 
-  #container2\.1 .row .col-4 .img2 {
+  #container2 .row .col-4 .img2 {
     float: right;
     width: 55%;
     height: 60%;
     margin: -5% 5% 0 0;
   }
 
-  #container2\.1 .row .col-4 h5 {
+  #container2 .row .col-4 h5 {
     width: 20%;
     height: 5%;
     padding: 0;
@@ -178,7 +105,7 @@
     color: #E43D30;
   }
 
-  #container2\.1 .row .col-4 p {
+  #container2 .row .col-4 p {
     text-align: left;
     width: 39%;
     height: 20%;
@@ -186,7 +113,7 @@
     margin: 2% 0 0 0;
   }
 
-  #container2\.1 .row .col-4 button {
+  #container2 .row .col-4 button {
     width: 20%;
     height: 7%;
     padding: 0;
@@ -195,7 +122,7 @@
     border: 0 solid white;
   }
 
-  #container2\.1 .row .col-4 button span {
+  #container2 .row .col-4 button span {
     color: white;
   }
 
@@ -256,105 +183,6 @@
     height: 100%;
     float: right;
     width: auto;
-  }
-
-  /*  container4*/
-  #container4 {
-    background-color: white;
-    height: 390px;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    max-width: 100%;
-  }
-
-  #container4 .row {
-    padding: 0;
-    margin: 0 10% 0 10%;
-    height: 100%;
-    width: 80%;
-  }
-
-  #container4 .col-4 {
-    padding: 0;
-    margin: auto;
-    height: 100%;
-    text-align: left;
-  }
-
-  #container4 .icons {
-    padding: 0;
-    margin-top: 10%;
-  }
-
-  #container4 .icons img {
-    margin-right: 2%;
-    width: 7%;
-    height: 7%;
-  }
-
-  #container4 h6 {
-    margin-bottom: 5%;
-    margin-top: 30%;
-    color: #E43D30;
-    text-transform: uppercase;
-    font-weight: bold;
-  }
-
-  #container4 p {
-    color: #706F6F;
-    padding: 0;
-    margin: 0;
-  }
-
-  #container4 a {
-    color: #706F6F;
-  }
-
-  #container4 .contact-info2 {
-    margin-top: 10%;
-  }
-
-  #container4 ul {
-    list-style-type: none;
-    padding: 0;
-  }
-
-  #container4 li {
-    padding: 0;
-    margin-bottom: 5%;
-    margin-left: 30%;
-  }
-
-  /*  footer*/
-  #footer {
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    max-width: 100%;
-    height: 80px;
-    background: #E43D30;
-  }
-
-  #footer .row {
-    padding: 0;
-    width: 80%;
-    margin: 0 10%;
-    height: 100%;
-  }
-
-  #footer h6 {
-    color: white;
-    padding: 0;
-    margin: 0;
-    display: inline-block;
-  }
-
-  #footer .copyright {
-    width: 60%;
-    margin: auto;
-    padding: 0;
-    height: 30%;
   }
 
 }
