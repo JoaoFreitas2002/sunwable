@@ -16,6 +16,9 @@ export class InvertersComponent implements OnInit {
   inverters: Inverter[] = [];
 
   ngOnInit(): void {
+    localStorage.removeItem('product');
+    localStorage.removeItem('productArray');
+    localStorage.removeItem('productType');
     this.AllInverters();
   }
 
@@ -38,6 +41,5 @@ export class InvertersComponent implements OnInit {
       return {height: '1100px'};
     }
   }
-
 
 }

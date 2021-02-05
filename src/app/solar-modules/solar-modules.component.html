@@ -12,7 +12,7 @@
       <h5>{{sm.nome}}</h5>
       <p>{{sm.resumo}}</p>
       <button routerLink="/product_detail/{{sm.id}}"
-              [state]="{data: {data1: solarModules[sm.id - 1], data2: solarModules}}"><span>+ Info</span>
+              [state]="{data: {data1: solarModules[sm.id - 1], data2: solarModules, data3: 'solarModules'}}"><span>+ Info</span>
       </button>
     </div>
   </div>

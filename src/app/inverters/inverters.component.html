@@ -11,7 +11,9 @@
       <img class="img1" src="assets/images/solar%20modules/solarmodules2.svg" alt="">
       <h5>{{inv.nome}}</h5>
       <p>{{inv.resumo}}</p>
-      <button routerLink="/product_detail"><span>+ Info</span></button>
+      <button routerLink="/product_detail/{{inv.id}}"
+              [state]="{data: {data1: inverters[inv.id - 1], data2: inverters, data3: 'inverters'}}"><span>+ Info</span>
+      </button>
     </div>
   </div>
 </div>

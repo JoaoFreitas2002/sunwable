@@ -1,5 +1,8 @@
 import {Component, OnInit} from '@angular/core';
 
+import {SolarModule} from "../services/solarModule";
+import {Inverter} from "../services/inverter";
+
 @Component({
   selector: 'app-product-detail',
   templateUrl: './product-detail.component.html',
@@ -7,40 +10,50 @@ import {Component, OnInit} from '@angular/core';
 })
 export class ProductDetailComponent implements OnInit {
 
-  constructor() {}
+  constructor() {
+  }
 
-  product: {
-    field1: any,
-    field2: any,
-    field3: any,
-    field4: any,
-    field5: any,
-    field6: any,
-    field7: any,
-    field8: any,
-    field9: any,
-    field10: any,
-  };
-  products: [{
-    field1: any;
-    field2: any,
-    field3: any,
-    field4: any,
-    field5: any,
-    field6: any,
-    field7: any,
-    field8: any,
-    field9: any,
-    field10: any,
-  }];
+  solarModule: SolarModule;
+  solarModules: SolarModule[] = [];
+
+  inverter: Inverter;
+  inverters: Inverter[] = [];
+
+  productType: string;
 
   ngOnInit(): void {
-    console.log(this.product);
-    console.log(this.products);
-    this.product = history.state.data.data1;
-    this.products = history.state.data.data2;
-    console.log(this.product);
-    console.log(this.products);
+    this.SeeProductType();
+  }
+
+  SeeProductType() {
+    if (localStorage.getItem('productType') === null) {
+      this.productType = history.state.data.data3;
+      localStorage.setItem('productType', this.productType);
+    } else {
+      this.productType = localStorage.getItem('productType');
+    }
+    if (localStorage.getItem('product') === null) {
+      if (this.productType === 'solarModules') {
+        this.solarModule = history.state.data.data1;
+        localStorage.setItem('product', JSON.stringify(this.solarModule));
+        this.solarModules = history.state.data.data2;
+        localStorage.setItem('productArray', JSON.stringify(this.solarModules));
+      } else if (this.productType === 'inverters') {
+        this.inverter = history.state.data.data1;
+        localStorage.setItem('product', JSON.stringify(this.inverter));
+        this.inverters = history.state.data.data2;
+        localStorage.setItem('productArray', JSON.stringify(this.inverters));
+      }
+    } else {
+      if (this.productType === 'solarModules') {
+        this.solarModule = JSON.parse(localStorage.getItem('product'));
+        this.solarModules = JSON.parse(localStorage.getItem('productArray'));
+      } else if (this.productType === 'inverters') {
+        this.inverter = JSON.parse(localStorage.getItem('product'));
+        this.inverters = JSON.parse(localStorage.getItem('productArray'));
+      }
+    }
+
   }
 
 }

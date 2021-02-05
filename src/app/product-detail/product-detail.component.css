@@ -7,6 +7,22 @@
 
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
+  /*container0*/
+  #container0 {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 1540px;
+    max-width: 100%;
+  }
+
+  #container0 .row {
+    padding: 0;
+    margin:0;
+    width: 100%;
+    height: 100%;
+  }
+
   /*  container1*/
   #container1 {
     margin: 0;
@@ -31,22 +47,19 @@
 
   #container1 .row .img1 {
     width: 15%;
-    height: 10%;
+    height: 5%;
     padding: 0;
-    margin: 4% 0 0 0;
   }
 
   #container1 .row .img2 {
     float: right;
-    width: 55%;
-    height: 60%;
+    height: 70%;
     margin: -5% 5% 0 0;
   }
 
   #container1 .row h5 {
     font-size: 3rem;
     padding: 0;
-    margin: -3% 0 0 0;
     text-transform: uppercase;
     color: #E43D30;
   }
@@ -143,10 +156,6 @@
   #myCarousel {
     width: 100%;
     height: 100%;
-  }
-
-  .carousel {
-    margin: 50px auto;
     padding: 0 70px;
   }
 
@@ -284,9 +293,90 @@
     right: 100% !important;
   }
 
-
-  /*  container3*/
+    /*container3*/
   #container3 {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 1540px;
+    max-width: 100%;
+  }
+
+  #container3 .row {
+    padding: 0;
+    margin:0;
+    width: 100%;
+    height: 100%;
+  }
+
+  /*  container4*/
+  #container4 {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 100%;
+    height: 1040px;
+  }
+
+  #container4 .row {
+    height: 100%;
+    padding: 0;
+    width: 80%;
+    margin: 10% 10% 0 10%;
+    color: #706F6F;
+  }
+
+  #container4 .col {
+    padding: 0;
+    margin: 0;
+  }
+
+  #container4 .row .img1 {
+    width: 15%;
+    height: 10%;
+    padding: 0;
+    margin: 4% 0 0 0;
+  }
+
+  #container4 .row .img2 {
+    float: right;
+    width: 55%;
+    height: 60%;
+    margin: -5% 5% 0 0;
+  }
+
+  #container4 .row h5 {
+    font-size: 3rem;
+    padding: 0;
+    margin: -3% 0 0 0;
+    text-transform: uppercase;
+    color: #E43D30;
+  }
+
+  #container4 .row p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: left;
+    width: 70%;
+    padding: 0;
+    margin: 2% 0 0 0;
+  }
+
+  #container4 .row button {
+    width: 20%;
+    height: 7%;
+    padding: 0;
+    margin: 9% 0 0 0;
+    background: #E43D30;
+    border: 0 solid white;
+  }
+
+  #container4 .row button span {
+    color: white;
+  }
+
+  /*  container6*/
+  #container6 {
     margin: 0;
     padding: 0;
     height: 450px;
@@ -294,40 +384,40 @@
     max-width: 100%;
   }
 
-  #container3 .row {
+  #container6 .row {
     height: 100%;
     width: 100%;
     color: white;
     text-align: left;
   }
 
-  #container3 .col-6 {
+  #container6 .col-6 {
     margin: 0;
     padding: 0;
     height: 100%;
   }
 
-  #container3 h4 {
+  #container6 h4 {
     width: 70%;
     height: 20%;
     margin-top: 20%;
     font-size: 2rem;
   }
 
-  #container3 p {
+  #container6 p {
     width: 78%;
     margin-bottom: 0;
     font-size: 1.1rem;
   }
 
-  #container3 span {
+  #container6 span {
     background-color: transparent;
     font-size: 1.15rem;
     color: white;
     padding: 0;
   }
 
-  #container3 button {
+  #container6 button {
     float: right;
     height: 15%;
     margin: 25% 0 50% 30%;
@@ -337,7 +427,7 @@
     position: absolute;
   }
 
-  #container3 img {
+  #container6 img {
     height: 100%;
     float: right;
     width: auto;

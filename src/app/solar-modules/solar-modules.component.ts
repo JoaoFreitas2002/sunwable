@@ -16,6 +16,9 @@ export class SolarModulesComponent implements OnInit {
   solarModules: SolarModule[] = [];
 
   ngOnInit() {
+    localStorage.removeItem('product');
+    localStorage.removeItem('productArray');
+    localStorage.removeItem('productType');
     this.AllSolarModules();
   }
 
