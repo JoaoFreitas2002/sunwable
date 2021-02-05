@@ -4,85 +4,14 @@
     <div class="name_product"><h1>inverters</h1></div>
   </div>
 </div>
-<div class="container" id="container2">
+<div class="container" id="container2" [ngStyle]="ChangeHeighContainer()">
   <div class="row">
-  </div>
-  <div class="container" id="container2.1">
-    <div class="row">
-      <div class="col-4" id="col1">
-        <img class="img2" src="assets/images/inverters/inverter_exemplo1.svg" alt="">
-        <img class="img1" src="assets/images/inverters/inverters_2.svg" alt="">
-        <h5>solax x1</h5>
-        <p>Inversor Solax</p>
-        <p>X1 mini 1.1 SD</p>
-        <button><span>+ Info</span></button>
-      </div>
-      <div class="col-4" id="col2">
-        <img class="img2" src="assets/images/inverters/inverter_exemplo2.svg" alt="">
-        <img class="img1" src="assets/images/inverters/inverters_2.svg" alt="">
-        <h5>solax x1</h5>
-        <p>Inversor Solax</p>
-        <p>X1 mini 1.1 SD</p>
-        <button><span>+ Info</span></button>
-      </div>
-      <div class="col-4" id="col3">
-        <img class="img2" src="assets/images/inverters/inverter_exemplo2.svg" alt="">
-        <img class="img1" src="assets/images/inverters/inverters_2.svg" alt="">
-        <h5>solax x1</h5>
-        <p>Inversor Solax</p>
-        <p>X1 mini 1.1 SD</p>
-        <button><span>+ Info</span></button>
-      </div>
-      <div class="w-100"></div>
-      <div class="col-4" id="col4">
-        <img class="img2" src="assets/images/inverters/inverter_exemplo2.svg" alt="">
-        <img class="img1" src="assets/images/inverters/inverters_2.svg" alt="">
-        <h5>solax x1</h5>
-        <p>Inversor Solax</p>
-        <p>X1 mini 1.1 SD</p>
-        <button><span>+ Info</span></button>
-      </div>
-      <div class="col-4" id="col5">
-        <img class="img2" src="assets/images/inverters/inverter_exemplo2.svg" alt="">
-        <img class="img1" src="assets/images/inverters/inverters_2.svg" alt="">
-        <h5>solax x1</h5>
-        <p>Inversor Solax</p>
-        <p>X1 mini 1.1 SD</p>
-        <button><span>+ Info</span></button>
-      </div>
-      <div class="col-4" id="col6">
-        <img class="img2" src="assets/images/inverters/inverter_exemplo2.svg" alt="">
-        <img class="img1" src="assets/images/inverters/inverters_2.svg" alt="">
-        <h5>solax x1</h5>
-        <p>Inversor Solax</p>
-        <p>X1 mini 1.1 SD</p>
-        <button><span>+ Info</span></button>
-      </div>
-      <div class="w-100"></div>
-      <div class="col-4" id="col7">
-        <img class="img2" src="assets/images/inverters/inverter_exemplo2.svg" alt="">
-        <img class="img1" src="assets/images/inverters/inverters_2.svg" alt="">
-        <h5>solax x1</h5>
-        <p>Inversor Solax</p>
-        <p>X1 mini 1.1 SD</p>
-        <button><span>+ Info</span></button>
-      </div>
-      <div class="col-4" id="col8">
-        <img class="img2" src="assets/images/inverters/inverter_exemplo2.svg" alt="">
-        <img class="img1" src="assets/images/inverters/inverters_2.svg" alt="">
-        <h5>solax x1</h5>
-        <p>Inversor Solax</p>
-        <p>X1 mini 1.1 SD</p>
-        <button><span>+ Info</span></button>
-      </div>
-      <div class="col-4" id="col9">
-        <img class="img2" src="assets/images/inverters/inverter_exemplo2.svg" alt="">
-        <img class="img1" src="assets/images/inverters/inverters_2.svg" alt="">
-        <h5>solax x1</h5>
-        <p>Inversor Solax</p>
-        <p>X1 mini 1.1 SD</p>
-        <button><span>+ Info</span></button>
-      </div>
+    <div class="col-4" id="product" *ngFor="let inv of inverters" [ngStyle]="ChangeHeighProduct()">
+      <img class="img2" src="{{inv.imagem}}" alt="{{inv.nome}}">
+      <img class="img1" src="assets/images/solar%20modules/solarmodules2.svg" alt="">
+      <h5>{{inv.nome}}</h5>
+      <p>{{inv.resumo}}</p>
+      <button routerLink="/product_detail"><span>+ Info</span></button>
     </div>
   </div>
 </div>

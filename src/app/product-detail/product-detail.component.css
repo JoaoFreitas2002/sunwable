@@ -19,7 +19,8 @@
   #container1 .row {
     height: 100%;
     padding: 0;
-    margin: 7% 10%;
+    width: 80%;
+    margin: 10% 10% 0 10%;
     color: #706F6F;
   }
 

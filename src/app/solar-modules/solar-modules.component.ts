@@ -17,17 +17,25 @@ export class SolarModulesComponent implements OnInit {
 
   ngOnInit() {
     this.AllSolarModules();
-    this.ChangeHeigh();
   }
 
   AllSolarModules() {
     this.productSrv.getAllSolarModules().subscribe(data => this.solarModules = data);
   }
 
-  ChangeHeigh() {
+  ChangeHeighProduct() {
     if (this.solarModules.length > 3 && this.solarModules.length < 7) {
-      document.getElementById('container2').style.height = '700px';
-      document.getElementById('product').style.height = '55%';
+      return {height: '55%'};
+    } else if (this.solarModules.length > 6 && this.solarModules.length < 10) {
+      return {height: '35%'};
+    }
+  }
+
+  ChangeHeighContainer() {
+    if (this.solarModules.length > 3 && this.solarModules.length < 7) {
+      return {height: '700px'};
+    } else if (this.solarModules.length > 6 && this.solarModules.length < 10) {
+      return {height: '1100px'};
     }
   }
 

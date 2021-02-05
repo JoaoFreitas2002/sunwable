@@ -4,14 +4,16 @@
     <div class="name_product"><h1>Solar Modules</h1></div>
   </div>
 </div>
-<div class="container" id="container2">
+<div class="container" id="container2" [ngStyle]="ChangeHeighContainer()">
   <div class="row">
-    <div class="col-4" id="product" *ngFor="let sm of solarModules">
-      <img class="img2" src="assets/images/solar%20modules/solar_exemplo.svg" alt="">
+    <div class="col-4" id="product" *ngFor="let sm of solarModules" [ngStyle]="ChangeHeighProduct()">
+      <img class="img2" src="{{sm.imagem}}" alt="{{sm.nome}}">
       <img class="img1" src="assets/images/solar%20modules/solarmodules2.svg" alt="">
       <h5>{{sm.nome}}</h5>
       <p>{{sm.resumo}}</p>
-      <button routerLink="/product_detail"><span>+ Info</span></button>
+      <button routerLink="/product_detail/{{sm.id}}"
+              [state]="{data: {data1: solarModules[sm.id - 1], data2: solarModules}}"><span>+ Info</span>
+      </button>
     </div>
   </div>
 </div>

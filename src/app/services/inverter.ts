@@ -1,4 +1,4 @@
-export class SolarModule {
+export class Inverter {
   id: number;
   nome: string;
   resumo: string;
