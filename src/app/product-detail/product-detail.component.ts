@@ -2,6 +2,7 @@ import {Component, OnInit} from '@angular/core';
 
 import {SolarModule} from "../services/solarModule";
 import {Inverter} from "../services/inverter";
+import {ProductsService} from "../services/products.service";
 
 @Component({
   selector: 'app-product-detail',
@@ -10,7 +11,7 @@ import {Inverter} from "../services/inverter";
 })
 export class ProductDetailComponent implements OnInit {
 
-  constructor() {
+  constructor(private productSrv: ProductsService) {
   }
 
   solarModule: SolarModule;
@@ -21,39 +22,47 @@ export class ProductDetailComponent implements OnInit {
 
   productType: string;
 
+  id: number;
+
   ngOnInit(): void {
+    this.solarModule = new SolarModule();
+    this.inverter = new Inverter();
     this.SeeProductType();
   }
 
   SeeProductType() {
     if (localStorage.getItem('productType') === null) {
-      this.productType = history.state.data.data3;
+      this.productType = history.state.data.data2;
       localStorage.setItem('productType', this.productType);
+      this.id = history.state.data.data1;
+      localStorage.setItem('id', String(this.id));
     } else {
       this.productType = localStorage.getItem('productType');
+      this.id = Number(localStorage.getItem('id'));
     }
-    if (localStorage.getItem('product') === null) {
-      if (this.productType === 'solarModules') {
-        this.solarModule = history.state.data.data1;
-        localStorage.setItem('product', JSON.stringify(this.solarModule));
-        this.solarModules = history.state.data.data2;
-        localStorage.setItem('productArray', JSON.stringify(this.solarModules));
-      } else if (this.productType === 'inverters') {
-        this.inverter = history.state.data.data1;
-        localStorage.setItem('product', JSON.stringify(this.inverter));
-        this.inverters = history.state.data.data2;
-        localStorage.setItem('productArray', JSON.stringify(this.inverters));
-      }
-    } else {
-      if (this.productType === 'solarModules') {
-        this.solarModule = JSON.parse(localStorage.getItem('product'));
-        this.solarModules = JSON.parse(localStorage.getItem('productArray'));
-      } else if (this.productType === 'inverters') {
-        this.inverter = JSON.parse(localStorage.getItem('product'));
-        this.inverters = JSON.parse(localStorage.getItem('productArray'));
-      }
+    if (this.productType === 'solarModules') {
+      this.GetAllSolarModules();
+      this.GetSolarModule();
+    } else if (this.productType === 'inverters') {
+      this.GetAllInverters();
+      this.GetInverter();
     }
+  }
 
+  GetAllSolarModules() {
+    this.productSrv.getAllSolarModules().subscribe(data => this.solarModules = data);
+  }
+
+  GetSolarModule() {
+    this.productSrv.getSolarModule(this.id).subscribe(data => this.solarModule = data);
+  }
+
+  GetAllInverters() {
+    this.productSrv.getAllInverters().subscribe(data => this.inverters = data);
+  }
+
+  GetInverter() {
+    this.productSrv.getInverter(this.id).subscribe(data => this.inverter = data);
   }
 
 }

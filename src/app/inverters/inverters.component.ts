@@ -16,8 +16,7 @@ export class InvertersComponent implements OnInit {
   inverters: Inverter[] = [];
 
   ngOnInit(): void {
-    localStorage.removeItem('product');
-    localStorage.removeItem('productArray');
+    localStorage.removeItem('id');
     localStorage.removeItem('productType');
     this.AllInverters();
   }

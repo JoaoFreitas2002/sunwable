@@ -3,32 +3,60 @@
     <div class="container" id="container1">
       <div class="row">
         <div class="col">
-          <img class="img1" src="assets/images/solar%20modules/solarmodules2.svg" alt="">
-          <h5>{{solarModule.nome}}</h5>
-          <p>{{solarModule.resumo}}</p>
-          <p style="color: #E43D30;font-size: 1.2rem;margin-top: 7%;font-weight: bold">
-            <span>POTÊNCIA: </span>{{solarModule.potencia}}
-          </p>
-          <p style="font-weight: 400;font-size: 1.1rem;width: 100%;margin-top: 2%">{{solarModule.descricao}}</p>
-        </div>
-        <div class="col">
-          <img class="img2" src="{{solarModule.imagem}}" alt="{{solarModule.nome}}">
-          <button type="button" class="form_btn" data-bs-toggle="modal" data-bs-target="#myModal">Formulário</button>
-          <!-- Modal -->
-          <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-               aria-hidden="true">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-body">
+          <div class="row" style="width: 100%;height: 100%;padding: 0;margin: 0">
+            <div class="col" style="height: fit-content">
+              <img class="img1" src="assets/images/solar%20modules/solarmodules2.svg" alt="Solar Modules">
+              <h5>{{solarModule.nome}}</h5>
+              <p>{{solarModule.resumo}}</p>
+              <p style="color: #E43D30;font-size: 1.2rem;margin-top: 7%;font-weight: bold">
+                <span>POTÊNCIA: </span>{{solarModule.potencia}}
+              </p>
+              <p style="font-weight: 400;font-size: 1.1rem;width: 100%;margin-top: 2%">{{solarModule.descricao}}</p>
+            </div>
+            <div class="container" id="container1.2">
+              <div class="row">
+                <div class="col" style="margin-right: 1%;margin-bottom: 1%">
+                  <img src="assets/images/icons/container2.1/col_1.svg" alt="" height="40%" width="20%">
+                  <p>{{solarModule.painel}}</p>
                 </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                  <button type="button" class="btn btn-primary">Imprimir Formulário</button>
+                <div class="col" style="margin-left: 1%;margin-bottom: 1%">
+                  <img src="assets/images/icons/container2.1/col_2.svg" alt="" height="40%" width="20%">
+                  <p>{{solarModule.carga}}</p>
+                </div>
+                <div class="w-100" style="height: 0"></div>
+                <div class="col" style="margin-right: 1%;margin-top: 1%">
+                  <img src="assets/images/icons/container2.1/col_3.svg" alt="" height="40%" width="20%">
+                  <p>{{solarModule.selecao}}</p>
+                </div>
+                <div class="col" style="margin-left: 1%;margin-top: 1%">
+                  <img src="assets/images/icons/container2.1/col_4.svg" alt="" height="40%" width="20%">
+                  <p>{{solarModule.garantia}}</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        <div class="col">
+          <img class="img2" src="{{solarModule.imagem}}" alt="{{solarModule.nome}}">
+          <div class="btn">
+            <button type="button" class="form_btn" data-toggle="modal" data-target="#myModal">Formulário</button>
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                 aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-body">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary">Imprimir Formulário</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
       </div>
     </div>
     <!--    <div class="container" id="container2">-->
@@ -76,17 +104,36 @@
   <div class="row">
     <div class="container" id="container4">
       <div class="row">
-        <div class="col">
-          <img class="img1" src="assets/images/solar%20modules/solarmodules2.svg" alt="">
+        <div class="col" style="height: fit-content">
+          <img class="img1" src="assets/images/inverters/inverters.svg" alt="Inverters">
           <h5>{{inverter.nome}}</h5>
           <p>{{inverter.resumo}}</p>
-          <p style="color: #E43D30;font-size: 1.2rem;margin-top: 15%"><span>POTÊNCIA: </span>{{inverter.potencia}}
-          </p>
-          <p>{{inverter.descricao}}</p>
+          <p style="color: #E43D30;font-size: 1.3rem;margin-top: 5%;font-weight: bold">
+            <span>POTÊNCIA DE SAÍDA: </span>{{inverter.potencia}}</p>
+          <p style="font-weight: 400;font-size: 1.1rem;width: 100%;margin-top: 2%">{{inverter.descricao}}</p>
+          <p style="font-size: 1.2rem;margin-top: 5%">Dimensões: {{inverter.dimensoes}}</p>
         </div>
         <div class="col">
           <img class="img2" src="{{inverter.imagem}}" alt="{{inverter.nome}}">
+          <div class="btn">
+            <button type="button" class="form_btn" data-toggle="modal" data-target="#myModal2">Formulário</button>
+            <!-- Modal -->
+            <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel2"
+                 aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-body">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary">Imprimir Formulário</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+        <hr style="">
       </div>
     </div>
     <!--    <div class="container" id="container5">-->

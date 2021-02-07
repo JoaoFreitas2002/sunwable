@@ -20,7 +20,15 @@ export class ProductsService {
     return this.http.get<SolarModule[]>(this.solarModulesUrl);
   }
 
+  getSolarModule(id: number) {
+    return this.http.get<SolarModule>(this.solarModulesUrl + id);
+  }
+
   getAllInverters() {
     return this.http.get<Inverter[]>(this.invertersUrl);
+  }
+
+  getInverter(id: number) {
+    return this.http.get<Inverter>(this.invertersUrl + id);
   }
 }
