@@ -9,8 +9,8 @@ import {Inverter} from './inverter';
 })
 export class ProductsService {
 
-  solarModulesUrl = 'http://127.0.0.1:8000/products/solarModules/';
-  invertersUrl = 'http://127.0.0.1:8000/products/inverters/';
+  solarModulesUrl = 'https://joaofreitas2002.pythonanywhere.com/products/solarModules/';
+  invertersUrl = 'https://joaofreitas2002.pythonanywhere.com/products/inverters/';
 
 
   constructor(private http: HttpClient) {
