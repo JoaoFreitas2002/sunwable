@@ -65,4 +65,10 @@ export class ProductDetailComponent implements OnInit {
     this.productSrv.getInverter(this.id).subscribe(data => this.inverter = data);
   }
 
+  ngIF(id: number) {
+    if (id === this.solarModule.id) {
+      return {display: 'none'};
+    }
+  }
+
 }

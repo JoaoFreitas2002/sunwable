@@ -27,7 +27,8 @@ export class AppComponent {
   getHeaderStyle() {
     if ((this.router.url.includes('/solar_modules')) || (this.router.url.includes('/inverters')) ||
       (this.router.url.includes('/batteries')) || (this.router.url.includes('/structures')) ||
-      (this.router.url.includes('/product_detail')) || (this.router.url.includes('/contact'))) {
+      (this.router.url.includes('/product_detail')) || (this.router.url.includes('/contact')) ||
+      (this.router.url.includes('/404'))) {
       document.getElementById('nav').style.background = '#E43D30';
       document.getElementById('pt').style.color = '#000000';
     } else {
