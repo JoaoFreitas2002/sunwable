@@ -63,17 +63,47 @@
       <div class="row">
         <div class="container" id="myContainer">
           <div class="row">
-            <div class="col-sm-4" id="col" *ngFor="let sm of solarModules" [ngStyle]="ngIF(sm.id)">
-              <div style="margin: 0;padding: 0;height: 100%;width: 100%">
-                <img class="img2_carousel" src="{{sm.imagem}}" alt="{{sm.nome}}" width="50%"
-                     height="90%">
-                <img class="img1_carousel" src="assets/images/solar%20modules/solarmodules2.svg" alt="">
-                <h2>{{sm.id}}</h2>
-                <h5>{{sm.nome}}</h5>
-                <p>{{sm.resumo}}</p>
-                <button routerLink="/product_detail"><span>+ Info</span></button>
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="false">
+              <div class="carousel-inner">
+                <div class="carousel-item" id="carousel-item" *ngFor="let item of slides; let i = index"
+                     [ngClass]="Activate()">
+                  <div class="row">
+                    <div class="col-sm-4" *ngFor="let sm of item; let id = index">
+                      <img class="img2_carousel" src="{{sm.imagem}}" alt="{{sm.nome}}" width="50%"
+                           height="90%">
+                      <img class="img1_carousel" src="assets/images/solar%20modules/solarmodules2.svg" alt="">
+                      <h5>{{sm.nome}}</h5>
+                      <p>{{sm.resumo}}</p>
+                      <button (click)="Refresh(sm.id)"><span>+ Info</span></button>
+                    </div>
+                  </div>
+                </div>
               </div>
+              <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
             </div>
+            <!--            <mdb-carousel [isControls]="true" class="carousel-multi-item multi-animation" [type]="'carousel-multi-item'"-->
+            <!--                          [animation]="'slide'" [interval]="0">-->
+            <!--              <mdb-carousel-item *ngFor="let item of slides; let i = index">-->
+            <!--                <div class="col-sm-4" *ngFor="let sm of item; let id = index">-->
+            <!--                  <mdb-card class="my-1">-->
+            <!--                    <img class="img2_carousel" src="{{sm.imagem}}" alt="{{sm.nome}}" width="50%"-->
+            <!--                         height="90%">-->
+            <!--                    <img class="img1_carousel" src="assets/images/solar%20modules/solarmodules2.svg" alt="">-->
+            <!--                    <h2>{{sm.id}}</h2>-->
+            <!--                    <h5>{{sm.nome}}</h5>-->
+            <!--                    <p>{{sm.resumo}}</p>-->
+            <!--                    <button routerLink="/product_detail"><span>+ Info</span></button>-->
+            <!--                  </mdb-card>-->
+            <!--                </div>-->
+            <!--              </mdb-carousel-item>-->
+            <!--            </mdb-carousel>-->
           </div>
         </div>
       </div>
@@ -116,45 +146,41 @@
         <hr style="">
       </div>
     </div>
-    <!--    <div class="container" id="container5">-->
-    <!--      <div class="row">-->
-    <!--        <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="0">-->
-    <!--          &lt;!&ndash; Carousel indicators &ndash;&gt;-->
-    <!--          <ol class="carousel-indicators">-->
-    <!--            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>-->
-    <!--            <li data-target="#myCarousel" data-slide-to="1"></li>-->
-    <!--            <li data-target="#myCarousel" data-slide-to="2"></li>-->
-    <!--          </ol>-->
-    <!--          &lt;!&ndash; Wrapper for carousel items &ndash;&gt;-->
-    <!--          <div class="carousel-inner">-->
-    <!--            <div class="carousel-item active" *ngFor="let sm of solarModules">-->
-    <!--              <div class="row">-->
-    <!--                <div class="col-sm-3">-->
-    <!--                  <div class="thumb-wrapper">-->
-    <!--                    <div class="img-box">-->
-    <!--                      <img class="img2_carousel" src="{{sm.imagem}}" alt="{{sm.nome}}">-->
-    <!--                      <img class="img1_carousel" src="assets/images/solar%20modules/solarmodules2.svg" alt="">-->
-    <!--                    </div>-->
-    <!--                    <div class="thumb-content">-->
-    <!--                      <h5>{{sm.nome}}</h5>-->
-    <!--                      <p>{{sm.resumo}}</p>-->
-    <!--                      <button routerLink="/product_detail"><span>+ Info</span></button>-->
-    <!--                    </div>-->
-    <!--                  </div>-->
-    <!--                </div>-->
-    <!--              </div>-->
-    <!--            </div>-->
-    <!--          </div>-->
-    <!--          &lt;!&ndash; Carousel controls &ndash;&gt;-->
-    <!--          <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">-->
-    <!--            <i class="fa fa-angle-left"></i>-->
-    <!--          </a>-->
-    <!--          <a class="carousel-control-next" href="#myCarousel" data-slide="next">-->
-    <!--            <i class="fa fa-angle-right"></i>-->
-    <!--          </a>-->
-    <!--        </div>-->
-    <!--      </div>-->
-    <!--    </div>-->
+    <div class="container" id="container5">
+      <div class="row">
+        <div class="container" id="myContainer2">
+          <div class="row">
+            <div id="carouselExampleControls2" class="carousel slide" data-ride="carousel" data-interval="false">
+              <div class="carousel-inner">
+                <div class="carousel-item" id="carousel-item2" *ngFor="let item of slides; let i = index"
+                     [ngClass]="Activate2()">
+                  <div class="row">
+                    <div class="col-sm-4" *ngFor="let inv of item; let id = index">
+                      <img class="img2_carousel" src="{{inv.imagem}}" alt="{{inv.nome}}" width="50%"
+                           height="90%">
+                      <img class="img1_carousel" src="assets/images/inverters/inverters.svg" alt="">
+                      <h5>{{inv.nome}}</h5>
+                      <p>{{inv.resumo}}</p>
+                      <button (click)="Refresh(inv.id)"><span>+ Info</span></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev"
+                 [ngStyle]="ArrowStyle()">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next"
+                 [ngStyle]="ArrowStyle()">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 <div class="container" id="container6">
@@ -172,50 +198,3 @@
     </div>
   </div>
 </div>
-<!--<div class="container" id="container2.1">-->
-<!--    <div class="row">-->
-<!--      <div class="col-4" id="col1">-->
-<!--        <img class="img2" src="assets/images/solar%20modules/solar_exemplo.svg" alt="">-->
-<!--        <img class="img1" src="assets/images/solar%20modules/solarmodules2.svg" alt="">-->
-<!--        <h5>Mercury</h5>-->
-<!--        <p>Módulo fotovoltaicode policristalino 60 células.</p>-->
-<!--        <button routerLink="/product_detail"><span>+ Info</span></button>-->
-<!--      </div>-->
-<!--      <div class="col-4" id="col2">-->
-<!--        <img class="img2" src="assets/images/solar%20modules/solar_exemplo.svg" alt="">-->
-<!--        <img class="img1" src="assets/images/solar%20modules/solarmodules2.svg" alt="">-->
-<!--        <h5>Mercury</h5>-->
-<!--        <p>Módulo fotovoltaicode policristalino 60 células.</p>-->
-<!--        <button><span>+ Info</span></button>-->
-<!--      </div>-->
-<!--      <div class="col-4" id="col3">-->
-<!--        <img class="img2" src="assets/images/solar%20modules/solar_exemplo.svg" alt="">-->
-<!--        <img class="img1" src="assets/images/solar%20modules/solarmodules2.svg" alt="">-->
-<!--        <h5>Mercury</h5>-->
-<!--        <p>Módulo fotovoltaicode policristalino 60 células.</p>-->
-<!--        <button><span>+ Info</span></button>-->
-<!--      </div>-->
-<!--      <div class="w-100"></div>-->
-<!--      <div class="col-4" id="col4">-->
-<!--        <img class="img2" src="assets/images/solar%20modules/solar_exemplo.svg" alt="">-->
-<!--        <img class="img1" src="assets/images/solar%20modules/solarmodules2.svg" alt="">-->
-<!--        <h5>Mercury</h5>-->
-<!--        <p>Módulo fotovoltaicode policristalino 60 células.</p>-->
-<!--        <button><span>+ Info</span></button>-->
-<!--      </div>-->
-<!--      <div class="col-4" id="col5">-->
-<!--        <img class="img2" src="assets/images/solar%20modules/solar_exemplo.svg" alt="">-->
-<!--        <img class="img1" src="assets/images/solar%20modules/solarmodules2.svg" alt="">-->
-<!--        <h5>Mercury</h5>-->
-<!--        <p>Módulo fotovoltaicode policristalino 60 células.</p>-->
-<!--        <button><span>+ Info</span></button>-->
-<!--      </div>-->
-<!--      <div class="col-4" id="col6">-->
-<!--        <img class="img2" src="assets/images/solar%20modules/solar_exemplo.svg" alt="">-->
-<!--        <img class="img1" src="assets/images/solar%20modules/solarmodules2.svg" alt="">-->
-<!--        <h5>Mercury</h5>-->
-<!--        <p>Módulo fotovoltaicode policristalino 60 células.</p>-->
-<!--        <button><span>+ Info</span></button>-->
-<!--      </div>-->
-<!--    </div>-->
-<!--  </div>-->

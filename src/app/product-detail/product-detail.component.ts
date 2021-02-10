@@ -21,12 +21,26 @@ export class ProductDetailComponent implements OnInit {
   inverters: Inverter[] = [];
 
   productType: string;
-
   id: number;
 
+  slides: any = [[]];
+
+  chunk(arr, chunkSize, solarModule) {
+    const R = [];
+    // tslint:disable-next-line:only-arrow-functions
+    const index = arr.map(function(e) {
+      return e.id;
+    }).indexOf(solarModule.id);
+    if (index > -1) {
+      arr.splice(index, 1);
+    }
+    for (let i = 0, len = arr.length; i < len; i += chunkSize) {
+      R.push(arr.slice(i, i + chunkSize));
+    }
+    return R;
+  }
+
   ngOnInit(): void {
-    this.solarModule = new SolarModule();
-    this.inverter = new Inverter();
     this.SeeProductType();
   }
 
@@ -41,9 +55,11 @@ export class ProductDetailComponent implements OnInit {
       this.id = Number(localStorage.getItem('id'));
     }
     if (this.productType === 'solarModules') {
+      this.solarModule = new SolarModule();
       this.GetAllSolarModules();
       this.GetSolarModule();
     } else if (this.productType === 'inverters') {
+      this.inverter = new Inverter();
       this.GetAllInverters();
       this.GetInverter();
     }
@@ -54,7 +70,10 @@ export class ProductDetailComponent implements OnInit {
   }
 
   GetSolarModule() {
-    this.productSrv.getSolarModule(this.id).subscribe(data => this.solarModule = data);
+    this.productSrv.getSolarModule(this.id).subscribe(data => {
+      this.solarModule = data;
+      this.slides = this.chunk(this.solarModules, 3, this.solarModule);
+    });
   }
 
   GetAllInverters() {
@@ -62,13 +81,29 @@ export class ProductDetailComponent implements OnInit {
   }
 
   GetInverter() {
-    this.productSrv.getInverter(this.id).subscribe(data => this.inverter = data);
+    this.productSrv.getInverter(this.id).subscribe(data => {
+      this.inverter = data;
+      this.slides = this.chunk(this.inverters, 3, this.inverter);
+    });
   }
 
-  ngIF(id: number) {
-    if (id === this.solarModule.id) {
-      return {display: 'none'};
-    }
+  Activate() {
+    document.getElementById('carousel-item').className = 'carousel-item active';
+  }
+
+  Activate2() {
+    document.getElementById('carousel-item2').className = 'carousel-item active';
+  }
+
+  Refresh(id: number) {
+    localStorage.setItem('id', String(id));
+    window.location.reload();
+  }
+
+  ArrowStyle() {
+      if (this.slides.length <= 3) {
+        return {display: 'none'};
+      }
   }
 
 }

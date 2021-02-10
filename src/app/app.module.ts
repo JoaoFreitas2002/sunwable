@@ -16,6 +16,7 @@ import {FormsModule} from '@angular/forms';
 import {ProductDetailComponent} from './product-detail/product-detail.component';
 import { ContactComponent } from './contact/contact.component';
 import { Error404Component } from './error404/error404.component';
+import {MDBBootstrapModule} from "angular-bootstrap-md";
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { Error404Component } from './error404/error404.component';
     NgbModule,
     CountUpModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    MDBBootstrapModule
   ],
   providers: [{provide: LOCALE_ID, useValue: 'pt-PT'}],
   bootstrap: [AppComponent]

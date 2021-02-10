@@ -1,6 +1,6 @@
 <div class="container" id="container1">
   <div class="row">
-    <img src="assets/images/inverters/inverters.svg" alt="Solar Modules">
+    <img src="assets/images/inverters/inverters2.svg" alt="Solar Modules">
     <div class="name_product"><h1>inverters</h1></div>
   </div>
 </div>
@@ -8,10 +8,10 @@
   <div class="row">
     <div class="col-4" id="product" *ngFor="let inv of inverters" [ngStyle]="ChangeHeighProduct()">
       <img class="img2" src="{{inv.imagem}}" alt="{{inv.nome}}">
-      <img class="img1" src="assets/images/solar%20modules/solarmodules2.svg" alt="">
+      <img class="img1" src="assets/images/inverters/inverters.svg" alt="">
       <h5>{{inv.nome}}</h5>
       <p>{{inv.resumo}}</p>
-      <button routerLink="/product_detail/{{inv.id}}"
+      <button routerLink="/product_detail"
               [state]="{data: {data1: inv.id, data2: 'inverters'}}"><span>+ Info</span>
       </button>
     </div>

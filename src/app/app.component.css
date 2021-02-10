@@ -17,6 +17,10 @@
     text-align: left;
   }
 
+  #company {
+    color: white;
+  }
+
   .dropdown-item:hover {
     background-color: #C83D30;
   }
