@@ -1,4 +1,4 @@
-<div class="container" id="container0" *ngIf="productType === 'solarModules'">
+<div class="container" id="container0" *ngIf="productType === 'solarModules'" [ngClass]="Activate()">
   <div class="row">
     <div class="container" id="container1">
       <div class="row">
@@ -65,8 +65,7 @@
           <div class="row">
             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="false">
               <div class="carousel-inner">
-                <div class="carousel-item" id="carousel-item" *ngFor="let item of slides; let i = index"
-                     [ngStyle]="Activate()">
+                <div class="carousel-item" id="carousel-item" *ngFor="let item of slides; let i = index">
                   <div class="row">
                     <div class="col-sm-4" *ngFor="let sm of item; let id = index">
                       <img class="img2_carousel" src="{{sm.imagem}}" alt="{{sm.nome}}" width="50%"
