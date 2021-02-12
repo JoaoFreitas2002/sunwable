@@ -88,7 +88,7 @@ export class ProductDetailComponent implements OnInit {
   }
 
   Activate() {
-    document.getElementById('carousel-item').className = 'carousel-item active';
+    return {display: 'block'};
   }
 
   Activate2() {

@@ -66,7 +66,7 @@
             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="false">
               <div class="carousel-inner">
                 <div class="carousel-item" id="carousel-item" *ngFor="let item of slides; let i = index"
-                     [ngClass]="Activate()">
+                     [ngStyle]="Activate()">
                   <div class="row">
                     <div class="col-sm-4" *ngFor="let sm of item; let id = index">
                       <img class="img2_carousel" src="{{sm.imagem}}" alt="{{sm.nome}}" width="50%"
@@ -88,22 +88,6 @@
                 <span class="sr-only">Next</span>
               </a>
             </div>
-            <!--            <mdb-carousel [isControls]="true" class="carousel-multi-item multi-animation" [type]="'carousel-multi-item'"-->
-            <!--                          [animation]="'slide'" [interval]="0">-->
-            <!--              <mdb-carousel-item *ngFor="let item of slides; let i = index">-->
-            <!--                <div class="col-sm-4" *ngFor="let sm of item; let id = index">-->
-            <!--                  <mdb-card class="my-1">-->
-            <!--                    <img class="img2_carousel" src="{{sm.imagem}}" alt="{{sm.nome}}" width="50%"-->
-            <!--                         height="90%">-->
-            <!--                    <img class="img1_carousel" src="assets/images/solar%20modules/solarmodules2.svg" alt="">-->
-            <!--                    <h2>{{sm.id}}</h2>-->
-            <!--                    <h5>{{sm.nome}}</h5>-->
-            <!--                    <p>{{sm.resumo}}</p>-->
-            <!--                    <button routerLink="/product_detail"><span>+ Info</span></button>-->
-            <!--                  </mdb-card>-->
-            <!--                </div>-->
-            <!--              </mdb-carousel-item>-->
-            <!--            </mdb-carousel>-->
           </div>
         </div>
       </div>
