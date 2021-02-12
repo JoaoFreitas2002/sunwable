@@ -101,9 +101,15 @@ export class ProductDetailComponent implements OnInit {
   }
 
   ArrowStyle() {
-      if (this.slides.length <= 3) {
+    if (this.productType === 'solarModule') {
+      if (this.solarModules.length <= 3) {
         return {display: 'none'};
       }
+    } else if (this.productType === 'inverters') {
+      if (this.inverters.length <= 3) {
+        return {display: 'none'};
+      }
+    }
   }
 
 }

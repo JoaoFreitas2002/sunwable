@@ -43,7 +43,7 @@
     width: 50%;
     height: 100%;
     font-size: 4rem;
-    margin: 0.8% auto 0 auto;
+    margin: 1.1% auto 0 auto;
     color: white;
     text-transform: uppercase;
   }
@@ -78,11 +78,10 @@
   #container2 .row .col-4 .img2 {
     float: right;
     height: 90%;
-    margin: -5% 0 0 0;
   }
 
   #container2 .row .col-4 h5 {
-    width: 40%;
+    width: 50%;
     height: 10%;
     padding: 0;
     margin: 3% 0 0 0;

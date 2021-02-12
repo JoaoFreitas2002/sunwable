@@ -34,6 +34,7 @@
     padding: 0;
     width: 100%;
     max-width: 100%;
+    height: 75%;
   }
 
   #container1 .row {
@@ -47,6 +48,7 @@
   #container1 .col {
     padding: 0;
     margin: 0;
+    height: 100%;
   }
 
   #container1 .row .img1 {
@@ -164,11 +166,11 @@
     padding: 0;
     width: 100%;
     margin: 0;
-    flex-direction: column;
   }
 
   #myContainer .carousel-inner, #myContainer .carousel, #myContainer .carousel-item {
     height: 100%;
+    width: 100%;
   }
 
   #myContainer .carousel-inner {
@@ -208,13 +210,6 @@
     margin: 3% 0 0 0;
     text-transform: uppercase;
     color: #E43D30;
-  }
-
-  #myContainer h2 {
-    width: fit-content;
-    float: right;
-    margin-right: 28%;
-    margin-top: -1%;
   }
 
   #myContainer p {
@@ -284,19 +279,17 @@
     padding: 0;
     margin: 0;
     height: 100%;
-    max-height: 85%;
   }
 
   #container4 .row .img1 {
-    width: 15%;
     height: 10%;
     padding: 0;
     margin: 4% 0 0 0;
   }
 
   #container4 .row .img2 {
-    height: 90%;
-    width: 100%;
+    display: block;
+    margin: 0 auto;
   }
 
   #container4 .row h5 {
@@ -338,14 +331,14 @@
   #container5 {
     margin: 0;
     padding: 0;
-    height: 30%;
+    height: 29%;
     background: white;
     max-width: 100%;
   }
 
   #container5 .row {
     margin: 0 0;
-    padding: 0 5%;
+    padding: 2% 5% 0 5%;
     max-width: 100%;
   }
 
@@ -361,11 +354,11 @@
     padding: 0;
     width: 100%;
     margin: 0;
-    flex-direction: column;
   }
 
   #myContainer2 .carousel-inner, #myContainer2 .carousel, #myContainer2 .carousel-item {
     height: 100%;
+    width: 100%;
   }
 
   #myContainer2 .carousel-inner {
@@ -386,7 +379,7 @@
   }
 
   #myContainer2 h5 {
-    width: 30%;
+    width: 50%;
     height: 10%;
     padding: 0;
     margin: 3% 0 0 0;
@@ -397,7 +390,7 @@
   #myContainer2 p {
     text-align: left;
     width: 40%;
-    height: 30%;
+    height: 20%;
     padding: 0;
     margin: 0;
   }
@@ -409,7 +402,7 @@
     margin: 15% 0 0 0;
     padding: 0;
     width: 25%;
-    height: 10%;
+    height: 15%;
   }
 
   #myContainer2 .img2_carousel {
