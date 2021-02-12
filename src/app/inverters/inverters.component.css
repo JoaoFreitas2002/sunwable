@@ -77,13 +77,12 @@
 
   #container2 .row .col-4 .img2 {
     float: right;
-    width: 45%;
-    height: 110%;
-    margin: -5% 5% 0 0;
+    height: 90%;
+    margin: -5% 0 0 0;
   }
 
   #container2 .row .col-4 h5 {
-    width: 25%;
+    width: 40%;
     height: 10%;
     padding: 0;
     margin: 3% 0 0 0;
