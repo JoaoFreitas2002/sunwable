@@ -65,8 +65,9 @@
           <div class="row">
             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="false">
               <div class="carousel-inner">
-                <div class="carousel-item" id="carousel-item" *ngFor="let item of slides; let i = index"
-                [ngClass]="Activate()">
+                <div class="carousel-item" id="carousel-item"
+                     *ngFor="let item of slides; let id = index;let first = first"
+                     [class.active]="first">
                   <div class="row">
                     <div class="col-sm-4" *ngFor="let sm of item; let id = index">
                       <img class="img2_carousel" src="{{sm.imagem}}" alt="{{sm.nome}}" width="50%"
@@ -138,8 +139,9 @@
           <div class="row">
             <div id="carouselExampleControls2" class="carousel slide" data-ride="carousel" data-interval="false">
               <div class="carousel-inner">
-                <div class="carousel-item" id="carousel-item2" *ngFor="let item of slides; let i = index"
-                     [ngClass]="Activate2()">
+                <div class="carousel-item" id="carousel-item2"
+                     *ngFor="let item of slides; let id = index; let first = first"
+                     [class.active]="first">
                   <div class="row">
                     <div class="col-sm-4" *ngFor="let inv of item; let id = index">
                       <img class="img2_carousel" src="{{inv.imagem}}" alt="{{inv.nome}}">

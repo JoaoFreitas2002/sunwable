@@ -22,6 +22,7 @@ export class ProductDetailComponent implements OnInit {
 
   productType: string;
   id: number;
+  activate = false;
 
   slides: any = [[]];
 
@@ -85,14 +86,6 @@ export class ProductDetailComponent implements OnInit {
       this.inverter = data;
       this.slides = this.chunk(this.inverters, 3, this.inverter);
     });
-  }
-
-  Activate() {
-    document.getElementById('carousel-item').className = 'carousel-item active';
-  }
-
-  Activate2() {
-    document.getElementById('carousel-item2').className = 'carousel-item active';
   }
 
   Refresh(id: number) {
