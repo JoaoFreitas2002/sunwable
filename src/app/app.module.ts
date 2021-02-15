@@ -15,7 +15,6 @@ import {HttpClientModule} from '@angular/common/http';
 import {FormsModule} from '@angular/forms';
 import {ProductDetailComponent} from './product-detail/product-detail.component';
 import { ContactComponent } from './contact/contact.component';
-import { Error404Component } from './error404/error404.component';
 import {MDBBootstrapModule} from "angular-bootstrap-md";
 
 @NgModule({
@@ -27,8 +26,7 @@ import {MDBBootstrapModule} from "angular-bootstrap-md";
     BatteriesComponent,
     StructuresComponent,
     ProductDetailComponent,
-    ContactComponent,
-    Error404Component
+    ContactComponent
   ],
   imports: [
     BrowserModule,

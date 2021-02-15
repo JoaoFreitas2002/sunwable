@@ -70,7 +70,6 @@
 
   #container1 .row p {
     font-size: 1.5rem;
-    font-weight: 500;
     text-align: left;
     width: 70%;
     padding: 0;
@@ -126,7 +125,7 @@
   }
 
   #container1\.2 .row p {
-    font-size: 1rem;
+    font-size: 0.8rem;
     margin: 5% 0 0 0;
     width: 100%;
   }
@@ -236,10 +235,12 @@
     margin: 0;
   }
 
-  .img2_carousel {
-    float: right;
+  #myContainer a {
     padding: 0;
     margin: 0;
+    float: right;
+    width: 50%;
+    height: 90%;
   }
 
   /*container3*/
@@ -302,7 +303,6 @@
 
   #container4 .row p {
     font-size: 1.5rem;
-    font-weight: 500;
     text-align: left;
     width: 70%;
     padding: 0;
@@ -405,7 +405,10 @@
     height: 15%;
   }
 
-  #myContainer2 .img2_carousel {
+  #myContainer2 a {
+    padding: 0;
+    margin: 0;
+    float: right;
     width: 60%;
   }
 

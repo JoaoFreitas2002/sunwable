@@ -76,6 +76,10 @@
   }
 
   #container2 .row .col-4 .img2 {
+    height: 100%;
+  }
+
+  #container2 .row .col-4 a {
     float: right;
     height: 90%;
   }
