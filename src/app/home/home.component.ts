@@ -1,6 +1,12 @@
 import {Component, OnInit, HostListener, Inject} from '@angular/core';
 import {DOCUMENT} from '@angular/common';
 
+import {WebsiteService} from "../services/website/website.service";
+import {Apresentation} from "../services/website/apresentation";
+import {Characteristic} from "../services/website/characteristic";
+import {Carousel} from "../services/website/carousel";
+import {OurNumbers} from "../services/website/ourNumbers";
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -20,11 +26,27 @@ export class HomeComponent implements OnInit {
 
   countUp: boolean;
 
-  constructor(@Inject(DOCUMENT) private document) {
+  constructor(@Inject(DOCUMENT) private document,
+              private websiteSrv: WebsiteService) {
   }
 
+  apresentation: Apresentation;
+  characteristic: Characteristic;
+  ourNumbers: OurNumbers;
+  carousel: Carousel[] = [];
 
-  ngOnInit(): void {
+  ngOnInit() {
+    this.GetAll();
+  }
+
+  GetAll() {
+    this.apresentation = new Apresentation();
+    this.characteristic = new Characteristic();
+    this.ourNumbers = new OurNumbers();
+    this.websiteSrv.GetApresentation().subscribe(data => this.apresentation = data[0]);
+    this.websiteSrv.GetCharacteristic().subscribe(data => this.characteristic = data[0]);
+    this.websiteSrv.GetAllCarousel().subscribe(data => this.carousel = data);
+    this.websiteSrv.GetOurNumbers().subscribe(data => this.ourNumbers = data[0]);
   }
 
   @HostListener('window:scroll', [])

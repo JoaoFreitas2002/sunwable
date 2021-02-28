@@ -8,18 +8,8 @@
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
   /*Carousel*/
-  .carousel-item #span1 {
+  .carousel-item span {
     height: 736px;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.9) 10%, rgba(0, 0, 0, 0.70) 40%,
-    rgba(0, 0, 0, 0.50) 60%, rgba(0, 0, 0, 0.30) 80%, rgba(0, 0, 0, 0) 100%), url('../../assets/images/hero_1.jpg');
-    background-size: 100%;
-  }
-
-  .carousel-item #span2 {
-    height: 736px;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.9) 10%, rgba(0, 0, 0, 0.70) 40%,
-    rgba(0, 0, 0, 0.50) 60%, rgba(0, 0, 0, 0.30) 80%, rgba(0, 0, 0, 0) 100%), url('../../assets/images/about_1.jpg');
-    background-size: 100%;
   }
 
   .carousel-control-next, .carousel-control-prev {
@@ -88,15 +78,14 @@
     color: #706F6F;
     width: 50%;
     margin: 0 auto;
-  }
-
-  #container1 .col-sm p:first-of-type {
     padding-top: 5%;
+    font-size: 1.1rem;
+    height: fit-content;
   }
 
-  #container1 .icon img {
-    height: 96px;
-    width: 100px;
+  #container1 img {
+    width: 30%;
+    height: 40%;
     text-align: center;
     padding-bottom: 5%;
     padding-top: 5%;
@@ -171,8 +160,8 @@
   }
 
   #container2\.1 img {
-    height: 66px;
-    width: 70px;
+    height: 25%;
+    width: 20%;
     text-align: center;
     padding-bottom: 3%;
     padding-top: 5%;
@@ -289,8 +278,8 @@
   }
 
   #container4 .icon img {
-    height: 96px;
-    width: 100px;
+    height: 30%;
+    width: 30%;
     text-align: center;
     padding-bottom: 5%;
     padding-top: 5%;
@@ -301,7 +290,7 @@
   #container5 {
     margin: 0;
     padding: 0;
-    height: 450px;
+    height: 300px;
     background: #F6F6F6;
     max-width: 100%;
   }
@@ -319,17 +308,20 @@
     height: 100%;
   }
 
+  #container5 .div-inside {
+    width: 100%;
+    height: fit-content;
+    margin: 12% 0;
+  }
+
   #container5 h4 {
-    width: 50%;
-    height: 10%;
-    margin-bottom: 2%;
-    margin-top: 25%;
+    width: 100%;
+    height: fit-content;
     font-size: 2rem;
   }
 
   #container5 p {
-    width: 60%;
-    margin-bottom: 0;
+    width: 50%;
     font-size: 1.1rem;
   }
 
@@ -342,9 +334,9 @@
   }
 
   #container5 button {
-    float: right;
     height: 15%;
-    margin: 25% 0 50% 35%;
+    top: 38%;
+    right: 48%;
     background-color: transparent;
     border: 0.2rem solid #E43D30;
     width: 25%;

@@ -48,13 +48,13 @@
   #container2 {
     margin: 0;
     padding: 0;
-    height: 1185px;
+    height: 1000px;
     background: white;
     max-width: 100%;
   }
 
   #container2 .row {
-    margin: 10% 10% 0 10%;
+    margin: 5% 10% 0 10%;
     height: 100%;
   }
 
@@ -72,7 +72,7 @@
   }
 
   #container2 label, #container2 p {
-    font-weight: 500;
+    font-weight: 400;
     font-size: 1rem;
     margin: 2% 0 0 0;
   }

@@ -1,9 +1,9 @@
 export class Inverter {
   id: number;
-  nome: string;
-  resumo: string;
-  potencia: string;
-  descricao: string;
-  dimensoes: string;
-  imagem: string;
+  name: string;
+  resume: string;
+  power: string;
+  description: string;
+  dimensions: string;
+  image: string;
 }

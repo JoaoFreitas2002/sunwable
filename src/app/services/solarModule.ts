@@ -1,12 +1,12 @@
 export class SolarModule {
   id: number;
-  nome: string;
-  resumo: string;
-  potencia: string;
-  descricao: string;
-  painel: string;
-  carga: string;
-  selecao: string;
-  garantia: string;
-  imagem: string;
+  name: string;
+  resume: string;
+  power: string;
+  description: string;
+  panel: string;
+  charge: string;
+  selection: string;
+  warranty: string;
+  image: string;
 }

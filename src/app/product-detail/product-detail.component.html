@@ -6,38 +6,38 @@
           <div class="row" style="width: 100%;height: 100%;padding: 0;margin: 0">
             <div class="col" style="height: fit-content">
               <img class="img1" src="assets/images/solar%20modules/solarmodules2.svg" alt="Solar Modules">
-              <h5>{{solarModule.nome}}</h5>
-              <p>{{solarModule.resumo}}</p>
+              <h5>{{solarModule.name}}</h5>
+              <p>{{solarModule.resume}}</p>
               <p style="color: #E43D30;font-size: 1.2rem;margin-top: 7%;font-weight: bold">
-                <span>POTÊNCIA: </span>{{solarModule.potencia}}
+                <span>POTÊNCIA: </span>{{solarModule.power}}
               </p>
-              <p style="font-weight: 400;font-size: 1.1rem;width: 100%;margin-top: 2%">{{solarModule.descricao}}</p>
+              <p style="font-weight: 400;font-size: 1.1rem;width: 100%;margin-top: 2%">{{solarModule.description}}</p>
             </div>
             <div class="container" id="container1.2">
               <div class="row">
                 <div class="col" style="margin-right: 1%;margin-bottom: 1%">
                   <img src="assets/images/icons/container2.1/col_1.svg" alt="" height="40%" width="20%">
-                  <p>{{solarModule.painel}}</p>
+                  <p>{{solarModule.panel}}</p>
                 </div>
                 <div class="col" style="margin-left: 1%;margin-bottom: 1%">
                   <img src="assets/images/icons/container2.1/col_2.svg" alt="" height="40%" width="20%">
-                  <p>{{solarModule.carga}}</p>
+                  <p>{{solarModule.charge}}</p>
                 </div>
                 <div class="w-100" style="height: 0"></div>
                 <div class="col" style="margin-right: 1%;margin-top: 1%">
                   <img src="assets/images/icons/container2.1/col_3.svg" alt="" height="40%" width="20%">
-                  <p>{{solarModule.selecao}}</p>
+                  <p>{{solarModule.selection}}</p>
                 </div>
                 <div class="col" style="margin-left: 1%;margin-top: 1%">
                   <img src="assets/images/icons/container2.1/col_4.svg" alt="" height="40%" width="20%">
-                  <p>{{solarModule.garantia}}</p>
+                  <p>{{solarModule.warranty}}</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
         <div class="col">
-          <img class="img2" src="{{solarModule.imagem}}" alt="{{solarModule.nome}}">
+          <img class="img2" src="{{solarModule.image}}" alt="{{solarModule.name}}">
           <div class="btn">
             <button type="button" class="form_btn" data-toggle="modal" data-target="#myModal">Datasheet</button>
             <!-- Modal -->
@@ -71,11 +71,11 @@
                   <div class="row">
                     <div class="col-sm-4" *ngFor="let sm of item; let id = index">
                       <a (click)="Refresh(sm.id)">
-                        <img class="img2_carousel" src="{{sm.imagem}}" alt="{{sm.nome}}" width="100%"
+                        <img class="img2_carousel" src="{{sm.image}}" alt="{{sm.name}}" width="100%"
                            height="100%"></a>
                       <img class="img1_carousel" src="assets/images/solar%20modules/solarmodules2.svg" alt="">
-                      <h5>{{sm.nome}}</h5>
-                      <p>{{sm.resumo}}</p>
+                      <h5>{{sm.name}}</h5>
+                      <p>{{sm.resumee}}</p>
                       <button (click)="Refresh(sm.id)"><span>+ Info</span></button>
                     </div>
                   </div>
@@ -102,16 +102,16 @@
       <div class="row">
         <div class="col">
           <img class="img1" src="assets/images/inverters/inverters.svg" alt="Inverters">
-          <h5>{{inverter.nome}}</h5>
-          <p>{{inverter.resumo}}</p>
+          <h5>{{inverter.name}}</h5>
+          <p>{{inverter.resume}}</p>
           <p style="color: #E43D30;font-size: 1.3rem;margin-top: 5%;font-weight: bold">
-            <span>POTÊNCIA DE SAÍDA: </span>{{inverter.potencia}}</p>
-          <p style="font-size: 1rem;width: 100%;margin-top: 2%">{{inverter.descricao}}</p>
-          <p style="font-size: 0.8rem;margin-top: 5%">Dimensões: {{inverter.dimensoes}}</p>
+            <span>POTÊNCIA DE SAÍDA: </span>{{inverter.power}}</p>
+          <p style="font-size: 1rem;width: 100%;margin-top: 2%">{{inverter.description}}</p>
+          <p style="font-size: 0.8rem;margin-top: 5%">Dimensões: {{inverter.dimensions}}</p>
         </div>
         <div class="col">
           <div style="width: 90%;margin: 0 auto">
-            <img class="img2" src="{{inverter.imagem}}" alt="{{inverter.nome}}">
+            <img class="img2" src="{{inverter.image}}" alt="{{inverter.name}}">
           </div>
           <div class="btn">
             <button type="button" class="form_btn" data-toggle="modal" data-target="#myModal2">Datasheet</button>
@@ -146,10 +146,10 @@
                   <div class="row">
                     <div class="col-sm-4" *ngFor="let inv of item; let id = index">
                       <a (click)="Refresh(inv.id)">
-                        <img class="img2_carousel" src="{{inv.imagem}}" alt="{{inv.nome}}" width="100%" height="100%"></a>
+                        <img class="img2_carousel" src="{{inv.image}}" alt="{{inv.name}}" width="100%" height="100%"></a>
                       <img class="img1_carousel" src="assets/images/inverters/inverters.svg" alt="">
-                      <h5>{{inv.nome}}</h5>
-                      <p>{{inv.resumo}}</p>
+                      <h5>{{inv.name}}</h5>
+                      <p>{{inv.resumee}}</p>
                       <button (click)="Refresh(inv.id)"><span>+ Info</span></button>
                     </div>
                   </div>

@@ -1,18 +1,12 @@
 <div id="carouselExampleControls" class="carousel slide carousel-fade" data-ride="carousel"
      data-interval="3500" data-keyboard="false" data-pause="false">
   <div class="carousel-inner">
-    <div class="carousel-item active">
-      <span class="d-block w-100" id="span1"></span>
+    <div class="carousel-item" *ngFor="let carousel of carousel; let first = first" [class.active]="first">
+      <span class="d-block w-100" style="background-size: 100%" [ngStyle]="{'background': 'linear-gradient(to bottom, rgba(0, 0, 0, 0.9) 10%, rgba(0, 0, 0, 0.70) 40%,\n'+
+'rgba(0, 0, 0, 0.50) 60%, rgba(0, 0, 0, 0.30) 80%, rgba(0, 0, 0, 0) 100%), url(' + carousel.image + ')', 'background-size': '100%'}"></span>
       <div class="text-hover-carousel">
-        <h5>photovoltaic high performance modules</h5>
-        <p>25 years linear performance guarantee</p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <span class="d-block w-100" id="span2"></span>
-      <div class="text-hover-carousel" style="width: 45%;left: 29%">
-        <h5>High performance and quality</h5>
-        <p>15 years manufacturer's warranty</p>
+        <h5>{{carousel.imageTitle}}</h5>
+        <p>{{carousel.imageCaption}}</p>
       </div>
     </div>
   </div>
@@ -28,27 +22,19 @@
 <div class="container" id="container1">
   <div class="row">
     <div class="col-sm">
-      <div class="icon">
-        <img src="assets/images/icons/container1/mission.svg" alt="">
-      </div>
+      <img src="{{apresentation.missionImage}}" alt="mission">
       <h4>mission</h4>
-      <p>meio ambiente</p>
-      <p>energia verde</p>
+      <p>{{apresentation.mission}}</p>
     </div>
     <div class="col-sm">
-      <div class="icon">
-        <img src="assets/images/icons/container1/focus.svg" alt="">
-      </div>
+      <img src="{{apresentation.focusImage}}" alt="focus">
       <h4>focus</h4>
-      <p>distribuição</p>
-      <p>parceiros</p>
+      <p>{{apresentation.focus}}</p>
     </div>
     <div class="col-sm">
-      <div class="icon">
-        <img src="assets/images/icons/container1/why%20us.svg" alt="">
-      </div>
+      <img src="{{apresentation.whyUsImage}}" alt="why Us">
       <h4>why Us</h4>
-      <p>Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto</p>
+      <p>{{apresentation.whyUs}}</p>
     </div>
   </div>
 </div>
@@ -56,31 +42,31 @@
   <div class="row">
     <h2>photovoltaic high performance modules</h2>
     <div class="col-4">
-      <img src="assets/images/solar_1.png" alt="">
+      <img src="{{characteristic.image}}" alt="">
     </div>
     <div class="col-8">
       <div class="container" id="container2.1">
         <div class="row">
           <div class="col" style="margin-bottom: 1%;margin-right: 1%">
-            <img src="assets/images/icons/container2.1/col_1.svg" alt="">
+            <img src="{{characteristic.panelImage}}" alt="">
             <h5>Polycrystalline and Monocrystalline cells</h5>
-            <p>Texto texto texto texto Texto texto texto texto Texto texto texto texto</p>
+            <p>{{characteristic.panel}}</p>
           </div>
           <div class="col" style="margin-bottom: 1%;margin-left: 1%">
-            <img src="assets/images/icons/container2.1/col_2.svg" alt="">
+            <img src="{{characteristic.chargeImage}}" alt="">
             <h5>PV High-performance</h5>
-            <p>Texto texto texto texto Texto texto texto texto Texto texto texto texto</p>
+            <p>{{characteristic.charge}}</p>
           </div>
           <div class="w-100 d-none d-md-block"></div>
           <div class="col" style="margin-top: 1%;margin-right: 1%">
-            <img src="assets/images/icons/container2.1/col_3.svg" alt="">
+            <img src="{{characteristic.selectionImage}}" alt="">
             <h5>Green Energy</h5>
-            <p>Texto texto texto texto Texto texto texto texto Texto texto texto texto</p>
+            <p>{{characteristic.selection}}</p>
           </div>
           <div class="col" style="margin-top: 1%;margin-left: 1%">
-            <img src="assets/images/icons/container2.1/col_4.svg" alt="">
+            <img src="{{characteristic.warrantyImage}}" alt="">
             <h5>25 years linear performance guarantee</h5>
-            <p>Texto texto texto texto Texto texto texto texto Texto texto texto texto</p>
+            <p>{{characteristic.warranty}}</p>
           </div>
         </div>
       </div>
@@ -106,23 +92,24 @@
     <h4>our numbers</h4>
     <div class="col-sm">
       <div class="icon">
-        <img src="assets/images/icons/container4/watts.svg" alt="">
+        <img src="{{ourNumbers.wattsImage}}" alt="">
       </div>
-      <h3 *ngIf="countUp" [countUp]="12000" [options]="options2"></h3>
+      <h3 *ngIf="countUp" [countUp]="ourNumbers.watts" [options]="options2"></h3>
       <p>installed watts</p>
     </div>
     <div class="col-sm">
       <div class="icon">
-        <img src="assets/images/icons/container4/projects.svg" alt="">
+        <img src="{{ourNumbers.projectsImage}}" alt="">
       </div>
-      <h3 *ngIf="countUp" [countUp]="300" [options]="options"></h3>
+      <h3 *ngIf="countUp" [countUp]="ourNumbers.projects" [options]="options"></h3>
       <p>completed projects</p>
     </div>
     <div class="col-sm">
       <div class="icon">
-        <img src="assets/images/icons/container4/costumers.svg" alt="">
+        <img src="{{ourNumbers.clientsImage}}" alt="">
       </div>
-      <h3 style="float: left;width: 20%;margin-left: 40%" *ngIf="countUp" [countUp]="90" [options]="options"></h3>
+      <h3 style="float: left;width: 20%;margin-left: 40%" *ngIf="countUp" [countUp]="ourNumbers.clients"
+          [options]="options"></h3>
       <span *ngIf="countUp" style="margin-left: -45%;font-size: 1.45rem;font-weight: bold">%</span>
       <p>satisfied customers</p>
     </div>
@@ -131,11 +118,13 @@
 <div class="container" id="container5">
   <div class="row">
     <div class="col-5" style="margin-left: 7%;padding: 0;height: 100%">
-      <h4>Get in touch!</h4>
-      <p>For further information or any other contact please send us a email.</p>
+      <div class="div-inside">
+        <h4>Get in touch!</h4>
+        <p>For further information or any other contact please send us a email.</p>
+      </div>
     </div>
     <div class="col" style="padding: 0;height: 100%">
-      <button><span>send</span></button>
+      <button routerLink="/contact"><span>send</span></button>
       <img src="assets/images/container5_icon.svg" alt="">
     </div>
   </div>

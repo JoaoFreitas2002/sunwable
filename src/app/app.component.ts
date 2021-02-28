@@ -1,5 +1,6 @@
 import {Component, HostListener} from '@angular/core';
 import {Router} from '@angular/router';
+import {TranslateService} from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
@@ -8,7 +9,9 @@ import {Router} from '@angular/router';
 })
 export class AppComponent {
 
-  constructor(private router: Router) {
+  constructor(private router: Router,
+              private translate: TranslateService) {
+    translate.setDefaultLang('pt');
   }
 
   @HostListener('window:scroll', [])

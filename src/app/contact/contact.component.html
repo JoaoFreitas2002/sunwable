@@ -25,16 +25,7 @@
       </div>
       <div class="horario_atendimento">
         <h5 style="margin-bottom: 0"><span>horário de atendimento</span></h5>
-        <p>segunda a sexta-feira</p>
-        <p class="p1">Logística</p>
-        <p>Descargas: 08h30 às 12h00</p>
-        <p>Cargas: 13h30-17h00</p>
-        <p class="p1">Apoio Técnico</p>
-        <p>08h30 às 12h30 | 13h30 às 17h30</p>
-        <p class="p1">Departamento Comercial</p>
-        <p>08h30 às 12h30 | 13h30 às 17h30</p>
-        <p class="p1">Serviços Administrativos</p>
-        <p>08h30 às 12h30 | 13h30 às 17h30</p>
+        <p [innerHTML]="shedule.text" style="font-weight: 400"></p>
       </div>
     </div>
     <div class="col-8">
@@ -42,32 +33,38 @@
       <form>
         <div class="form-group">
           <label for="name">Nome <span>*</span></label>
-          <input type="text" class="form-control form-control-lg" id="name" required="required">
+          <input type="text" class="form-control form-control-lg" id="name" name="nome"
+                    [(ngModel)]="EmailForm.name" required="required">
         </div>
         <div class="form-group">
           <label for="company">Empresa <span>*</span></label>
-          <input type="text" class="form-control form-control-lg" id="company" required="required">
+          <input type="text" class="form-control form-control-lg" id="company" name="company"
+                    [(ngModel)]="EmailForm.company" required="required">
         </div>
         <div class="row" style="margin: 0;height: 9%">
           <div class="col" style="padding-left: 0">
             <label for="phone">Telefone <span>*</span></label>
-            <input type="text" class="form-control form-control-lg" id="phone" required="required">
+            <input type="text" class="form-control form-control-lg" id="phone" name="phone"
+                    [(ngModel)]="EmailForm.phone" required="required">
           </div>
           <div class="col" style="padding-right: 0">
             <label for="place">Concelho <span>*</span></label>
-            <input type="text" class="form-control form-control-lg" id="place" required="required">
+            <input type="text" class="form-control form-control-lg" id="place" name="place"
+                    [(ngModel)]="EmailForm.place" required="required">
           </div>
         </div>
         <div class="form-group">
           <label for="email">Email <span>*</span></label>
-          <input type="email" class="form-control form-control-lg" id="email" required>
+          <input type="email" class="form-control form-control-lg" id="email" name="email"
+                    [(ngModel)]="EmailForm.email" required>
         </div>
         <div class="form-group">
           <label for="message">Mensagem <span>*</span></label>
-          <textarea class="form-control" id="message" rows="8" required="required"></textarea>
+          <textarea class="form-control" id="message" name="mensagem" rows="8" required="required"
+                    [(ngModel)]="EmailForm.message"></textarea>
         </div>
         <h6 style="margin-top: 2%">* Campos Obrigatórios.</h6>
-        <button class="btn" type="submit" style="background: #E43D30;width: 27%;margin-top: 3%">
+        <button class="btn" type="submit" (click)="SendEmail()" style="background: #E43D30;width: 27%;margin-top: 3%">
           <span style="font-size: 1.5rem;text-transform: none;color: white">enviar</span>
         </button>
       </form>
