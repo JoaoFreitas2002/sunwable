@@ -5,7 +5,7 @@
         <div class="col">
           <div class="row" style="width: 100%;height: 100%;padding: 0;margin: 0">
             <div class="col" style="height: fit-content">
-              <img class="img1" src="assets/images/solar%20modules/solarmodules2.svg" alt="Solar Modules">
+              <img class="img1" src="assets/images/solar%20modules/solarModules2.svg" alt="Solar Modules">
               <h5>{{solarModule.name}}</h5>
               <p>{{solarModule.resume}}</p>
               <p style="color: #E43D30;font-size: 1.2rem;margin-top: 7%;font-weight: bold">
@@ -72,8 +72,8 @@
                     <div class="col-sm-4" *ngFor="let sm of item; let id = index">
                       <a (click)="Refresh(sm.id)">
                         <img class="img2_carousel" src="{{sm.image}}" alt="{{sm.name}}" width="100%"
-                           height="100%"></a>
-                      <img class="img1_carousel" src="assets/images/solar%20modules/solarmodules2.svg" alt="">
+                             height="100%"></a>
+                      <img class="img1_carousel" src="assets/images/solar%20modules/solarModules2.svg" alt="">
                       <h5>{{sm.name}}</h5>
                       <p>{{sm.resumee}}</p>
                       <button (click)="Refresh(sm.id)"><span>+ Info</span></button>
@@ -146,7 +146,8 @@
                   <div class="row">
                     <div class="col-sm-4" *ngFor="let inv of item; let id = index">
                       <a (click)="Refresh(inv.id)">
-                        <img class="img2_carousel" src="{{inv.image}}" alt="{{inv.name}}" width="100%" height="100%"></a>
+                        <img class="img2_carousel" src="{{inv.image}}" alt="{{inv.name}}" width="100%"
+                             height="100%"></a>
                       <img class="img1_carousel" src="assets/images/inverters/inverters.svg" alt="">
                       <h5>{{inv.name}}</h5>
                       <p>{{inv.resumee}}</p>
