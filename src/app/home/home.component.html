@@ -3,8 +3,8 @@
   <div class="carousel-inner">
     <div class="carousel-item" *ngFor="let carousel of carousel; let first = first" [class.active]="first">
       <span class="d-block w-100" style="background-size: 100%" [ngStyle]="{'background': 'linear-gradient(to bottom, rgba(0, 0, 0, 0.9) 10%, rgba(0, 0, 0, 0.70) 40%,\n'+
-'rgba(0, 0, 0, 0.50) 60%, rgba(0, 0, 0, 0.30) 80%, rgba(0, 0, 0, 0) 100%), url(' + carousel.image + ')', 'background-size': '100%'}"></span>
-      <div class="text-hover-carousel">
+'rgba(0, 0, 0, 0.50) 60%, rgba(0, 0, 0, 0.30) 80%, rgba(0, 0, 0, 0) 100%), url(' + carousel.image + ') no-repeat center center', 'background-size': 'cover'}"></span>
+      <div class="carousel-caption d-none d-md-block">
         <h5>{{carousel.imageTitle}}</h5>
         <p>{{carousel.imageCaption}}</p>
       </div>
@@ -47,25 +47,25 @@
     <div class="col-8">
       <div class="container" id="container2.1">
         <div class="row">
-          <div class="col" style="margin-bottom: 1%;margin-right: 1%">
+          <div class="col" id="col1">
             <img src="{{characteristic.panelImage}}" alt="">
             <h5>Polycrystalline and Monocrystalline cells</h5>
             <p>{{characteristic.panel}}</p>
           </div>
-          <div class="col" style="margin-bottom: 1%;margin-left: 1%">
+          <div class="col" id="col2">
             <img src="{{characteristic.chargeImage}}" alt="">
             <h5>PV High-performance</h5>
             <p>{{characteristic.charge}}</p>
           </div>
           <div class="w-100 d-none d-md-block"></div>
-          <div class="col" style="margin-top: 1%;margin-right: 1%">
+          <div class="col" id="col3">
             <img src="{{characteristic.selectionImage}}" alt="">
             <h5>Green Energy</h5>
             <p>{{characteristic.selection}}</p>
           </div>
-          <div class="col" style="margin-top: 1%;margin-left: 1%">
+          <div class="col" id="col4">
             <img src="{{characteristic.warrantyImage}}" alt="">
-            <h5>25 years linear performance guarantee</h5>
+            <h5 id="h5_change">25 years linear performance guarantee</h5>
             <p>{{characteristic.warranty}}</p>
           </div>
         </div>
@@ -76,10 +76,12 @@
 <div class="container" id="container3">
   <div class="row">
     <div class="col-5" style="margin-left: 7%;padding: 0;height: 100%">
-      <h4>we are not just a supplier, we are a partner!</h4>
-      <p>Increase your business with at SUNWABLE.</p>
-      <p>We have more than 10 years of experience and knowledge in the development of energy solutions.We invite you to
-        be a part of it.</p>
+      <div class="text">
+        <h4>we are not just a supplier, we are a partner!</h4>
+        <p>Increase your business with at SUNWABLE.</p>
+        <p>We have more than 10 years of experience and knowledge in the development of energy solutions.We invite you
+          to be a part of it.</p>
+      </div>
     </div>
     <div class="col" style="padding: 0;height: 100%">
       <button><span>become an installer</span></button>
@@ -110,7 +112,7 @@
       </div>
       <h3 style="float: left;width: 20%;margin-left: 40%" *ngIf="countUp" [countUp]="ourNumbers.clients"
           [options]="options"></h3>
-      <span *ngIf="countUp" style="margin-left: -45%;font-size: 1.45rem;font-weight: bold">%</span>
+      <span *ngIf="countUp" style="float: left;font-size: 1.45rem;font-weight: bold">%</span>
       <p>satisfied customers</p>
     </div>
   </div>
@@ -123,7 +125,7 @@
         <p>For further information or any other contact please send us a email.</p>
       </div>
     </div>
-    <div class="col" style="padding: 0;height: 100%">
+    <div class="col" style="margin-right: 7%;height: 100%">
       <button routerLink="/contact"><span>send</span></button>
       <img src="assets/images/container5_icon.svg" alt="">
     </div>

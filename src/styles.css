@@ -1,4 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+/*---------------------------  global  --------------------------------*/
 body.modal-open {
   padding-right: 0 !important;
 }
@@ -9,4 +10,11 @@ nav {
 
 .modal-open {
   overflow: inherit;
+}
+
+/*---------------------------  media  --------------------------------*/
+@media (min-width: 768px) and (max-width: 992px) {
+  :root {
+    font-size: 12px;
+  }
 }

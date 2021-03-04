@@ -25,20 +25,4 @@ export class SolarModulesComponent implements OnInit {
     this.productSrv.getAllSolarModules().subscribe(data => this.solarModules = data);
   }
 
-  ChangeHeighProduct() {
-    if (this.solarModules.length > 3 && this.solarModules.length < 7) {
-      return {height: '55%'};
-    } else if (this.solarModules.length > 6 && this.solarModules.length < 10) {
-      return {height: '35%'};
-    }
-  }
-
-  ChangeHeighContainer() {
-    if (this.solarModules.length > 3 && this.solarModules.length < 7) {
-      return {height: '700px'};
-    } else if (this.solarModules.length > 6 && this.solarModules.length < 10) {
-      return {height: '1100px'};
-    }
-  }
-
 }

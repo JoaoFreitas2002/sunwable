@@ -1,485 +1,505 @@
-/*X-Small devices (portrait phones, less than 576px)*/
-/*No media query for `xs` since this is the default in Bootstrap*/
-
-/*Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) {
+/*---------------------------  global  --------------------------------*/
+#container0, #container3 {
+  background-color: white;
 }
 
-/*Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) {
+hr {
+  height: 0.1%;
+  background-color: rgb(228, 61, 48);
+  width: 100%;
+  margin: 0;
+}
 
-  #container0, #container3 {
-    background-color: white;
-  }
+/*---------------------------  container0  --------------------------------*/
+#container0 {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 1540px;
+  max-width: 100%;
+}
 
-  /*container0*/
+#container0 .row {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/*---------------------------  container1  --------------------------------*/
+#container1 {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 100%;
+  height: 75%;
+}
+
+#container1 .row {
+  height: 100%;
+  padding: 10% 0 0 0;
+  width: 80%;
+  margin: 0 10% 0 10%;
+  color: #706F6F;
+}
+
+#container1 .col {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+#container1 .row .img1 {
+  width: 10%;
+  padding: 0;
+}
+
+#container1 .row .img2 {
+  height: 80%;
+  width: 100%;
+}
+
+#container1 .row h5 {
+  font-size: 3rem;
+  padding: 1% 0 0 0;
+  text-transform: uppercase;
+  color: #E43D30;
+}
+
+#container1 .row p {
+  font-size: 1.5rem;
+  text-align: left;
+  width: 70%;
+  padding: 0;
+  margin: 2% 0 0 0;
+}
+
+#container1 .btn {
+  width: 100%;
+  height: 10%;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.btn:not(:disabled):not(.disabled) {
+  cursor: auto;
+}
+
+#container1 .form_btn {
+  width: 30%;
+  height: 50%;
+  background-color: rgb(228, 61, 48);
+  border: 0;
+  color: white;
+  padding: 0;
+}
+
+#container1\.2 {
+  padding: 0;
+  height: 40%;
+  margin-bottom: 10%;
+}
+
+#container1\.2 .row {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#container1\.2 .col {
+  background-color: #F4F4F4;
+  padding: 2%;
+  width: 48%;
+  height: auto;
+  color: #706F6F;
+}
+
+#container1\.2 img {
+  padding-bottom: 3%;
+  padding-top: 5%;
+}
+
+#container1\.2 .row p {
+  font-size: 0.8rem !important;
+  margin: 5% 0 0 0;
+  width: 100%;
+}
+
+/*---------------------------  container2  --------------------------------*/
+#container2 {
+  margin: 0;
+  padding: 0;
+  height: 24%;
+  background: white;
+  max-width: 100%;
+}
+
+#container2 .row {
+  margin: 0 0;
+  padding: 3% 5% 0 5%;
+  max-width: 100%;
+}
+
+#myContainer {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+#myContainer .row {
+  padding: 0;
+  width: 100%;
+  margin: 0;
+}
+
+#myContainer .carousel-inner, #myContainer .carousel, #myContainer .carousel-item {
+  height: 100%;
+  width: 100%;
+}
+
+#myContainer .carousel-inner {
+  width: 90%;
+  margin: auto;
+}
+
+#myContainer .carousel-control-prev, #myContainer .carousel-control-next {
+  width: 5%;
+  height: 20%;
+  margin: auto;
+  opacity: 1;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+  width: 60%;
+  height: 100%;
+}
+
+.carousel-control-next-icon {
+  background-image: url("../../assets/arrows/carousel-arrow.svg") !important;
+}
+
+.carousel-control-prev-icon {
+  background-image: url("../../assets/arrows/carousel-arrow-2.svg") !important;
+}
+
+#myContainer .col-sm-4 {
+  height: 100%;
+  text-align: left;
+}
+
+#myContainer h5 {
+  width: 25%;
+  height: 10%;
+  padding: 0;
+  margin: 3% 0 0 0;
+  text-transform: uppercase;
+  color: #E43D30;
+}
+
+#myContainer p {
+  text-align: left;
+  width: 40%;
+  height: 30%;
+  padding: 0;
+  margin: 0;
+}
+
+#myContainer button {
+  color: white;
+  background-color: rgb(228, 61, 48);
+  border: 0;
+  margin: 15% 0 0 0;
+  padding: 0;
+  width: 25%;
+  height: 10%;
+}
+
+.img1_carousel {
+  width: 15%;
+  padding: 0;
+  margin: 0;
+}
+
+#myContainer a {
+  padding: 0;
+  margin: 0;
+  float: right;
+  width: 50%;
+  height: 90%;
+}
+
+/*---------------------------  container3  --------------------------------*/
+#container3 {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 1090px;
+  max-width: 100%;
+}
+
+#container3 .row {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/*---------------------------  container4  --------------------------------*/
+#container4 {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 100%;
+  height: 70%;
+}
+
+#container4 .row {
+  height: 100%;
+  padding: 10% 0 0 0;
+  width: 80%;
+  margin: 0 10% 0 10%;;
+  color: #706F6F;
+}
+
+#container4 .col {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+#container4 .row .img1 {
+  height: 10%;
+  padding: 0;
+  margin: 4% 0 0 0;
+}
+
+#container4 .row .img2 {
+  display: block;
+  margin: 0 auto;
+}
+
+#container4 .row h5 {
+  font-size: 3rem;
+  padding: 1% 0 0 0;
+  margin: -0;
+  text-transform: uppercase;
+  color: #E43D30;
+}
+
+#container4 .row p {
+  font-size: 1.5rem;
+  text-align: left;
+  width: 70%;
+  padding: 0;
+  margin: 2% 0 0 0;
+}
+
+#container4 .btn {
+  width: 100%;
+  height: 15%;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+#container4 .form_btn {
+  width: 30%;
+  height: 50%;
+  background-color: rgb(228, 61, 48);
+  border: 0;
+  color: white;
+  padding: 0;
+}
+
+/*---------------------------  container5  --------------------------------*/
+#container5 {
+  margin: 0;
+  padding: 0;
+  height: 29%;
+  background: white;
+  max-width: 100%;
+}
+
+#container5 .row {
+  margin: 0 0;
+  padding: 2% 5% 0 5%;
+  max-width: 100%;
+}
+
+#myContainer2 {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+#myContainer2 .row {
+  padding: 0;
+  width: 100%;
+  margin: 0;
+}
+
+#myContainer2 .carousel-inner, #myContainer2 .carousel, #myContainer2 .carousel-item {
+  height: 100%;
+  width: 100%;
+}
+
+#myContainer2 .carousel-inner {
+  width: 90%;
+  margin: auto;
+}
+
+#myContainer2 .carousel-control-prev, #myContainer2 .carousel-control-next {
+  width: 5%;
+  height: 20%;
+  margin: auto;
+  opacity: 1;
+}
+
+#myContainer2 .col-sm-4 {
+  height: 100%;
+  text-align: left;
+}
+
+#myContainer2 h5 {
+  width: 50%;
+  height: 10%;
+  padding: 0;
+  margin: 3% 0 0 0;
+  text-transform: uppercase;
+  color: #E43D30;
+}
+
+#myContainer2 p {
+  text-align: left;
+  width: 40%;
+  height: 20%;
+  padding: 0;
+  margin: 0;
+}
+
+#myContainer2 button {
+  color: white;
+  background-color: rgb(228, 61, 48);
+  border: 0;
+  margin: 15% 0 0 0;
+  padding: 0;
+  width: 25%;
+  height: 15%;
+}
+
+#myContainer2 a {
+  padding: 0;
+  margin: 0;
+  float: right;
+  width: 60%;
+}
+
+/*---------------------------  container6  --------------------------------*/
+#container6 {
+  margin: 0;
+  padding: 0;
+  height: 450px;
+  background: #E43D30;
+  max-width: 100%;
+}
+
+#container6 .row {
+  height: 100%;
+  width: 100%;
+  color: white;
+  text-align: left;
+}
+
+#container6 .col-6 {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+#container6 h4 {
+  width: 70%;
+  height: 20%;
+  margin-top: 20%;
+  font-size: 2rem;
+}
+
+#container6 p {
+  width: 78%;
+  margin-bottom: 0;
+  font-size: 1.1rem;
+}
+
+#container6 span {
+  background-color: transparent;
+  font-size: 1.15rem;
+  color: white;
+  padding: 0;
+}
+
+#container6 button {
+  top: 40%;
+  right: 45%;
+  height: 15%;
+  background-color: transparent;
+  border: 0.2rem solid white;
+  width: 25%;
+  position: absolute;
+}
+
+#container6 img {
+  height: 100%;
+  float: right;
+  width: auto;
+}
+
+#container6 .text {
+  margin: 20% 0;
+}
+
+/*---------------------------  media  --------------------------------*/
+
+/*Medium devices (tablets)*/
+@media (min-width: 768px) and (max-width: 992px) {
+  /*---------------------------  container0  --------------------------------*/
   #container0 {
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    height: 1540px;
-    max-width: 100%;
+    height: 940px;
   }
 
-  #container0 .row {
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    height: 100%;
-  }
-
-  /*  container1*/
-  #container1 {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    max-width: 100%;
-    height: 75%;
-  }
-
+  /*---------------------------  container1  --------------------------------*/
   #container1 .row {
-    height: 100%;
-    padding: 10% 0 0 0;
-    width: 80%;
-    margin: 0 10% 0 10%;
-    color: #706F6F;
-  }
-
-  #container1 .col {
-    padding: 0;
-    margin: 0;
-    height: 100%;
-  }
-
-  #container1 .row .img1 {
-    width: 10%;
-    padding: 0;
-  }
-
-  #container1 .row .img2 {
-    height: 80%;
-    width: 100%;
-  }
-
-  #container1 .row h5 {
-    font-size: 3rem;
-    padding: 1% 0 0 0;
-    text-transform: uppercase;
-    color: #E43D30;
+    padding-top: 15%;
   }
 
   #container1 .row p {
-    font-size: 1.5rem;
-    text-align: left;
-    width: 70%;
-    padding: 0;
-    margin: 2% 0 0 0;
-  }
-
-  #container1 .btn {
-    width: 100%;
-    height: 10%;
-    padding: 0;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-  }
-
-  .btn:not(:disabled):not(.disabled) {
-    cursor: auto;
-  }
-
-  #container1 .form_btn {
-    width: 30%;
-    height: 50%;
-    background-color: rgb(228, 61, 48);
-    border: 0;
-    color: white;
-    padding: 0;
-  }
-
-  #container1\.2 {
-    padding: 0;
-    height: 40%;
-    margin-bottom: 10%;
+    font-size: 1.3rem;
+    max-height: 170px;
   }
 
   #container1\.2 .row {
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    height: 100%;
+    padding-top: 10%;
   }
 
-  #container1\.2 .col {
-    background-color: #F4F4F4;
-    padding: 2%;
-    width: 48%;
-    height: auto;
-    color: #706F6F;
-  }
-
-  #container1\.2 img {
-    padding-bottom: 3%;
-    padding-top: 5%;
-  }
-
-  #container1\.2 .row p {
-    font-size: 0.8rem;
-    margin: 5% 0 0 0;
-    width: 100%;
-  }
-
-  /* hr */
-  hr {
-    height: 0.1%;
-    background-color: rgb(228, 61, 48);
-    width: 100%;
-    margin: 0;
-  }
-
-  /*  container 2*/
-  #container2 {
-    margin: 0;
-    padding: 0;
-    height: 24%;
-    background: white;
-    max-width: 100%;
-  }
-
-  #container2 .row {
-    margin: 0 0;
-    padding: 3% 5% 0 5%;
-    max-width: 100%;
-  }
-
-  #myContainer {
-    max-width: 100%;
-    width: 100%;
-    height: 100%;
-    padding: 0;
-    margin: 0;
-  }
-
-  #myContainer .row {
-    padding: 0;
-    width: 100%;
-    margin: 0;
-  }
-
-  #myContainer .carousel-inner, #myContainer .carousel, #myContainer .carousel-item {
-    height: 100%;
-    width: 100%;
-  }
-
-  #myContainer .carousel-inner {
-    width: 90%;
-    margin: auto;
-  }
-
-  #myContainer .carousel-control-prev, #myContainer .carousel-control-next {
-    width: 5%;
-    height: 20%;
-    margin: auto;
-    opacity: 1;
-  }
-
-  .carousel-control-next-icon, .carousel-control-prev-icon {
-    width: 60%;
-    height: 100%;
-  }
-
-  .carousel-control-next-icon {
-    background-image: url("../../assets/arrows/carousel-arrow.svg") !important;
-  }
-
-  .carousel-control-prev-icon {
-    background-image: url("../../assets/arrows/carousel-arrow-2.svg") !important;
-  }
-
-  #myContainer .col-sm-4 {
-    height: 100%;
-    text-align: left;
-  }
-
-  #myContainer h5 {
-    width: 25%;
-    height: 10%;
-    padding: 0;
-    margin: 3% 0 0 0;
-    text-transform: uppercase;
-    color: #E43D30;
-  }
-
-  #myContainer p {
-    text-align: left;
-    width: 40%;
-    height: 30%;
-    padding: 0;
-    margin: 0;
-  }
-
+  /*---------------------------  container2  --------------------------------*/
   #myContainer button {
-    color: white;
-    background-color: rgb(228, 61, 48);
-    border: 0;
-    margin: 15% 0 0 0;
-    padding: 0;
-    width: 25%;
-    height: 10%;
+    width: 45px;
+    height: 20px;
+    margin-top: 20%;
   }
 
-  .img1_carousel {
-    width: 15%;
-    padding: 0;
-    margin: 0;
-  }
-
-  #myContainer a {
-    padding: 0;
-    margin: 0;
-    float: right;
-    width: 50%;
-    height: 90%;
-  }
-
-  /*container3*/
-  #container3 {
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    height: 1090px;
-    max-width: 100%;
-  }
-
-  #container3 .row {
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    height: 100%;
-  }
-
-  /*  container4*/
-  #container4 {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    max-width: 100%;
-    height: 70%;
-  }
-
-  #container4 .row {
-    height: 100%;
-    padding: 10% 0 0 0;
-    width: 80%;
-    margin: 0 10% 0 10%;;
-    color: #706F6F;
-  }
-
-  #container4 .col {
-    padding: 0;
-    margin: 0;
-    height: 100%;
-  }
-
-  #container4 .row .img1 {
-    height: 10%;
-    padding: 0;
-    margin: 4% 0 0 0;
-  }
-
-  #container4 .row .img2 {
-    display: block;
-    margin: 0 auto;
-  }
-
-  #container4 .row h5 {
-    font-size: 3rem;
-    padding: 1% 0 0 0;
-    margin: -0;
-    text-transform: uppercase;
-    color: #E43D30;
-  }
-
-  #container4 .row p {
-    font-size: 1.5rem;
-    text-align: left;
-    width: 70%;
-    padding: 0;
-    margin: 2% 0 0 0;
-  }
-
-  #container4 .btn {
-    width: 100%;
-    height: 15%;
-    padding: 0;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-  }
-
-  #container4 .form_btn {
-    width: 30%;
-    height: 50%;
-    background-color: rgb(228, 61, 48);
-    border: 0;
-    color: white;
-    padding: 0;
-  }
-
-  /*  container5*/
-  #container5 {
-    margin: 0;
-    padding: 0;
-    height: 29%;
-    background: white;
-    max-width: 100%;
-  }
-
-  #container5 .row {
-    margin: 0 0;
-    padding: 2% 5% 0 5%;
-    max-width: 100%;
-  }
-
-  #myContainer2 {
-    max-width: 100%;
-    width: 100%;
-    height: 100%;
-    padding: 0;
-    margin: 0;
-  }
-
-  #myContainer2 .row {
-    padding: 0;
-    width: 100%;
-    margin: 0;
-  }
-
-  #myContainer2 .carousel-inner, #myContainer2 .carousel, #myContainer2 .carousel-item {
-    height: 100%;
-    width: 100%;
-  }
-
-  #myContainer2 .carousel-inner {
-    width: 90%;
-    margin: auto;
-  }
-
-  #myContainer2 .carousel-control-prev, #myContainer2 .carousel-control-next {
-    width: 5%;
-    height: 20%;
-    margin: auto;
-    opacity: 1;
-  }
-
-  #myContainer2 .col-sm-4 {
-    height: 100%;
-    text-align: left;
-  }
-
-  #myContainer2 h5 {
-    width: 50%;
-    height: 10%;
-    padding: 0;
-    margin: 3% 0 0 0;
-    text-transform: uppercase;
-    color: #E43D30;
-  }
-
-  #myContainer2 p {
-    text-align: left;
-    width: 40%;
-    height: 20%;
-    padding: 0;
-    margin: 0;
-  }
-
-  #myContainer2 button {
-    color: white;
-    background-color: rgb(228, 61, 48);
-    border: 0;
-    margin: 15% 0 0 0;
-    padding: 0;
-    width: 25%;
-    height: 15%;
-  }
-
-  #myContainer2 a {
-    padding: 0;
-    margin: 0;
-    float: right;
-    width: 60%;
-  }
-
-  /*  container6*/
+  /*---------------------------  container6  --------------------------------*/
   #container6 {
-    margin: 0;
-    padding: 0;
-    height: 450px;
-    background: #E43D30;
-    max-width: 100%;
-  }
-
-  #container6 .row {
-    height: 100%;
-    width: 100%;
-    color: white;
-    text-align: left;
-  }
-
-  #container6 .col-6 {
-    margin: 0;
-    padding: 0;
-    height: 100%;
+    height: 300px;
   }
 
   #container6 h4 {
-    width: 70%;
-    height: 20%;
-    margin-top: 20%;
-    font-size: 2rem;
+    width: 90%;
   }
-
-  #container6 p {
-    width: 78%;
-    margin-bottom: 0;
-    font-size: 1.1rem;
-  }
-
-  #container6 span {
-    background-color: transparent;
-    font-size: 1.15rem;
-    color: white;
-    padding: 0;
-  }
-
-  #container6 button {
-    float: right;
-    height: 15%;
-    margin: 25% 0 50% 30%;
-    background-color: transparent;
-    border: 0.2rem solid white;
-    width: 25%;
-    position: absolute;
-  }
-
-  #container6 img {
-    height: 100%;
-    float: right;
-    width: auto;
-  }
-
-}
-
-/*Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) {
-}
-
-/*X-Large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) {
-}
-
-/*XX-Large devices (larger desktops, 1400px and up)*/
-@media (min-width: 1400px) {
 }

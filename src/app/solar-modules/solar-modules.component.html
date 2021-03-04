@@ -4,11 +4,11 @@
     <div class="name_product"><h1>Solar Modules</h1></div>
   </div>
 </div>
-<div class="container" id="container2" [ngStyle]="ChangeHeighContainer()">
+<div class="container" id="container2">
   <div class="row">
-    <div class="col-4" id="product" *ngFor="let sm of solarModules" [ngStyle]="ChangeHeighProduct()">
+    <div class="col-4" *ngFor="let sm of solarModules">
       <a routerLink="/product_detail"
-              [state]="{data: {data1: sm.id, data2: 'solarModules'}}">
+         [state]="{data: {data1: sm.id, data2: 'solarModules'}}">
         <img class="img2" src="{{sm.image}}" alt="{{sm.name}}"></a>
       <img class="img1" src="assets/images/solar%20modules/solarModules2.svg" alt="">
       <h5>{{sm.name}}</h5>
@@ -22,10 +22,13 @@
 <div class="container" id="container3">
   <div class="row">
     <div class="col-5" style="margin-left: 10%;padding: 0;height: 100%">
-      <h4>we are not just a supplier, we are a partner!</h4>
-      <p>Increase your business with at SUNWABLE.</p>
-      <p>We have more than 10 years of experience and knowledge in the development of energy solutions.We invite you to
-        be a part of it.</p>
+      <div class="text">
+        <h4>we are not just a supplier, we are a partner!</h4>
+        <p>Increase your business with at SUNWABLE.</p>
+        <p>We have more than 10 years of experience and knowledge in the development of energy solutions.We invite you
+          to
+          be a part of it.</p>
+      </div>
     </div>
     <div class="col" style="padding: 0;height: 100%">
       <button><span>become an installer</span></button>

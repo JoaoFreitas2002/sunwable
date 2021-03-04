@@ -25,6 +25,7 @@ export class HomeComponent implements OnInit {
   };
 
   countUp: boolean;
+  sd: any;
 
   constructor(@Inject(DOCUMENT) private document,
               private websiteSrv: WebsiteService) {
@@ -53,12 +54,27 @@ export class HomeComponent implements OnInit {
   onWindowScroll() {
     // tslint:disable-next-line:variable-name
     const number = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
-
-    if (number > 2000 && number < 2670) {
-      this.countUp = true;
-    } else {
-      this.countUp = false;
+    const number2 = window.screen.width;
+    console.log(number);
+    console.log(number2);
+    if (number2 >= 768 && number2 <= 1024) {
+      if (number > 922) {
+        this.countUp = true;
+      } else {
+        this.countUp = false;
+      }
+    } else if (number2 >= 1372) {
+      if (number >= 1364 && number <= 2641) {
+        this.countUp = true;
+      } else {
+        this.countUp = false;
+      }
+    } else if (number2 > 1024 && number2 < 1372) {
+      if (number >= 1950 && number <= 2552) {
+        this.countUp = true;
+      } else {
+        this.countUp = false;
+      }
     }
-
   }
 }

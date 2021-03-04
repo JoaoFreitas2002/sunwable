@@ -1,364 +1,442 @@
-/*X-Small devices (portrait phones, less than 576px)*/
-/*No media query for `xs` since this is the default in Bootstrap*/
-
-/*Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) {
+/*---------------------------  global  --------------------------------*/
+/*---------------------------  carousel  --------------------------------*/
+.carousel-item span {
+  height: 736px;
 }
 
-/*Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) {
-  /*Carousel*/
+.carousel-control-prev-icon {
+  background-image: url("../../assets/arrows/arrow_left.png");
+  width: 20px;
+  height: 40px;
+}
+
+.carousel-control-next-icon {
+  background-image: url("../../assets/arrows/arrow_right.png");
+  width: 20px;
+  height: 40px;
+}
+
+h4:first-letter, p:first-letter {
+  text-transform: uppercase;
+}
+
+.carousel-control-next, .carousel-control-prev {
+  width: 10%;
+}
+
+.carousel-caption {
+  text-transform: uppercase;
+  bottom: 35%;
+  width: 40%;
+  left: 30%;
+}
+
+.carousel-caption h5 {
+  font-size: 2.5rem;
+}
+
+.carousel-caption p {
+  font-size: 1.25rem;
+}
+
+/*---------------------------  container1  --------------------------------*/
+#container1 {
+  margin: 0;
+  padding: 0;
+  height: 435px;
+  background: linear-gradient(to bottom, rgba(225, 225, 255, 0) 25%, rgba(225, 225, 224, 0.25) 50%,
+  rgba(225, 224, 224, 0.5) 75%, rgba(224, 224, 224, 0.75) 100%);
+  max-width: 100%;
+}
+
+#container1 .row {
+  margin: 0 10%;
+  height: 100%;
+}
+
+#container1 .col-sm {
+  margin: auto;
+  height: 70%;
+  width: 26.6%;
+  text-align: center;
+  color: #E43D30;
+}
+
+#container1 .col-sm p {
+  color: #706F6F;
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 5%;
+  font-size: 1.1rem;
+  height: fit-content;
+}
+
+#container1 img {
+  width: 30%;
+  height: 40%;
+  text-align: center;
+  padding-bottom: 5%;
+  padding-top: 5%;
+  box-sizing: unset;
+}
+
+/*---------------------------  container2  --------------------------------*/
+#container2 {
+  margin: 0;
+  padding: 0;
+  height: 750px;
+  background: linear-gradient(to bottom, rgba(225, 225, 255, 0) 25%, rgba(225, 225, 224, 0) 50%,
+  rgba(225, 224, 224, 0.25) 75%, rgba(224, 224, 224, 0.50) 100%);
+  max-width: 100%;
+}
+
+#container2 .row {
+  margin: 0 5%;
+  height: 100%;
+  max-width: 100%;
+}
+
+#container2 h2 {
+  width: 100%;
+  max-width: 100%;
+  height: 5%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #706F6F;
+  margin: 3.5% 0 1.5% 0;
+  padding: 0;
+}
+
+#container2 .col-4, #container2 .col-8 {
+  height: 80%;
+  margin: 1% auto 0 auto;
+}
+
+#container2 .col-4 img {
+  height: 90%;
+  width: 100%;
+}
+
+/*---------------------------  container2.1  --------------------------------*/
+#container2\.1 {
+  width: 100%;
+  max-width: 100%;
+  height: 95%;
+  max-height: 100%;
+  padding-right: 0;
+}
+
+#container2\.1 .row {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#container2\.1 .col {
+  background-color: rgb(244, 244, 244);
+  padding: 2%;
+  width: 100%;
+  max-width: 48%;
+  max-height: 48%;
+  height: 100%;
+  color: #706F6F;
+}
+
+#container2\.1 #col1 {
+  margin-bottom: 1%;
+  margin-right: 1%;
+}
+
+#container2\.1 #col2 {
+  margin-bottom: 1%;
+  margin-left: 1%;
+}
+
+#container2\.1 #col3 {
+  margin-top: 1%;
+  margin-right: 1%;
+}
+
+#container2\.1 #col4 {
+  margin-top: 1%;
+  margin-left: 1%;
+}
+
+#container2\.1 .col h5 {
+  color: #E43D30;
+  width: 60%;
+}
+
+#container2\.1 img {
+  height: 25%;
+  width: 20%;
+  text-align: center;
+  padding-bottom: 3%;
+  padding-top: 5%;
+  box-sizing: unset;
+}
+
+#container2\.1 p {
+  width: 60%;
+}
+
+/*---------------------------  container3  --------------------------------*/
+#container3 {
+  margin: 0;
+  padding: 0;
+  height: 450px;
+  background: #E43D30;
+  max-width: 100%;
+}
+
+#container3 .row {
+  height: 100%;
+  width: 100%;
+  color: white;
+  text-align: left;
+}
+
+#container3 .col-6 {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+#container3 .text {
+  margin: 20% 0;
+}
+
+#container3 h4 {
+  width: 70%;
+  height: fit-content;
+  font-size: 2rem;
+}
+
+#container3 p {
+  width: 80%;
+  margin-bottom: 0;
+  font-size: 1.1rem;
+}
+
+#container3 span {
+  background-color: transparent;
+  font-size: 1.15rem;
+  color: white;
+  padding: 0;
+}
+
+#container3 button {
+  top: 40%;
+  right: 45%;
+  height: 15%;
+  background-color: transparent;
+  border: 0.2rem solid white;
+  width: 25%;
+  position: absolute;
+}
+
+#container3 img {
+  height: 100%;
+  float: right;
+}
+
+/*---------------------------  container4  --------------------------------*/
+#container4 {
+  margin: 0;
+  padding: 0;
+  height: 435px;
+  background: rgb(255, 255, 255);
+  max-width: 100%;
+}
+
+#container4 .row {
+  margin: 0 10%;
+  height: 100%;
+}
+
+#container4 .row h4 {
+  width: 100%;
+  max-width: 100%;
+  height: fit-content;
+  text-align: center;
+  text-transform: uppercase;
+  color: grey;
+  margin: 3.5% 0 1.5% 0;
+  padding: 0;
+}
+
+#container4 h3 {
+  margin: 0;
+}
+
+#container4 .col-sm {
+  margin: 3% auto auto auto;
+  height: 80%;
+  width: 26.6%;
+  text-align: center;
+  color: #706F6F;
+}
+
+h4:first-letter, p:first-letter {
+  text-transform: uppercase;
+}
+
+#container4 .col-sm p {
+  color: #706F6F;
+  width: 50%;
+  margin: 0 auto;
+}
+
+#container4 .icon img {
+  height: 30%;
+  width: 30%;
+  text-align: center;
+  padding-bottom: 5%;
+  padding-top: 5%;
+  box-sizing: unset;
+}
+
+/*---------------------------  container5  --------------------------------*/
+#container5 {
+  margin: 0;
+  padding: 0;
+  height: 300px;
+  background: #F6F6F6;
+  max-width: 100%;
+}
+
+#container5 .row {
+  height: 100%;
+  width: 100%;
+  color: #706F6F;
+  text-align: left;
+}
+
+#container5 .col-6 {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+#container5 .div-inside {
+  width: 100%;
+  height: fit-content;
+  margin: 15% 0;
+}
+
+#container5 h4 {
+  width: 100%;
+  height: fit-content;
+  font-size: 2rem;
+}
+
+#container5 p {
+  width: 50%;
+  font-size: 1.1rem;
+}
+
+#container5 span {
+  background-color: transparent;
+  font-size: 1.3rem;
+  color: #E43D30;
+  font-weight: bold;
+  padding: 0;
+}
+
+#container5 button {
+  height: 15%;
+  top: 40%;
+  right: 45%;
+  background-color: transparent;
+  border: 0.2rem solid #E43D30;
+  width: 25%;
+  position: absolute;
+}
+
+#container5 img {
+  height: 100%;
+  width: auto;
+  float: right;
+  margin-right: 20%;
+}
+
+/*---------------------------  media  --------------------------------*/
+/*Medium devices (tablets)*/
+@media (min-width: 768px) and (max-width: 992px) {
+  /*---------------------------  carousel  --------------------------------*/
   .carousel-item span {
-    height: 736px;
+    height: 550px;
   }
 
-  .carousel-control-next, .carousel-control-prev {
-    width: 10%;
-  }
-
-  .carousel-control-prev-icon {
-    background-image: url("../../assets/arrows/arrow_left.png");
-    width: 20px;
-    height: 40px;
-  }
-
-  .carousel-control-next-icon {
-    background-image: url("../../assets/arrows/arrow_right.png");
-    width: 20px;
-    height: 40px;
-  }
-
-  .text-hover-carousel {
-    text-transform: uppercase;
-    text-align: center;
-    width: 35%;
-    height: 20%;
-    position: absolute;
-    top: 40%;
-    left: 32.5%;
-    color: white;
-  }
-
-  .text-hover-carousel h5 {
-    font-size: 2.5rem;
-  }
-
-  .text-hover-carousel p {
-    font-size: 1.25rem;
-  }
-
-  /*  container 1*/
-  #container1 {
-    margin: 0;
-    padding: 0;
-    height: 435px;
-    background: linear-gradient(to bottom, rgba(225, 225, 255, 0) 25%, rgba(225, 225, 224, 0.25) 50%,
-    rgba(225, 224, 224, 0.5) 75%, rgba(224, 224, 224, 0.75) 100%);
-    max-width: 100%;
-  }
-
-  #container1 .row {
-    margin: 0 10%;
-    height: 100%;
-  }
-
-  #container1 .col-sm {
-    margin: auto;
-    height: 70%;
-    width: 26.6%;
-    text-align: center;
-    color: #E43D30;
-  }
-
-  h4:first-letter, p:first-letter {
-    text-transform: uppercase;
-  }
-
-  #container1 .col-sm p {
-    color: #706F6F;
+  .carousel-caption {
     width: 50%;
-    margin: 0 auto;
-    padding-top: 5%;
-    font-size: 1.1rem;
-    height: fit-content;
+    left: 25%;
   }
 
-  #container1 img {
-    width: 30%;
-    height: 40%;
-    text-align: center;
-    padding-bottom: 5%;
-    padding-top: 5%;
-    box-sizing: unset;
+  /*---------------------------  container1  --------------------------------*/
+  #container1 {
+    height: 310px;
   }
 
-  /*  container 2*/
+  /*---------------------------  container2  --------------------------------*/
   #container2 {
-    margin: 0;
-    padding: 0;
-    height: 750px;
-    background: linear-gradient(to bottom, rgba(225, 225, 255, 0) 25%, rgba(225, 225, 224, 0) 50%,
-    rgba(225, 224, 224, 0.25) 75%, rgba(224, 224, 224, 0.50) 100%);
-    max-width: 100%;
+    height: 550px;
   }
 
-  #container2 .row {
-    margin: 0 5%;
-    height: 100%;
-    max-width: 100%;
-  }
-
-  #container2 h2 {
-    width: 100%;
-    max-width: 100%;
-    height: 5%;
-    text-align: center;
-    text-transform: uppercase;
-    color: #706F6F;
-    margin: 3.5% 0 1.5% 0;
-    padding: 0;
-  }
-
-  #container2 .col-4, #container2 .col-8 {
-    height: 80%;
-    margin: 1% auto 0 auto;
-  }
-
-  #container2 .col-4 img {
-    height: 90%;
-    width: 100%;
-  }
-
-  /*  container 2.1*/
-  #container2\.1 {
-    width: 100%;
-    max-width: 100%;
-    height: 95%;
-    max-height: 100%;
-    padding-right: 0;
-  }
-
-  #container2\.1 .row {
-    margin: 0;
-    width: 100%;
-    height: 100%;
-  }
-
-  #container2\.1 .col {
-    background-color: rgb(244, 244, 244);
-    padding: 2%;
-    width: 100%;
-    max-width: 48%;
-    max-height: 48%;
-    height: 100%;
-    color: #706F6F;
-  }
-
+  /*---------------------------  container2.1  --------------------------------*/
   #container2\.1 .col h5 {
-    color: #E43D30;
-    width: 60%;
+    width: 85%;
   }
 
-  #container2\.1 img {
-    height: 25%;
-    width: 20%;
-    text-align: center;
-    padding-bottom: 3%;
-    padding-top: 5%;
-    box-sizing: unset;
+  #h5_change {
+    width: 95% !Important;
   }
 
-  #container2\.1 p {
-    width: 60%;
+  #container2\.1 #col1 {
+    margin-bottom: 0.5%;
+    margin-right: 0.5%;
   }
 
-  /*  container3*/
+  #container2\.1 #col2 {
+    margin-bottom: 0.5%;
+    margin-left: 0.5%;
+  }
+
+  #container2\.1 #col3 {
+    margin-top: 0.5%;
+    margin-right: 0.5%;
+  }
+
+  #container2\.1 #col4 {
+    margin-top: 0.5%;
+    margin-left: 0.5%;
+  }
+
+  /*---------------------------  container3  --------------------------------*/
   #container3 {
-    margin: 0;
-    padding: 0;
-    height: 450px;
-    background: #E43D30;
-    max-width: 100%;
-  }
-
-  #container3 .row {
-    height: 100%;
-    width: 100%;
-    color: white;
-    text-align: left;
-  }
-
-  #container3 .col-6 {
-    margin: 0;
-    padding: 0;
-    height: 100%;
+    height: 300px;
   }
 
   #container3 h4 {
-    width: 70%;
-    height: 20%;
-    margin-top: 20%;
-    font-size: 2rem;
+    width: 90%;
   }
 
-  #container3 p {
-    width: 78%;
-    margin-bottom: 0;
-    font-size: 1.1rem;
-  }
-
-  #container3 span {
-    background-color: transparent;
-    font-size: 1.15rem;
-    color: white;
-    padding: 0;
-  }
-
-  #container3 button {
-    float: right;
-    height: 15%;
-    margin: 25% 0 50% 35%;
-    background-color: transparent;
-    border: 0.2rem solid white;
-    width: 25%;
-    position: absolute;
-  }
-
-  #container3 img {
-    height: 100%;
-    float: right;
-    width: auto;
-  }
-
-  /*  container4*/
+  /*---------------------------  container4  --------------------------------*/
   #container4 {
-    margin: 0;
-    padding: 0;
-    height: 435px;
-    background: rgb(255, 255, 255);
-    max-width: 100%;
+    height: 250px;
   }
 
-  #container4 .row {
-    margin: 0 10%;
-    height: 100%;
-  }
-
-  #container4 .row h4 {
-    width: 100%;
-    max-width: 100%;
-    height: 5%;
-    text-align: center;
-    text-transform: uppercase;
-    color: grey;
-    margin: 3.5% 0 1.5% 0;
-    padding: 0;
-  }
-
-  #container4 h3 {
-    margin: 0;
-  }
-
-  #container4 .col-sm {
-    margin: 3% auto auto auto;
-    height: 80%;
-    width: 26.6%;
-    text-align: center;
-    color: #706F6F;
-  }
-
-  h4:first-letter, p:first-letter {
-    text-transform: uppercase;
-  }
-
-  #container4 .col-sm p {
-    color: #706F6F;
-    width: 50%;
-    margin: 0 auto;
-  }
-
-  #container4 .icon img {
-    height: 30%;
-    width: 30%;
-    text-align: center;
-    padding-bottom: 5%;
-    padding-top: 5%;
-    box-sizing: unset;
-  }
-
-  /*  container5*/
+  /*---------------------------  container5  --------------------------------*/
   #container5 {
-    margin: 0;
-    padding: 0;
-    height: 300px;
-    background: #F6F6F6;
-    max-width: 100%;
-  }
-
-  #container5 .row {
-    height: 100%;
-    width: 100%;
-    color: #706F6F;
-    text-align: left;
-  }
-
-  #container5 .col-6 {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-  }
-
-  #container5 .div-inside {
-    width: 100%;
-    height: fit-content;
-    margin: 12% 0;
-  }
-
-  #container5 h4 {
-    width: 100%;
-    height: fit-content;
-    font-size: 2rem;
+    height: 200px;
   }
 
   #container5 p {
-    width: 50%;
-    font-size: 1.1rem;
-  }
-
-  #container5 span {
-    background-color: transparent;
-    font-size: 1.3rem;
-    color: #E43D30;
-    font-weight: bold;
-    padding: 0;
-  }
-
-  #container5 button {
-    height: 15%;
-    top: 38%;
-    right: 48%;
-    background-color: transparent;
-    border: 0.2rem solid #E43D30;
-    width: 25%;
-    position: absolute;
+    width: 70%;
   }
 
   #container5 img {
-    height: 100%;
-    width: auto;
-    margin-left: 35%;
+    margin-right: 15%;
   }
 
-}
-
-/*Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) {
-}
-
-/*X-Large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) {
-}
-
-/*XX-Large devices (larger desktops, 1400px and up)*/
-@media (min-width: 1400px) {
 }
