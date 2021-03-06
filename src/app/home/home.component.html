@@ -1,133 +1,162 @@
-<div id="carouselExampleControls" class="carousel slide carousel-fade" data-ride="carousel"
-     data-interval="3500" data-keyboard="false" data-pause="false">
-  <div class="carousel-inner">
-    <div class="carousel-item" *ngFor="let carousel of carousel; let first = first" [class.active]="first">
-      <span class="d-block w-100" style="background-size: 100%" [ngStyle]="{'background': 'linear-gradient(to bottom, rgba(0, 0, 0, 0.9) 10%, rgba(0, 0, 0, 0.70) 40%,\n'+
+<div class="container-fluid" style="padding: 0">
+  <div id="carouselExampleControls" class="carousel slide carousel-fade" data-ride="carousel"
+       data-interval="3500" data-keyboard="false" data-pause="false">
+    <div class="carousel-inner">
+      <div class="carousel-item" *ngFor="let carousel of carousel; let first = first" [class.active]="first">
+        <span class="d-block w-100" style="background-size: 100%" [ngStyle]="{'background': 'linear-gradient(to bottom, rgba(0, 0, 0, 0.9) 10%, rgba(0, 0, 0, 0.70) 40%,\n'+
 'rgba(0, 0, 0, 0.50) 60%, rgba(0, 0, 0, 0.30) 80%, rgba(0, 0, 0, 0) 100%), url(' + carousel.image + ') no-repeat center center', 'background-size': 'cover'}"></span>
-      <div class="carousel-caption d-none d-md-block">
-        <h5>{{carousel.imageTitle}}</h5>
-        <p>{{carousel.imageCaption}}</p>
+        <div class="carousel-caption d-none d-md-block">
+          <h5>{{carousel.imageTitle}}</h5>
+          <p>{{carousel.imageCaption}}</p>
+        </div>
       </div>
     </div>
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
   </div>
-  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
 </div>
-<div class="container" id="container1">
-  <div class="row">
-    <div class="col-sm">
-      <img src="{{apresentation.missionImage}}" alt="mission">
-      <h4>mission</h4>
-      <p>{{apresentation.mission}}</p>
-    </div>
-    <div class="col-sm">
-      <img src="{{apresentation.focusImage}}" alt="focus">
-      <h4>focus</h4>
-      <p>{{apresentation.focus}}</p>
-    </div>
-    <div class="col-sm">
-      <img src="{{apresentation.whyUsImage}}" alt="why Us">
-      <h4>why Us</h4>
-      <p>{{apresentation.whyUs}}</p>
+<div class="container-fluid" id="container1">
+  <div class="container" id="container1_in" style="padding: 0">
+    <div class="row">
+      <div class="col-sm">
+        <div class="icon">
+          <img src="{{apresentation.missionImage}}" alt="mission" width="30%" height="100%">
+        </div>
+        <h4>mission</h4>
+        <p>{{apresentation.mission}}</p>
+      </div>
+      <div class="col-sm">
+        <div class="icon">
+          <img src="{{apresentation.focusImage}}" alt="focus" width="30%" height="100%">
+        </div>
+        <h4>focus</h4>
+        <p>{{apresentation.focus}}</p>
+      </div>
+      <div class="col-sm">
+        <div class="icon">
+          <img src="{{apresentation.whyUsImage}}" alt="why Us" width="30%" height="100%">
+        </div>
+        <h4>why Us</h4>
+        <p>{{apresentation.whyUs}}</p>
+      </div>
     </div>
   </div>
 </div>
 <div class="container" id="container2">
   <div class="row">
-    <h2>photovoltaic high performance modules</h2>
-    <div class="col-4">
-      <img src="{{characteristic.image}}" alt="">
+    <div class="col col-top">
+      <h1>photovoltaic high performance modules</h1>
     </div>
-    <div class="col-8">
-      <div class="container" id="container2.1">
-        <div class="row">
-          <div class="col" id="col1">
-            <img src="{{characteristic.panelImage}}" alt="">
-            <h5>Polycrystalline and Monocrystalline cells</h5>
-            <p>{{characteristic.panel}}</p>
-          </div>
-          <div class="col" id="col2">
-            <img src="{{characteristic.chargeImage}}" alt="">
-            <h5>PV High-performance</h5>
-            <p>{{characteristic.charge}}</p>
-          </div>
-          <div class="w-100 d-none d-md-block"></div>
-          <div class="col" id="col3">
-            <img src="{{characteristic.selectionImage}}" alt="">
-            <h5>Green Energy</h5>
-            <p>{{characteristic.selection}}</p>
-          </div>
-          <div class="col" id="col4">
-            <img src="{{characteristic.warrantyImage}}" alt="">
-            <h5 id="h5_change">25 years linear performance guarantee</h5>
-            <p>{{characteristic.warranty}}</p>
+    <div class="w-100" style="height: 0"></div>
+    <div class="col col-bottom">
+      <div class="row" id="row1">
+        <div class="col-4">
+          <img src="{{characteristic.image}}" alt="" width="100%" height="100%">
+        </div>
+        <div class="col-8">
+          <div class="container-sm" id="container2_sm" style="height: 100%">
+            <div class="row">
+              <div class="col" id="col1">
+                <img src="{{characteristic.panelImage}}" alt="" width="20%" height="20%">
+                <h5>Polycrystalline and Monocrystalline cells</h5>
+                <p>{{characteristic.panel}}</p>
+              </div>
+              <div class="col" id="col2">
+                <img src="{{characteristic.chargeImage}}" alt="" width="20%" height="20%">
+                <h5>PV High-performance</h5>
+                <p>{{characteristic.charge}}</p>
+              </div>
+              <div class="w-100" style="height: 0"></div>
+              <div class="col" id="col3">
+                <img src="{{characteristic.selectionImage}}" alt="" width="20%" height="20%">
+                <h5>Green Energy</h5>
+                <p>{{characteristic.selection}}</p>
+              </div>
+              <div class="col" id="col4">
+                <img src="{{characteristic.warrantyImage}}" alt="" width="20%" height="20%">
+                <h5 id="h5_change">25 years linear performance guarantee</h5>
+                <p>{{characteristic.warranty}}</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
 </div>
-<div class="container" id="container3">
-  <div class="row">
-    <div class="col-5" style="margin-left: 7%;padding: 0;height: 100%">
-      <div class="text">
-        <h4>we are not just a supplier, we are a partner!</h4>
-        <p>Increase your business with at SUNWABLE.</p>
-        <p>We have more than 10 years of experience and knowledge in the development of energy solutions.We invite you
-          to be a part of it.</p>
+<div class="container-fluid" id="container3">
+  <div class="container" id="container3_in">
+    <div class="row">
+      <div class="col">
+        <div class="text">
+          <h2>we are not just a supplier, we are a partner!</h2>
+          <p>Increase your business with at SUNWABLE.</p>
+          <p>We have more than 10 years of experience and knowledge in the development of energy solutions.We invite you
+            to
+            be a part of it.</p>
+        </div>
       </div>
-    </div>
-    <div class="col" style="padding: 0;height: 100%">
-      <button><span>become an installer</span></button>
-      <img src="assets/images/container3_image.svg" alt="">
+      <div class="col">
+        <button><span>become an installer</span></button>
+      </div>
     </div>
   </div>
 </div>
-<div class="container" id="container4">
-  <div class="row">
-    <h4>our numbers</h4>
-    <div class="col-sm">
-      <div class="icon">
-        <img src="{{ourNumbers.wattsImage}}" alt="">
+<div class="container-fluid" id="container4">
+  <div class="container" id="container4_in">
+    <div class="row">
+      <div class="col-top">
+        <h1>our numbers</h1>
       </div>
-      <h3 *ngIf="countUp" [countUp]="ourNumbers.watts" [options]="options2"></h3>
-      <p>installed watts</p>
-    </div>
-    <div class="col-sm">
-      <div class="icon">
-        <img src="{{ourNumbers.projectsImage}}" alt="">
+      <div class="w-100" style="height: 0"></div>
+      <div class="col-bottom">
+        <div class="row">
+          <div class="col-sm">
+            <div class="icon">
+              <img src="{{ourNumbers.wattsImage}}" alt="" width="30%" height="100%">
+            </div>
+            <h3 *ngIf="countUp" [countUp]="ourNumbers.watts" [options]="options2"></h3>
+            <p>installed watts</p>
+          </div>
+          <div class="col-sm">
+            <div class="icon">
+              <img src="{{ourNumbers.projectsImage}}" alt="" width="30%" height="100%">
+            </div>
+            <h3 *ngIf="countUp" [countUp]="ourNumbers.projects" [options]="options"></h3>
+            <p>completed projects</p>
+          </div>
+          <div class="col-sm">
+            <div class="icon">
+              <img src="{{ourNumbers.clientsImage}}" alt="" width="30%" height="100%">
+            </div>
+            <h3><span *ngIf="countUp" [countUp]="ourNumbers.clients"
+                      [options]="options"></span> %</h3>
+            <p>satisfied customers</p>
+          </div>
+        </div>
       </div>
-      <h3 *ngIf="countUp" [countUp]="ourNumbers.projects" [options]="options"></h3>
-      <p>completed projects</p>
-    </div>
-    <div class="col-sm">
-      <div class="icon">
-        <img src="{{ourNumbers.clientsImage}}" alt="">
-      </div>
-      <h3 style="float: left;width: 20%;margin-left: 40%" *ngIf="countUp" [countUp]="ourNumbers.clients"
-          [options]="options"></h3>
-      <span *ngIf="countUp" style="float: left;font-size: 1.45rem;font-weight: bold">%</span>
-      <p>satisfied customers</p>
     </div>
   </div>
 </div>
-<div class="container" id="container5">
-  <div class="row">
-    <div class="col-5" style="margin-left: 7%;padding: 0;height: 100%">
-      <div class="div-inside">
-        <h4>Get in touch!</h4>
-        <p>For further information or any other contact please send us a email.</p>
+<div class="container-fluid" id="container5">
+  <div class="container" id="container5_in">
+    <div class="row">
+      <div class="col">
+        <div class="text">
+          <h2>Get in touch!</h2>
+          <p>For further information or any other contact please send us a email.</p>
+        </div>
       </div>
-    </div>
-    <div class="col" style="margin-right: 7%;height: 100%">
-      <button routerLink="/contact"><span>send</span></button>
-      <img src="assets/images/container5_icon.svg" alt="">
+      <div class="col">
+        <button routerLink="/contact"><span>send</span></button>
+        <img style="float: right" src="assets/images/container5_icon.svg" alt="" width="50%" height="100%">
+      </div>
     </div>
   </div>
 </div>

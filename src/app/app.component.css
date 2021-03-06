@@ -1,4 +1,12 @@
 /*---------------------------  global  --------------------------------*/
+p, h1, h2, h3, h4, h5, h6 {
+  min-height: 5%;
+}
+
+p {
+  margin-bottom: 0;
+}
+
 /*---------------------------  my own  --------------------------------*/
 .collapseClass {
   width: 30%;
@@ -115,23 +123,17 @@ nav {
 #container2 {
   background-color: white;
   height: 390px;
-  margin: 0;
   padding: 0;
-  width: 100%;
   max-width: 100%;
 }
 
-#container2 .row {
+#container2_in {
   padding: 0;
-  margin: 0 10% 0 10%;
   height: 100%;
-  width: 80%;
 }
 
-#container2 .col-4 {
-  padding: 0;
+#container2_in .col-4 {
   margin: auto;
-  height: 100%;
   text-align: left;
 }
 
@@ -142,13 +144,10 @@ nav {
 
 #container2 .icons img {
   margin-right: 2%;
-  width: 7%;
-  height: 7%;
 }
 
 #container2 h6 {
   margin-bottom: 5%;
-  margin-top: 30%;
   color: #E43D30;
   text-transform: uppercase;
   font-weight: bold;
@@ -157,7 +156,6 @@ nav {
 #container2 p {
   color: #706F6F;
   padding: 0;
-  margin: 0;
 }
 
 #container2 a {
@@ -171,12 +169,12 @@ nav {
 #container2 ul {
   list-style-type: none;
   padding: 0;
+  margin-left: 20%;
 }
 
 #container2 li {
   padding: 0;
   margin-bottom: 5%;
-  margin-left: 30%;
 }
 
 /*---------------------------  footer  --------------------------------*/
@@ -237,9 +235,5 @@ nav {
   /*---------------------------  container2  --------------------------------*/
   #container2 {
     height: 290px;
-  }
-
-  #container2 .icons img {
-    width: 10%;
   }
 }

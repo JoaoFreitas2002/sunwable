@@ -1,4 +1,27 @@
 /*---------------------------  global  --------------------------------*/
+.row {
+  padding: 0;
+  height: 100%;
+}
+
+.icon {
+  height: 50%;
+}
+
+p {
+  padding: 0;
+  min-height: 5%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+  min-height: 5%;
+}
+
+h4:first-letter, p:first-letter {
+  text-transform: uppercase;
+}
+
 /*---------------------------  carousel  --------------------------------*/
 .carousel-item span {
   height: 736px;
@@ -41,48 +64,37 @@ h4:first-letter, p:first-letter {
 
 /*---------------------------  container1  --------------------------------*/
 #container1 {
-  margin: 0;
   padding: 0;
   height: 435px;
   background: linear-gradient(to bottom, rgba(225, 225, 255, 0) 25%, rgba(225, 225, 224, 0.25) 50%,
   rgba(225, 224, 224, 0.5) 75%, rgba(224, 224, 224, 0.75) 100%);
-  max-width: 100%;
 }
 
-#container1 .row {
-  margin: 0 10%;
+#container1_in {
   height: 100%;
 }
 
 #container1 .col-sm {
   margin: auto;
   height: 70%;
-  width: 26.6%;
   text-align: center;
   color: #E43D30;
 }
 
 #container1 .col-sm p {
   color: #706F6F;
-  width: 50%;
-  margin: 0 auto;
-  padding-top: 5%;
-  font-size: 1.1rem;
+  min-height: 5%;
+  max-height: 20%;
   height: fit-content;
 }
 
-#container1 img {
-  width: 30%;
-  height: 40%;
-  text-align: center;
+#container1 .col-sm img {
   padding-bottom: 5%;
   padding-top: 5%;
-  box-sizing: unset;
 }
 
 /*---------------------------  container2  --------------------------------*/
 #container2 {
-  margin: 0;
   padding: 0;
   height: 750px;
   background: linear-gradient(to bottom, rgba(225, 225, 255, 0) 25%, rgba(225, 225, 224, 0) 50%,
@@ -92,130 +104,107 @@ h4:first-letter, p:first-letter {
 
 #container2 .row {
   margin: 0 5%;
-  height: 100%;
-  max-width: 100%;
+  text-align: center;
 }
 
-#container2 h2 {
-  width: 100%;
-  max-width: 100%;
-  height: 5%;
-  text-align: center;
-  text-transform: uppercase;
-  color: #706F6F;
-  margin: 3.5% 0 1.5% 0;
+#container2 .col-bottom {
+  height: 80%;
+  margin-bottom: 5%;
+  padding: 0;
+}
+
+#container2 .col-top {
+  height: 15%;
   padding: 0;
 }
 
 #container2 .col-4, #container2 .col-8 {
-  height: 80%;
-  margin: 1% auto 0 auto;
-}
-
-#container2 .col-4 img {
-  height: 90%;
-  width: 100%;
-}
-
-/*---------------------------  container2.1  --------------------------------*/
-#container2\.1 {
-  width: 100%;
-  max-width: 100%;
-  height: 95%;
-  max-height: 100%;
-  padding-right: 0;
-}
-
-#container2\.1 .row {
-  margin: 0;
-  width: 100%;
+  padding: 0;
   height: 100%;
 }
 
-#container2\.1 .col {
+#container2 h1 {
+  text-transform: uppercase;
+  color: #706F6F;
+  margin: revert;
+}
+
+/*---------------------------  container2.1  --------------------------------*/
+#container2_sm {
+  padding: 0;
+}
+
+#container2_sm .col {
   background-color: rgb(244, 244, 244);
   padding: 2%;
-  width: 100%;
-  max-width: 48%;
-  max-height: 48%;
   height: 100%;
   color: #706F6F;
 }
 
-#container2\.1 #col1 {
+#container2_sm #col1 {
   margin-bottom: 1%;
   margin-right: 1%;
 }
 
-#container2\.1 #col2 {
+#col1, #col2, #col3, #col4 {
+  height: 48% !important;
+  text-align: left;
+}
+
+#container2_sm #col2 {
   margin-bottom: 1%;
   margin-left: 1%;
 }
 
-#container2\.1 #col3 {
+#container2_sm #col3 {
   margin-top: 1%;
   margin-right: 1%;
 }
 
-#container2\.1 #col4 {
+#container2_sm #col4 {
   margin-top: 1%;
   margin-left: 1%;
 }
 
-#container2\.1 .col h5 {
+#container2_sm .col h5 {
   color: #E43D30;
-  width: 60%;
+  width: 70%;
+  max-height: 30%;
+  margin-top: 5%;
+  min-height: 20%;
 }
 
-#container2\.1 img {
-  height: 25%;
-  width: 20%;
-  text-align: center;
-  padding-bottom: 3%;
-  padding-top: 5%;
-  box-sizing: unset;
-}
-
-#container2\.1 p {
-  width: 60%;
+#container2_sm p {
+  width: 70%;
+  max-height: 35%;
 }
 
 /*---------------------------  container3  --------------------------------*/
 #container3 {
-  margin: 0;
   padding: 0;
   height: 450px;
-  background: #E43D30;
-  max-width: 100%;
+  background: url("../../assets/images/container3_image.svg") right no-repeat, #E43D30;
 }
 
-#container3 .row {
+#container3_in {
   height: 100%;
-  width: 100%;
   color: white;
-  text-align: left;
+  padding: 0;
 }
 
-#container3 .col-6 {
-  margin: 0;
+#container3 .col {
   padding: 0;
   height: 100%;
 }
 
-#container3 .text {
-  margin: 20% 0;
-}
-
-#container3 h4 {
+#container3 h2 {
   width: 70%;
-  height: fit-content;
-  font-size: 2rem;
+  min-height: 20%;
 }
 
 #container3 p {
-  width: 80%;
   margin-bottom: 0;
-  font-size: 1.1rem;
+  min-height: 5%;
 }
 
 #container3 span {
@@ -226,113 +215,94 @@ h4:first-letter, p:first-letter {
 }
 
 #container3 button {
-  top: 40%;
-  right: 45%;
   height: 15%;
   background-color: transparent;
   border: 0.2rem solid white;
-  width: 25%;
+  width: 40%;
+  max-width: 40%;
+  min-width: 30%;
   position: absolute;
+  margin: 34%;
 }
 
-#container3 img {
-  height: 100%;
-  float: right;
+#container3 .text {
+  margin: 20% 0;
+  min-height: 50%;
 }
 
 /*---------------------------  container4  --------------------------------*/
 #container4 {
-  margin: 0;
   padding: 0;
   height: 435px;
   background: rgb(255, 255, 255);
-  max-width: 100%;
 }
 
-#container4 .row {
-  margin: 0 10%;
+#container4_in {
+  padding: 0;
   height: 100%;
 }
 
-#container4 .row h4 {
-  width: 100%;
-  max-width: 100%;
-  height: fit-content;
-  text-align: center;
-  text-transform: uppercase;
-  color: grey;
-  margin: 3.5% 0 1.5% 0;
-  padding: 0;
+#container4 .col-top {
+  height: 30%;
 }
 
-#container4 h3 {
-  margin: 0;
+#container4 .col-top, #container4 .col-bottom {
+  padding: 0;
+  width: 100%;
+  text-align: center;
+}
+
+#container4 .col-bottom {
+  height: 70%;
+}
+
+#container4 .col-top h1 {
+  text-transform: uppercase;
+  color: grey;
+  margin: revert;
 }
 
 #container4 .col-sm {
-  margin: 3% auto auto auto;
-  height: 80%;
-  width: 26.6%;
   text-align: center;
   color: #706F6F;
-}
-
-h4:first-letter, p:first-letter {
-  text-transform: uppercase;
 }
 
 #container4 .col-sm p {
   color: #706F6F;
-  width: 50%;
-  margin: 0 auto;
 }
 
-#container4 .icon img {
-  height: 30%;
-  width: 30%;
-  text-align: center;
-  padding-bottom: 5%;
-  padding-top: 5%;
-  box-sizing: unset;
+#container4 .icon {
+  height: 40%;
 }
 
 /*---------------------------  container5  --------------------------------*/
 #container5 {
-  margin: 0;
   padding: 0;
   height: 300px;
   background: #F6F6F6;
-  max-width: 100%;
 }
 
-#container5 .row {
+#container5_in {
   height: 100%;
-  width: 100%;
-  color: #706F6F;
   text-align: left;
-}
-
-#container5 .col-6 {
-  margin: 0;
   padding: 0;
+}
+
+#container5 .col {
   height: 100%;
+  padding: 0;
+  color: #706F6F;
 }
 
-#container5 .div-inside {
-  width: 100%;
-  height: fit-content;
-  margin: 15% 0;
-}
-
-#container5 h4 {
-  width: 100%;
-  height: fit-content;
-  font-size: 2rem;
+#container5 h2 {
+  width: 70%;
+  min-height: 5%;
 }
 
 #container5 p {
-  width: 50%;
-  font-size: 1.1rem;
+  margin-bottom: 0;
+  min-height: 5%;
+  width: 70%;
 }
 
 #container5 span {
@@ -345,19 +315,19 @@ h4:first-letter, p:first-letter {
 
 #container5 button {
   height: 15%;
-  top: 40%;
-  right: 45%;
+  min-height: 15%;
+  max-width: 40%;
+  min-width: 25%;
+  margin: 22% 37%;
   background-color: transparent;
   border: 0.2rem solid #E43D30;
   width: 25%;
   position: absolute;
 }
 
-#container5 img {
-  height: 100%;
-  width: auto;
-  float: right;
-  margin-right: 20%;
+#container5 .text {
+  margin: 15% 0;
+  min-height: 50%;
 }
 
 /*---------------------------  media  --------------------------------*/
@@ -383,42 +353,18 @@ h4:first-letter, p:first-letter {
     height: 550px;
   }
 
-  /*---------------------------  container2.1  --------------------------------*/
-  #container2\.1 .col h5 {
-    width: 85%;
+  /*---------------------------  container2_sm  --------------------------------*/
+  #container2_sm .col h5 {
+    width: auto;
   }
 
-  #h5_change {
-    width: 95% !Important;
-  }
-
-  #container2\.1 #col1 {
-    margin-bottom: 0.5%;
-    margin-right: 0.5%;
-  }
-
-  #container2\.1 #col2 {
-    margin-bottom: 0.5%;
-    margin-left: 0.5%;
-  }
-
-  #container2\.1 #col3 {
-    margin-top: 0.5%;
-    margin-right: 0.5%;
-  }
-
-  #container2\.1 #col4 {
-    margin-top: 0.5%;
-    margin-left: 0.5%;
+  #container2 .col-bottom #row1 {
+    margin: 0;
   }
 
   /*---------------------------  container3  --------------------------------*/
   #container3 {
     height: 300px;
-  }
-
-  #container3 h4 {
-    width: 90%;
   }
 
   /*---------------------------  container4  --------------------------------*/
@@ -429,14 +375,6 @@ h4:first-letter, p:first-letter {
   /*---------------------------  container5  --------------------------------*/
   #container5 {
     height: 200px;
-  }
-
-  #container5 p {
-    width: 70%;
-  }
-
-  #container5 img {
-    margin-right: 15%;
   }
 
 }

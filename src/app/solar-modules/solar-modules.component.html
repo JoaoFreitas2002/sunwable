@@ -1,38 +1,58 @@
-<div class="container" id="container1">
+<div class="container-fluid" id="container1">
   <div class="row">
-    <img src="assets/images/solar%20modules/solarModules.svg" alt="Solar Modules">
-    <div class="name_product"><h1>Solar Modules</h1></div>
+    <div class="col col-top">
+      <img src="assets/images/solar%20modules/solarModules.svg" alt="Solar Modules" width="30%"
+           height="30%" style="display: block;margin: 11% auto">
+    </div>
+    <div class="w-100" style="height: 0"></div>
+    <div class="col col-bottom">
+      <h1>Solar Modules</h1>
+    </div>
   </div>
 </div>
 <div class="container" id="container2">
   <div class="row">
-    <div class="col-4" *ngFor="let sm of solarModules">
-      <a routerLink="/product_detail"
-         [state]="{data: {data1: sm.id, data2: 'solarModules'}}">
-        <img class="img2" src="{{sm.image}}" alt="{{sm.name}}"></a>
-      <img class="img1" src="assets/images/solar%20modules/solarModules2.svg" alt="">
-      <h5>{{sm.name}}</h5>
-      <p>{{sm.resume}}</p>
-      <button routerLink="/product_detail"
-              [state]="{data: {data1: sm.id, data2: 'solarModules'}}"><span>+ Info</span>
-      </button>
+    <div class="col-sm-4" *ngFor="let sm of solarModules">
+      <div class="row" style="margin: 0;height: 100%">
+        <div class="col col-left float-left">
+          <div class="row">
+            <div class="col col-top">
+              <img class="img1" src="assets/images/solar%20modules/solarModules2.svg" alt=""
+                   width="30%" height="15%">
+              <h5 style="margin-top: 5%;min-height: 5%;color: #E43D30">{{sm.name}}</h5>
+              <p style="margin-top: 10%;min-height: 30%">{{sm.resume}}</p>
+            </div>
+            <div class="w-100" style="height: 0"></div>
+            <div class="col col-bottom">
+              <button routerLink="/product_detail" [state]="{data: {data1: sm.id, data2: 'solarModules'}}">
+                <span>+ Info</span></button>
+            </div>
+          </div>
+        </div>
+        <div class="col col-right float-right">
+          <img class="img2" style="cursor: pointer" src="{{sm.image}}"
+               alt="{{sm.name}}" width="100%"
+               height="100%" routerLink="/product_detail" [state]="{data: {data1: sm.id, data2: 'solarModules'}}">
+        </div>
+      </div>
     </div>
   </div>
 </div>
 <div class="container" id="container3">
-  <div class="row">
-    <div class="col-5" style="margin-left: 10%;padding: 0;height: 100%">
-      <div class="text">
-        <h4>we are not just a supplier, we are a partner!</h4>
-        <p>Increase your business with at SUNWABLE.</p>
-        <p>We have more than 10 years of experience and knowledge in the development of energy solutions.We invite you
-          to
-          be a part of it.</p>
+  <div class="container" id="container3_in">
+    <div class="row">
+      <div class="col">
+        <div class="text">
+          <h2>we are not just a supplier, we are a partner!</h2>
+          <p>Increase your business with at SUNWABLE.</p>
+          <p>We have more than 10 years of experience and knowledge in the development of energy solutions.We invite you
+            to
+            be a part of it.</p>
+        </div>
       </div>
-    </div>
-    <div class="col" style="padding: 0;height: 100%">
-      <button><span>become an installer</span></button>
-      <img src="assets/images/container3_image.svg" alt="">
+      <div class="col">
+        <button><span>become an installer</span></button>
+      </div>
     </div>
   </div>
 </div>

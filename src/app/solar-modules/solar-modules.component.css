@@ -1,106 +1,79 @@
 /*---------------------------  global  --------------------------------*/
+.row {
+  padding: 0;
+  height: 100%;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+h5 {
+  margin-bottom: 0;
+}
+
+.col-top {
+  height: 80%;
+}
+
+.col-bottom {
+  height: 20%;
+}
+
+.col-bottom, .col-left, .col-right {
+  padding: 0;
+}
+
+.col-bottom button {
+  color: white;
+  background-color: rgb(228, 61, 48);
+  border: 0;
+  width: 50%;
+  height: 50%;
+}
+
 /*---------------------------  container1  --------------------------------*/
 #container1 {
-  margin: 0;
   padding: 0;
-  width: 100%;
-  max-width: 100%;
   height: 500px;
   background: #E43D30;
 }
 
-#container1 .row {
-  height: 100%;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-}
-
-#container1 .row img {
-  height: 30%;
-  width: 30%;
-  padding: 0;
-  margin: 10% auto 0 auto;
-}
-
-#container1 .name_product {
-  width: 100%;
-  height: 15%;
-  padding: 0;
-  margin-top: 9.2%;
-  text-align: center;
-}
-
-#container1 .row h1 {
-  width: fit-content;
-  height: 100%;
+#container1 h1 {
+  margin: auto;
   font-size: 4rem;
-  margin: 0 auto;
+  width: fit-content;
   color: white;
   text-transform: uppercase;
+}
+
+#container1 .col-top {
+  height: 88%;
+}
+
+#container1 .col-bottom {
+  height: 12%;
 }
 
 /*---------------------------  container2  --------------------------------*/
 #container2 {
-  margin: 0;
+  height: 1100px;
   padding: 0;
-  height: fit-content;
   background: white;
-  max-width: 100%;
 }
 
-#container2 .row {
-  margin: 0 5%;
-  max-width: 100%;
-  height: 100%;
-  padding-bottom: 5%;
+#container2 .col-sm-4 {
+  height: 30%;
+  margin-top: 3.3%;
 }
 
-#container2 .col-4 {
-  height: fit-content;
-  padding-top: 5%;
+.col-right {
+  height: auto;
+  margin: auto;
 }
 
-#container2 .row .col-4 .img1 {
-  width: 10%;
+#container2 .col-top {
   padding: 0;
-  margin: 0;
-}
-
-#container2 .row .col-4 .img2 {
-  float: right;
-  width: 45%;
-  margin: -5% 5% 0 0;
-}
-
-#container2 .row .col-4 h5 {
-  width: 25%;
-  height: 10%;
-  padding: 0;
-  margin: 3% 0 0 0;
-  text-transform: uppercase;
-  color: #E43D30;
-}
-
-#container2 .row .col-4 p {
-  text-align: left;
-  width: 40%;
-  height: fit-content;
-  padding: 0;
-  margin: 0;
-}
-
-#container2 .row .col-4 button {
-  width: 20%;
-  height: 40px;
-  padding: 0;
-  margin: 25% 0 0 0;
-  background: #E43D30;
-  border: 0 solid white;
-}
-
-#container2 .row .col-4 button span {
-  color: white;
 }
 
 /*---------------------------  container3  --------------------------------*/
@@ -108,34 +81,29 @@
   margin: 0;
   padding: 0;
   height: 450px;
-  background: #E43D30;
   max-width: 100%;
+  background: url("../../assets/images/container3_image.svg") right no-repeat, #E43D30;
 }
 
-#container3 .row {
+#container3_in {
   height: 100%;
-  width: 100%;
   color: white;
-  text-align: left;
+  padding: 0;
 }
 
-#container3 .col-6 {
-  margin: 0;
+#container3 .col {
   padding: 0;
   height: 100%;
 }
 
-#container3 h4 {
+#container3 h2 {
   width: 70%;
-  height: 20%;
-  margin-top: 20%;
-  font-size: 2rem;
+  min-height: 20%;
 }
 
 #container3 p {
-  width: 78%;
   margin-bottom: 0;
-  font-size: 1.1rem;
+  min-height: 5%;
 }
 
 #container3 span {
@@ -146,19 +114,19 @@
 }
 
 #container3 button {
-  float: right;
   height: 15%;
-  margin: 25% 0 50% 30%;
   background-color: transparent;
   border: 0.2rem solid white;
-  width: 25%;
+  width: 40%;
+  max-width: 40%;
+  min-width: 30%;
   position: absolute;
+  margin: 34%;
 }
 
-#container3 img {
-  height: 100%;
-  float: right;
-  width: auto;
+#container3 .text {
+  margin: 20% 0;
+  min-height: 50%;
 }
 
 /*---------------------------  media  --------------------------------*/
@@ -166,43 +134,20 @@
 @media (min-width: 768px) and (max-width: 992px) {
   /*---------------------------  container1 --------------------------------*/
   #container1 {
-    height: 400px;
-  }
-
-  #container1 .name_product {
-    margin-top: 15.5%;
+    height: 350px;
   }
 
   #container1 .row img {
-    margin-top: 15%;
+    margin-top: 15% !important;
   }
 
   /*---------------------------  container2 --------------------------------*/
-  #container2 .row .col-4 .img1 {
-    width: 15%;
-  }
-
-  #container2 .row .col-4 p {
-    width: 100%;
-    font-size: 0.9rem;
-  }
-
-  #container2 .row .col-4 h5 {
-    font-size: 1rem;
-  }
-
-  #container2 .row .col-4 button {
-    margin-top: 5%;
-    height: 20px;
-    width: 45px;
+  #container2 {
+    height: 700px;
   }
 
   /*---------------------------  container3  --------------------------------*/
   #container3 {
     height: 300px;
-  }
-
-  #container3 h4 {
-    width: 90%;
   }
 }
