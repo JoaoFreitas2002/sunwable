@@ -1,53 +1,6 @@
 /*---------------------------  global  --------------------------------*/
-p, h1, h2, h3, h4, h5, h6 {
-  min-height: 5%;
-}
-
-p {
-  margin-bottom: 0;
-}
-
-/*---------------------------  my own  --------------------------------*/
-.collapseClass {
-  width: 30%;
-  height: 35%;
-  top: 0;
-  right: 0;
-  position: fixed;
-  background-color: #E43D30;
-}
-
-.collapseClass .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-  color: black;
-}
-
-.collapseUlClass {
-  margin-right: 5%;
+.row {
   height: 100%;
-  width: 100% !important;
-  padding-top: 20%;
-}
-
-.collapseUlClass2 {
-  float: right;
-  padding: 0;
-  margin: 0 0 0 -15% !important;
-  border: 0;
-}
-
-.collapseLiClass {
-  margin-right: 0;
-  float: right;
-}
-
-.img1ext {
-  margin: 5% !important;
-  height: 40% !important;
 }
 
 /*---------------------------  navbar  --------------------------------*/
@@ -55,21 +8,21 @@ nav {
   padding-top: 1rem;
   transition: 1000ms ease;
   background: transparent;
+  height: 90px;
 }
 
-.nv img {
-  height: 100%;
-  width: 50%;
-}
-
-.nav-link, .dropdown-item {
+nav a {
   text-transform: uppercase;
   color: white;
-  text-align: left;
+  text-align: center;
 }
 
-#company {
-  color: white;
+#navbar-nav li {
+  margin: auto;
+}
+
+#navbarNav, .dropdown-menu {
+  max-width: 50%;
 }
 
 .dropdown-item:hover {
@@ -81,159 +34,61 @@ nav {
   width: fit-content;
 }
 
-.navbar-nav {
-  margin-left: auto;
-  width: 55%;
-}
-
-.navbar-nav li {
-  margin: auto;
-  color: white;
-}
-
-.nav-link .img2 {
-  height: 6%;
-  width: 6%;
-  margin-right: 2%;
-}
-
-.nav-link .img1 {
-  height: 13%;
-  width: 13%;
-  float: right;
-  margin: 6% 15% 0 0;
-}
-
 .dropdown-menu {
   background-color: #E43D30;
-  display: none;
-  line-height: 1.5rem;
-  text-align: center;
 }
 
-#firstdrop:hover #dropdown1, #seconddrop:hover #dropdown2 {
+.dropdown:hover .dropdown-menu {
   display: block;
-}
-
-.navbar-toggler {
-  float: right;
+  margin-top: 0;
 }
 
 /*---------------------------  container2  --------------------------------*/
 #container2 {
-  background-color: white;
-  height: 390px;
-  padding: 0;
-  max-width: 100%;
+  height: 600px;
 }
 
-#container2_in {
-  padding: 0;
-  height: 100%;
-}
-
-#container2_in .col-4 {
-  margin: auto;
-  text-align: left;
-}
-
-#container2 .icons {
-  padding: 0;
-  margin-top: 10%;
-}
-
-#container2 .icons img {
-  margin-right: 2%;
+.social_media i {
+  color: #E43D30;
+  font-size: 2rem;
 }
 
 #container2 h6 {
-  margin-bottom: 5%;
   color: #E43D30;
-  text-transform: uppercase;
-  font-weight: bold;
 }
 
-#container2 p {
+#container2 p, #container2 a {
   color: #706F6F;
-  padding: 0;
-}
-
-#container2 a {
-  color: #706F6F;
-}
-
-#container2 .contact-info2 {
-  margin-top: 10%;
-}
-
-#container2 ul {
-  list-style-type: none;
-  padding: 0;
-  margin-left: 20%;
-}
-
-#container2 li {
-  padding: 0;
-  margin-bottom: 5%;
 }
 
 /*---------------------------  footer  --------------------------------*/
 #footer {
-  padding: 0;
-  margin: 0;
-  width: 100%;
-  max-width: 100%;
   height: 80px;
-  background: #E43D30;
+  background-color: #E43D30;
 }
 
-#footer .row {
-  padding: 0;
-  width: 80%;
-  margin: 0 10%;
-  height: 100%;
-}
-
-#footer h6 {
+#footer h6, #footer a {
   color: white;
-  padding: 0;
-  margin: 0;
-  display: inline-block;
-}
-
-#footer .copyright {
-  width: 60%;
   margin: auto;
-  padding: 0;
-  height: 30%;
-  text-align: center;
 }
 
 /*---------------------------  media  --------------------------------*/
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+
+  #container2 {
+    height: 400px;
+  }
+}
 
 /*Medium devices (tablets)*/
-@media (min-width: 768px) and (max-width: 992px) {
-  /*---------------------------  navbar  --------------------------------*/
-  #nav ul {
-    margin-right: 5%;
-    width: 25%;
-  }
+@media (min-width: 768px) {
+}
 
-  #nav ul li {
-    margin-right: 10%;
-  }
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+}
 
-  #dropdown1 li, #dropdown2 li {
-    margin-right: 0 !important;
-  }
-
-  #dropdown1 .dropdown-item, #dropdown2 .dropdown-item {
-    float: right;
-    padding: 0.2rem 0;
-  }
-
-  /*---------------------------  container2  --------------------------------*/
-  #container2 {
-    height: 290px;
-  }
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
 }

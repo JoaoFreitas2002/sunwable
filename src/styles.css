@@ -1,25 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+@import "assets/plugins/joaofreitas-0.1.0/config.css";
+
 /*---------------------------  global  --------------------------------*/
-body.modal-open {
-  padding-right: 0 !important;
+
+html {
+  background-color: white;
 }
 
-nav {
-  padding-right: 0 !important;
-}
-
-.modal-open {
-  overflow: inherit;
-}
-
-.row {
-  height: 100%;
-  margin: 0;
+ul {
+  list-style-type: none;
 }
 
 /*---------------------------  media  --------------------------------*/
-@media (min-width: 768px) and (max-width: 992px) {
-  html {
-    font-size: 12px !important;
-  }
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
 }
