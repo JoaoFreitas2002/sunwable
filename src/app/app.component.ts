@@ -14,22 +14,17 @@ export class AppComponent {
     translate.setDefaultLang('pt');
   }
 
-  closeButton = false;
-
-  StyleForCollapse() {
-    if (this.closeButton === true) {
-      document.getElementById('navbarNav').style.backgroundColor = 'transparent';
-      document.getElementById('pt').style.color = '#E43D30';
-      this.closeButton = false;
-    } else if (this.closeButton === false) {
-      document.getElementById('navbarNav').style.backgroundColor = '#E43D30';
-      document.getElementById('pt').style.color = 'black';
-      this.closeButton = true;
-    }
-  }
-
   @HostListener('window:scroll', [])
   OnWindowScroll() {
+    const number_width = window.screen.width;
+    if (number_width <= 992) {
+      document.getElementById('navbarNav').style.backgroundColor = '#E43D30';
+      document.getElementById('pt').style.color = 'black';
+    } else if (number_width > 992) {
+      document.getElementById('navbarNav').style.backgroundColor = 'transparent';
+      document.getElementById('pt').style.color = '#E43D30';
+    }
+
     // tslint:disable-next-line:variable-name
     const number = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
     if (number > 100) {

@@ -7,7 +7,12 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "deploy": "ng build --prod && firebase deploy"
+  },
+  "engines": {
+    "node": "14.15.0",
+    "npm": "6.14.8"
   },
   "private": true,
   "dependencies": {
@@ -23,9 +28,13 @@
     "@angular/router": "~11.0.1",
     "@ngx-translate/core": "^13.0.0",
     "@ngx-translate/http-loader": "^6.0.0",
+    "bootstrap": "^4.6.0",
+    "bootstrap-icons": "^1.4.1",
+    "jquery": "^3.6.0",
     "ngx-countup": "^7.3.3",
     "rxjs": "^6.6.3",
     "tslib": "^2.0.0",
+    "typescript": "^4.0.2",
     "zone.js": "~0.10.2"
   },
   "devDependencies": {
@@ -44,7 +53,6 @@
     "karma-jasmine-html-reporter": "^1.5.0",
     "protractor": "~7.0.0",
     "ts-node": "~8.3.0",
-    "tslint": "~6.1.0",
-    "typescript": "~4.0.2"
+    "tslint": "~6.1.0"
   }
 }

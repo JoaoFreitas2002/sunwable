@@ -21,10 +21,6 @@ nav a {
   margin: auto;
 }
 
-#navbarNav, .dropdown-menu {
-  max-width: 50%;
-}
-
 .dropdown-item:hover {
   background-color: #C83D30;
 }
@@ -73,6 +69,13 @@ nav a {
 }
 
 /*---------------------------  media  --------------------------------*/
+/*my own*/
+@media (max-width: 1023px) {
+  #navbarNav, .dropdown-menu {
+    max-width: 50%;
+  }
+}
+
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
 
@@ -87,6 +90,11 @@ nav a {
 
 /*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
+  .dropdown-toggle::after {
+    border-top: .4em solid;
+    border-right: .4em solid transparent;
+    border-left: .4em solid transparent;
+  }
 }
 
 /*Extra large devices (large desktops, 1200px and up)*/

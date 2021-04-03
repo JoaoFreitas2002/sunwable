@@ -1,81 +1,81 @@
-<div class="container-full" id="carousel">
-  <div id="carouselControls" class="carousel slide carousel-fade" data-ride="carousel"
-       data-interval="3500" data-keyboard="false" data-pause="false">
-    <div class="carousel-inner text-center">
-      <div class="carousel-item" *ngFor="let carousel of carousel; let first = first"
-           [class.active]="first" [ngStyle]="{'background': 'linear-gradient(to bottom, rgba(0, 0, 0, 0.9) 10%, rgba(0, 0, 0, 0.70) 40%,\n'+
+<div id="carouselControls" class="carousel slide carousel-fade" data-ride="carousel"
+     data-interval="3500" data-keyboard="false" data-pause="false">
+  <div class="carousel-inner text-center">
+    <div class="carousel-item" *ngFor="let carousel of carousel; let first = first"
+         [class.active]="first" [ngStyle]="{'background': 'linear-gradient(to bottom, rgba(0, 0, 0, 0.9) 10%, rgba(0, 0, 0, 0.70) 40%,\n'+
 'rgba(0, 0, 0, 0.50) 60%, rgba(0, 0, 0, 0.30) 80%, rgba(0, 0, 0, 0) 100%), url(' + carousel.image + ') no-repeat center center', 'background-size': 'cover'}">
-        <div class="d-flex h-100 align-items-center justify-content-center text-white">
-          <div style="width: 80%;margin: auto">
-            <h3 class="text-uppercase">{{carousel.imageTitle}}</h3>
-            <p class="text-uppercase">{{carousel.imageCaption}}</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <a class="carousel-control-prev w-10" href="#carouselControls" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next w-10" href="#carouselControls" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
-</div>
-<div class="container-full text-center" id="container1-full">
-  <div class="container-lg h-100" id="container1">
-    <div class="row row-cols-1 row-cols-sm-3">
-      <div class="col pt-3 py-sm-5">
-        <div class="row row-cols-1">
-          <div class="col col-top">
-            <img src="{{apresentation.missionImage}}" alt="" height="100%" width="auto">
-          </div>
-          <div class="col col-bottom">
-            <h3>mission</h3>
-            <p>{{apresentation.mission}}</p>
-          </div>
-        </div>
-      </div>
-      <div class="col pt-3 py-sm-5">
-        <div class="row row-cols-1">
-          <div class="col col-top">
-            <img src="{{apresentation.focusImage}}" alt="" width="auto" height="100%">
-          </div>
-          <div class="col col-bottom">
-            <h3>focus</h3>
-            <p>{{apresentation.focus}}</p>
-          </div>
-        </div>
-      </div>
-      <div class="col pt-3 py-sm-5">
-        <div class="row row-cols-1">
-          <div class="col col-top">
-            <img src="{{apresentation.whyUsImage}}" alt="" width="auto" height="100%">
-          </div>
-          <div class="col col-bottom">
-            <h3>why Us</h3>
-            <p>{{apresentation.whyUs}}</p>
-          </div>
+      <div class="d-flex h-100 align-items-center justify-content-center text-white">
+        <div style="width: 80%;margin: auto">
+          <h3 class="text-uppercase">{{carousel.imageTitle}}</h3>
+          <p class="text-uppercase">{{carousel.imageCaption}}</p>
         </div>
       </div>
     </div>
   </div>
+  <a class="carousel-control-prev w-10" href="#carouselControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next w-10" href="#carouselControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
 </div>
-<div class="container-full" id="container2-full">
-  <div class="container-lg h-100" id="container2">
+<div class="container-fluid text-center container1-apresen">
+  <div class="row">
+    <div class="col-lg h-100 container1">
+      <div class="row row-cols-1 row-cols-sm-3 row-tr-3 row-tr-sm-1">
+        <div class="col">
+          <div class="row row-cols-1">
+            <div class="col h-30 h-sm-25 mt-auto">
+              <img src="{{apresentation.missionImage}}" alt="" height="100%" width="auto">
+            </div>
+            <div class="col h-30 h-sm-35 mb-auto">
+              <h3>mission</h3>
+              <p>{{apresentation.mission}}</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="row row-cols-1">
+            <div class="col h-30 h-sm-25 mt-auto">
+              <img src="{{apresentation.focusImage}}" alt="" width="auto" height="100%">
+            </div>
+            <div class="col h-30 h-sm-35 mb-auto">
+              <h3>focus</h3>
+              <p>{{apresentation.focus}}</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="row row-cols-1">
+            <div class="col h-30 h-sm-25 mt-auto">
+              <img src="{{apresentation.whyUsImage}}" alt="" width="auto" height="100%">
+            </div>
+            <div class="col h-30 h-sm-35 mb-auto">
+              <h3>why Us</h3>
+              <p>{{apresentation.whyUs}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container-fluid container2-charac">
+  <div class="container-lg h-100 container2">
     <div class="row row-cols-1">
       <div class="col h-15 d-flex justify-content-center">
         <h3 class="text-uppercase m-auto">photovoltaic high performance modules</h3>
       </div>
       <div class="col h-85 text-left pb-3">
-        <div class="row row-cols-1 row-cols-lg-2">
+        <div class="row row-cols-1 row-cols-lg-2 no-gutters">
           <div class="col col-img col-lg-4 d-none d-md-block">
             <img src="{{characteristic.image}}" alt="" width="100%" height="100%">
           </div>
           <div class="col col-container col-lg-8">
-            <div class="row row-cols-1 row-cols-sm-2" id="container2-1">
-              <div class="col w-auto" id="col1">
+            <div class="row row-cols-1 row-cols-sm-2 container2-1">
+              <div class="col col-charac">
                 <div class="row row-cols-1">
                   <div class="col h-20">
                     <img class="pt-1" src="{{characteristic.panelImage}}" alt="" width="auto" height="100%">
@@ -86,7 +86,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col w-auto" id="col2">
+              <div class="col col-charac">
                 <div class="row row-cols-1">
                   <div class="col h-20">
                     <img class="pt-1" src="{{characteristic.chargeImage}}" alt="" width="auto" height="100%">
@@ -97,7 +97,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col w-auto" id="col3">
+              <div class="col col-charac">
                 <div class="row row-cols-1">
                   <div class="col h-20">
                     <img class="pt-1" src="{{characteristic.selectionImage}}" alt="" width="auto" height="100%">
@@ -108,7 +108,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col w-auto" id="col4">
+              <div class="col col-charac">
                 <div class="row row-cols-1">
                   <div class="col h-20">
                     <img class="pt-1" src="{{characteristic.warrantyImage}}" alt="" width="auto" height="100%">
@@ -126,8 +126,8 @@
     </div>
   </div>
 </div>
-<div class="container-full" id="container3-full">
-  <div class="container-lg h-100" id="container3">
+<div class="container-fluid container3-becomeInstaller">
+  <div class="container-lg h-100 container3">
     <div class="row row-cols-2 text-white">
       <div class="col h-100 d-flex">
         <div class="text m-auto text-left">
@@ -144,41 +144,41 @@
     </div>
   </div>
 </div>
-<div class="container-lg" id="container4">
+<div class="container-lg container4">
   <div class="row row-cols-1 text-center">
-    <div class="col h-15 d-flex justify-content-center">
+    <div class="col h-15 h-sm-20 d-flex justify-content-center">
       <h1 class="text-uppercase m-auto">our numbers</h1>
     </div>
-    <div class="col h-85">
-      <div class="row row-cols-1 row-cols-sm-3">
-        <div class="col pt-3 pt-sm-5">
+    <div class="col h-85 h-sm-80">
+      <div class="row row-cols-1 row-tr-3 row-cols-sm-3 row-tr-sm-1">
+        <div class="col">
           <div class="row row-cols-1">
-            <div class="col col-top">
+            <div class="col h-30 h-sm-25 mt-auto">
               <img src="{{ourNumbers.wattsImage}}" alt="" width="auto" height="100%">
             </div>
-            <div class="col col-bottom">
+            <div class="col h-30 h-sm-35 mb-auto">
               <h3 [countUp]="ourNumbers.watts" [options]="options2"></h3>
               <p>installed watts</p>
             </div>
           </div>
         </div>
-        <div class="col pt-3 pt-sm-5">
+        <div class="col">
           <div class="row row-cols-1">
-            <div class="col col-top">
+            <div class="col h-30 h-sm-25 mt-auto">
               <img src="{{ourNumbers.projectsImage}}" alt="" width="auto" height="100%">
             </div>
-            <div class="col col-bottom">
+            <div class="col h-30 h-sm-35 mb-auto">
               <h3 [countUp]="ourNumbers.projects" [options]="options"></h3>
               <p>completed projects</p>
             </div>
           </div>
         </div>
-        <div class="col pt-3 pt-sm-5">
+        <div class="col">
           <div class="row row-cols-1">
-            <div class="col col-top">
+            <div class="col h-30 h-sm-25 mt-auto">
               <img src="{{ourNumbers.clientsImage}}" alt="" width="auto" height="100%">
             </div>
-            <div class="col col-bottom">
+            <div class="col h-30 h-sm-35 mb-auto">
               <h3><span [countUp]="ourNumbers.clients"
                         [options]="options"></span> %</h3>
               <p>satisfied customers</p>
@@ -189,8 +189,8 @@
     </div>
   </div>
 </div>
-<div class="container-full" id="container5-full">
-  <div class="container-lg h-100" id="container5">
+<div class="container-fluid container5-contact">
+  <div class="container-lg h-100 container5">
     <div class="row row-cols-2 text-left">
       <div class="col h-100 d-flex justify-content-center">
         <div class="text-left m-auto text">

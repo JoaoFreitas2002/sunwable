@@ -1,17 +1,34 @@
 /* You can add global styles to this file, and also import other style files */
 @import "assets/plugins/joaofreitas-0.1.0/config.css";
+@import "~bootstrap-icons/font/bootstrap-icons.css";
 
-/*---------------------------  global  --------------------------------*/
+/*---------------------------  GLOBAL  --------------------------------*/
+/*---------------------------  GLOBAL  --------------------------------*/
+/*---------------------------  GLOBAL  --------------------------------*/
 
 html {
   background-color: white;
+}
+
+.row {
+  height: 100%;
+}
+
+h4:first-letter, p:first-letter {
+  text-transform: uppercase;
+}
+
+.margintop-90 {
+  margin-top: 90px;
 }
 
 ul {
   list-style-type: none;
 }
 
-/*---------------------------  media  --------------------------------*/
+/*---------------------------  MEDIA  --------------------------------*/
+/*---------------------------  MEDIA  --------------------------------*/
+/*---------------------------  MEDIA  --------------------------------*/
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
 }

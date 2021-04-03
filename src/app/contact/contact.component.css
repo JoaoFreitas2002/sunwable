@@ -1,17 +1,10 @@
-/*---------------------------  container1  --------------------------------*/
-#container1 {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  max-width: 100%;
-  height: 500px;
+.row {
+  height: 100%;
 }
 
-#container1 .row {
-  height: 100%;
-  width: 100%;
-  padding: 0;
-  margin: 0;
+/*---------------------------  container1  --------------------------------*/
+#container1 {
+  height: 350px;
 }
 
 .mapouter {
@@ -37,35 +30,13 @@
 
 /*---------------------------  container2  --------------------------------*/
 #container2 {
-  margin: 0;
-  padding: 0;
-  height: 1000px;
+  height: 1700px;
   background: white;
-  max-width: 100%;
-}
-
-#container2 .row {
-  margin: 5% 10% 0 10%;
-  height: 100%;
-}
-
-#container2 .col-4 {
-  padding: 0;
-  height: 100%;
   color: #706F6F;
 }
 
-#container2 .col-8 {
-  height: 100%;
-  color: #706F6F;
-  padding: 0 0 0 15%;
-  margin-top: 2.5%;
-}
-
-#container2 label, #container2 p {
-  font-weight: 400;
-  font-size: 1rem;
-  margin: 2% 0 0 0;
+#container2 .col-md-5, #container2 .col-md-7 {
+  height: 50%;
 }
 
 #container2 input, #container2 textarea {
@@ -76,40 +47,47 @@
   color: #E43D30;
 }
 
-#container2 .escritorio h5, #container2 .horario_atendimento {
-  margin: 20% 0 0 0;
+#container2 .btn {
+  background-color: #E43D30;
+  border: 0.2rem solid #E43D30;
+  width: 20%;
+  height: 20%;
 }
 
-#container2 .col-8 h2 {
-  margin: 13% 0 0 0;
-}
-
-#container2 .coordenadas {
-  margin: 10% 0 0 0;
-}
-
-#container2 p {
-  margin: 0;
-}
-
-#container2 .p1 {
-  margin-top: 10%;
-}
-
-#container2 span {
-  text-transform: uppercase;
-}
-
-#container2 form {
-  height: 80%;
+#container2 .btn span {
+  color: white;
 }
 
 
 /*---------------------------  media  --------------------------------*/
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+}
+
 /*Medium devices (tablets)*/
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 768px) {
+
   /*---------------------------  container2  --------------------------------*/
   #container2 {
-    height: 700px;
+    height: 1100px;
   }
+
+
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+  /*---------------------------  container1  --------------------------------*/
+  #container1 {
+    height: 500px;
+  }
+
+  #container2 .col-md-5, #container2 .col-md-7 {
+    height: 100%;
+  }
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
 }

@@ -1,226 +1,184 @@
 /*---------------------------  global  --------------------------------*/
-
-.carousel, .carousel-inner, .carousel-item {
-  height: 100%;
+.max-h-50 {
+  max-height: 50%;
 }
 
-hr {
-  height: 0.1%;
-  background-color: rgb(228, 61, 48);
-  width: 100%;
-  margin: 0;
-}
-
-.btn .form_btn {
-  width: 30%;
-  height: 50%;
-  background-color: rgb(228, 61, 48);
-  border: 0;
-  color: white;
-  padding: 0;
-}
-
-.carousel-control-next-icon, .carousel-control-prev-icon {
-  width: 100%;
-}
-
-.carousel-control-next-icon {
-  background-image: url("../../assets/arrows/carousel-arrow.svg") !important;
-}
-
-.carousel-control-prev-icon {
-  background-image: url("../../assets/arrows/carousel-arrow-2.svg") !important;
-}
-
-.carousel-inner {
-  margin: auto;
-  width: 94%;
-}
-
-.col-sm-4 .col {
-  padding: 0;
-}
-
-p {
-  margin-bottom: 0;
-}
-
-h5 {
-  margin-bottom: 0;
-}
-
-#container1, #container2, #container4, #container5 {
-  padding: 0;
-}
-
-#container1 .col, #container4 .col {
-  padding: 0;
-  height: 100%;
-}
-
-#container1 .col-top h1, #container4 .col h1 {
-  color: #E43D30;
-  min-height: 5%;
-}
-
-#container1 .col-bottom .col p, #container4 .col p {
-  margin: 2% 0 0 0;
-  min-height: 6rem;
-}
-
-.btn {
-  margin-top: 10%;
-  height: 10%;
-  padding: 0;
-  width: 100%;
-}
-
-#container2 .carousel-control-prev, #container2 .carousel-control-next, #container5 .carousel-control-prev, #container5 .carousel-control-next {
-  width: 3%;
-  height: 20%;
-  margin: auto;
-  opacity: 1;
-}
-
-#container1 .col-left .col-top, #container5 .col-left .col-top {
-  height: 60%;
-}
-
-#container1 .col-left .col-bottom, #container5 .col-left .col-bottom {
-  height: 40%;
-}
-
-#container2 .col-bottom button, #container5 .col-bottom button {
-  color: white;
-  background-color: rgb(228, 61, 48);
-  border: 0;
-  width: 50%;
-  height: 50%;
-}
-
-/*---------------------------  container0  --------------------------------*/
-#container0 {
-  height: 1500px;
-  padding: 0;
-  width: 100%;
-  margin: 10% auto 0 auto;
+.max-h-90 {
+  max-height: 95%;
 }
 
 /*---------------------------  container1  --------------------------------*/
-#container1 {
-  height: 70%;
+.container-detail {
+  height: 2250px;
 }
 
-#container1 .col-bottom .col {
-  background-color: #F4F4F4;
-  padding: 2%;
-  color: #706F6F;
+.col-info,
+.col-text {
+  height: 60%;
 }
 
-/*---------------------------  container2  --------------------------------*/
-#container2 {
-  height: 20%;
-  margin-top: 6.5%;
+.col-img,
+.col-img-detail,
+.col-detail {
+  height: 40%;
 }
 
-/*---------------------------  container3  --------------------------------*/
-#container3 {
-  height: 1000px;
-  padding: 0;
+.col-first {
+  height: 80%;
+}
+
+.col-align-center {
+  height: 5px;
+  background-color: #E43D30;
+  border: 0.2rem solid #E43D30;
+  border-radius: 50px;
+  margin: auto;
+}
+
+.align-self-end h6 {
+  color: #E43D30;
+}
+
+.col-align-last {
+  height: 19%;
+}
+
+.col-left button {
+  border: 0.2rem solid #E43D30;
+  background-color: #E43D30;
+  color: white;
+  width: 50%;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  opacity: 100%;
   width: 100%;
-  margin: 10% auto 0 auto;
 }
 
-/*---------------------------  container4  --------------------------------*/
-#container4 {
-  height: 60%;
+.carousel-control-next {
+  padding-right: 15px;
 }
 
-#container4 .form_btn {
-  height: 60%;
+.carousel-control-prev {
+  padding-left: 15px;
 }
 
-#container4 .col p {
-  min-height: 5%;
+.col-top {
+  height: 20%;
 }
 
-/*---------------------------  container5  --------------------------------*/
-#container5 {
-  height: 30%;
-  margin-top: 6.5%;
+.col-bottom {
+  height: 80%;
 }
 
-#container5 .col-bottom button {
-  height: 30%;
+.carousel-arrow {
+  color: #E43D30;
+  font-size: 3rem;
+}
+
+h1, .potencia {
+  color: #E43D30;
+}
+
+.p {
+  font-size: 1.2rem;
+}
+
+.col-detail p {
+  color: #706f6f;
+}
+
+.col-col-detail {
+  background-color: #f4f4f4;
+  max-width: 49%;
+  max-height: 48%;
+}
+
+.form_btn {
+  background-color: #E43D30;
+  color: white;
+  border: 0.2rem solid #E43D30;
+  width: 30%;
+  height: 50%;
 }
 
 /*---------------------------  container6  --------------------------------*/
-#container6 {
-  margin: 0;
-  padding: 0;
-  height: 450px;
-  max-width: 100%;
+#container6-full {
+  height: 350px;
   background: url("../../assets/images/container3_image.svg") right no-repeat, #E43D30;
 }
 
-#container6_in {
-  height: 100%;
-  color: white;
-  padding: 0;
-}
-
-#container6 .col {
-  padding: 0;
-  height: 100%;
-}
-
-#container6 h2 {
-  width: 70%;
-  min-height: 20%;
-}
-
-#container6 p {
-  margin-bottom: 0;
-  min-height: 5%;
-}
-
-#container6 span {
-  background-color: transparent;
-  font-size: 1.15rem;
-  color: white;
-  padding: 0;
-}
-
-#container6 button {
-  height: 15%;
-  background-color: transparent;
+#container6 .btn {
+  width: 45%;
+  height: 30%;
   border: 0.2rem solid white;
-  width: 40%;
-  max-width: 40%;
-  min-width: 30%;
-  position: absolute;
-  margin: 34%;
-}
-
-#container6 .text {
-  margin: 20% 0;
-  min-height: 50%;
+  top: 35%;
 }
 
 /*---------------------------  media  --------------------------------*/
-@media (min-width: 768px) and (max-width: 992px) {
-  /*---------------------------  container0  --------------------------------*/
-  #container0 {
-    height: 1100px;
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+  /*---------------------------  container1  --------------------------------*/
+  .container-detail {
+    height: 2250px;
   }
 
-  /*---------------------------  container3  --------------------------------*/
-  #container3 {
-    height: 900px;
+  .p {
+    font-size: 1.4rem;
   }
 
   /*---------------------------  container6  --------------------------------*/
-  #container6 {
-    height: 300px;
+  #container6 .btn {
+    width: auto;
+    height: auto;
+    top: 45%;
+  }
+
+}
+
+/*Medium devices (tablets)*/
+@media (min-width: 768px) {
+  /*---------------------------  container1  --------------------------------*/
+  .container-detail {
+    height: 1350px;
+  }
+
+  .col-img-detail,
+  .col-info {
+    height: 100%;
+  }
+
+  .p {
+    font-size: 1.2rem;
+  }
+
+  .form_btn {
+    height: 30%;
+  }
+
+  .col-top {
+    height: 10%;
+  }
+
+  .col-bottom {
+    height: 90%;
+  }
+
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+  /*---------------------------  container6  --------------------------------*/
+  #container6-full {
+    height: 450px;
+  }
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+  /*---------------------------  container1  --------------------------------*/
+  .container-detail {
+    height: 1500px;
   }
 }

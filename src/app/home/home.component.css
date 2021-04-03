@@ -1,21 +1,14 @@
-/*---------------------------  global  --------------------------------*/
-h4:first-letter, p:first-letter {
-  text-transform: uppercase;
-}
+/*---------------------------  GLOBAL  --------------------------------*/
+/*---------------------------  GLOBAL  --------------------------------*/
+/*---------------------------  GLOBAL  --------------------------------*/
 
-.text {
-  height: fit-content;
-}
 
-.row {
-  height: 100%;
-}
+/*---------------------------  COMPONENTS  --------------------------------*/
+/*---------------------------  COMPONENTS  --------------------------------*/
+/*---------------------------  COMPONENTS  --------------------------------*/
 
-.col {
-  height: 33%;
-}
-
-/*---------------------------  carousel  --------------------------------*/
+/*---------------------------  CAROUSEL  --------------------------------*/
+/*---------------------------  CAROUSEL  --------------------------------*/
 .carousel-item {
   height: 500px;
 }
@@ -31,133 +24,135 @@ h4:first-letter, p:first-letter {
   width: 20px;
   height: 40px;
 }
-
-/*---------------------------  container1  --------------------------------*/
-#container1-full {
+/*---------------------------  CONTAINER1  --------------------------------*/
+/*---------------------------  CONTAINER1  --------------------------------*/
+.container1-apresen {
   height: 700px;
   background: linear-gradient(to bottom, rgba(225, 225, 255, 0) 25%, rgba(225, 225, 224, 0.25) 50%,
   rgba(225, 224, 224, 0.5) 75%, rgba(224, 224, 224, 0.75) 100%);
   color: #E43D30;
 }
 
-#container1 .col p {
+.container1 p {
   color: #706F6F;
 }
 
-/*---------------------------  container2  --------------------------------*/
-#container2-full {
+/*---------------------------  CONTAINER2  --------------------------------*/
+/*---------------------------  CONTAINER2  --------------------------------*/
+.container2-charac {
   height: 1050px;
   background: linear-gradient(to bottom, rgba(225, 225, 255, 0) 25%, rgba(225, 225, 224, 0) 50%,
   rgba(225, 224, 224, 0.25) 75%, rgba(224, 224, 224, 0.50) 100%);
   color: #706F6F;
 }
 
-#container2-1 h5 {
+.container2-1 h5 {
   color: #E43D30;
 }
 
-#col1, #col2, #col3, #col4 {
+.col-charac {
   background-color: #f4f4f4;
   height: 24%;
   margin: auto;
 }
 
-#container2 .col-img {
+.col-img {
   height: 25%;
 }
 
-#container2 .col-container {
+.col-container {
   height: 100%;
 }
 
-/*---------------------------  container3  --------------------------------*/
-#container3-full {
+/*---------------------------  CONTAINER3  --------------------------------*/
+/*---------------------------  CONTAINER3  --------------------------------*/
+.container3-becomeInstaller {
   height: 350px;
   background: url("../../assets/images/container3_image.svg") right no-repeat, #E43D30;
 }
 
-#container3 .btn {
-  width: 45%;
+.container3 .btn {
+  width: 50%;
   height: 30%;
   border: 0.2rem solid white;
   top: 35%;
 }
 
-/*---------------------------  container4  --------------------------------*/
-#container4 {
+.text {
+  height: fit-content;
+}
+
+/*---------------------------  CONTAINER4  --------------------------------*/
+/*---------------------------  CONTAINER4  --------------------------------*/
+.container4 {
   height: 700px;
   color: #706F6F;
 }
 
-/*---------------------------  container5  --------------------------------*/
-#container5-full {
+/*---------------------------  CONTAINER5  --------------------------------*/
+/*---------------------------  CONTAINER5  --------------------------------*/
+.container5-contact {
   height: 200px;
   background: #F6F6F6;
 }
 
-#container5 span {
+.container5 span {
   color: #E43D30;
 }
 
-#container5 button {
+.container5 .btn {
   border: 0.2rem solid #E43D30;
   width: 40%;
   height: 20%;
   top: 40%;
 }
 
-/*---------------------------  media  --------------------------------*/
+
+/*---------------------------  MEDIA  --------------------------------*/
+/*---------------------------  MEDIA  --------------------------------*/
+/*---------------------------  MEDIA  --------------------------------*/
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
-  /*---------------------------  global  --------------------------------*/
-  #container1 .col, #container4 .h-85 .col {
-    height: 100%;
-  }
 
-  #container1-full, #container4 {
+  .container1-apresen, .container4 {
     height: 300px;
   }
 
-  /*---------------------------  container2  --------------------------------*/
-  #container2-full {
+  .container2-charac {
     height: 700px;
   }
 
-  #col1, #col2, #col3, #col4 {
+  .col-charac {
     max-width: 49%;
     height: 49%;
   }
 
-  #container3 .btn {
+  .container3 .btn {
     width: auto;
     height: auto;
     top: 45%;
   }
 
-  /*---------------------------  container5  --------------------------------*/
-  #container5-full {
+  .container5-contact {
     height: 300px;
   }
 }
 
 /*Medium devices (tablets)*/
 @media (min-width: 768px) {
-  /*---------------------------  carousel  --------------------------------*/
   .carousel-item {
     height: 600px;
   }
 
-  /*---------------------------  container2  --------------------------------*/
-  #container2-full {
+  .container2-charac {
     height: 1050px;
   }
 
-  #container2 .col-container {
+  .col-container {
     height: 70%;
   }
 
-  /*---------------------------  container4  --------------------------------*/
-  #container4 span {
+  .container4 span {
     font-size: 2rem;
   }
 
@@ -165,32 +160,28 @@ h4:first-letter, p:first-letter {
 
 /*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
-  /*---------------------------  global  --------------------------------*/
-  #container1-full, #container4 {
+  .container1-apresen, .container4 {
     height: 435px;
   }
 
-  /*---------------------------  carousel  --------------------------------*/
   .carousel-item {
     height: 736px;
   }
 
-  /*---------------------------  container2  --------------------------------*/
-  #container2-full {
+  .container2-charac {
     height: 750px;
   }
 
-  #container2 .col-img, #container2 .col-container {
+  .col-img,
+  .col-container {
     height: 100%;
   }
 
-  /*---------------------------  container3  --------------------------------*/
-  #container3-full {
+  .container3-becomeInstaller {
     height: 450px;
   }
 
-  /*---------------------------  container5  --------------------------------*/
-  #container5-full {
+  .container5-contact {
     height: 300px;
   }
 }
@@ -198,4 +189,3 @@ h4:first-letter, p:first-letter {
 /*Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
 }
-

@@ -1,59 +1,83 @@
-<div class="container" id="container0" *ngIf="productType === 'solarModules'">
-  <div class="container" id="container1">
-    <div class="row">
-      <div class="col float-left col-left">
-        <div class="row">
-          <div class="col col-top">
-            <img class="img1" src="assets/images/solar%20modules/solarModules2.svg" alt="Solar Modules" width="20%"
-                 height="15%">
-            <h1>{{solarModule.name}}</h1>
-            <p style="min-height: 5%;font-size: 1.5rem;margin-bottom: 15%">{{solarModule.resume}}</p>
-            <p style="color: #E43D30;font-size: 1.2rem;min-height: 5%">
-              <span>POTÊNCIA: </span>{{solarModule.power}}
-            </p>
-            <p style="overflow:auto;font-size: 1.1rem;min-height: 30%">
-              {{solarModule.description}}</p>
-          </div>
-          <div class="w-100" style="height: 0"></div>
-          <div class="col col-bottom">
-            <div class="container-sm" style="padding: 0">
-              <div class="row">
-                <div class="col" style="margin-right: 1%;margin-bottom: 1%">
-                  <img src="assets/images/icons/container2.1/col_1.svg" alt="" height="40%" width="20%">
-                  <p>{{solarModule.panel}}</p>
+<div class="container-xl container-detail margintop-90" *ngIf="productType === 'solarModules'">
+  <div class="row row-cols-1">
+    <div class="col order-first col-first">
+      <div class="row row-cols-1 row-cols-md-2">
+        <div class="col order-last order-md-first col-info">
+          <div class="row row-cols-1 d-flex">
+            <div class="col pt-3 pt-md-5 col-text">
+              <img src="assets/images/solar%20modules/solarModules2.svg" alt="" width="auto"
+                   height="8%">
+              <h1 class="mt-1" id="h1">{{solarModule.name}}</h1>
+              <p class="mb-5 p">{{solarModule.resume}}</p>
+              <p class="m-0 p potencia"><span>POTÊNCIA: </span>{{solarModule.power}}</p>
+              <p class="overflow-auto p max-h-50">{{solarModule.description}}</p>
+            </div>
+            <div class="col-md pt-3 col-detail">
+              <div class="row row-cols-1 row-cols-sm-2">
+                <div class="col mr-auto col-col-detail">
+                  <div class="row row-cols-1">
+                    <div class="col col-img">
+                      <img class="py-2" src="{{characteristic.panelImage}}" alt="" height="80%" width="auto">
+                    </div>
+                    <div class="col col-text">
+                      <p class="overflow-auto p max-h-90">{{solarModule.panel}}</p>
+                    </div>
+                  </div>
                 </div>
-                <div class="col" style="margin-left: 1%;margin-bottom: 1%">
-                  <img src="assets/images/icons/container2.1/col_2.svg" alt="" height="40%" width="20%">
-                  <p>{{solarModule.charge}}</p>
+                <div class="col ml-auto col-col-detail">
+                  <div class="row row-cols-1">
+                    <div class="col col-img">
+                      <img class="py-2" src="{{characteristic.chargeImage}}" alt="" height="80%" width="auto">
+                    </div>
+                    <div class="col col-text">
+                      <p class="overflow-auto p max-h-90">{{solarModule.charge}}</p>
+                    </div>
+                  </div>
                 </div>
-                <div class="w-100" style="height: 0"></div>
-                <div class="col" style="margin-right: 1%;margin-top: 1%">
-                  <img src="assets/images/icons/container2.1/col_3.svg" alt="" height="40%" width="20%">
-                  <p>{{solarModule.selection}}</p>
+                <div class="col mr-auto col-col-detail">
+                  <div class="row row-cols-1">
+                    <div class="col col-img">
+                      <img class="py-2" src="{{characteristic.selectionImage}}" alt="" height="80%" width="auto">
+                    </div>
+                    <div class="col col-text">
+                      <p class="overflow-auto p max-h-90">{{solarModule.selection}}</p>
+                    </div>
+                  </div>
                 </div>
-                <div class="col" style="margin-left: 1%;margin-top: 1%">
-                  <img src="assets/images/icons/container2.1/col_4.svg" alt="" height="40%" width="20%">
-                  <p>{{solarModule.warranty}}</p>
+                <div class="col ml-auto col-col-detail">
+                  <div class="row row-cols-1">
+                    <div class="col col-img">
+                      <img class="py-2" src="{{characteristic.warrantyImage}}" alt="" height="80%" width="auto">
+                    </div>
+                    <div class="col col-text">
+                      <p class="overflow-auto p max-h-90">{{solarModule.warranty}}</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="col float-right col-right">
-        <img class="img2" src="{{solarModule.image}}" alt="{{solarModule.name}}" width="100%" height="80%">
-        <div class="btn">
-          <button type="button" class="form_btn" data-toggle="modal" data-target="#myModal">Datasheet</button>
-          <!-- Modal -->
-          <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-               aria-hidden="true">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-body">
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                  <button type="button" class="btn btn-primary">Imprimir Formulário</button>
+        <div class="col order-first order-md-last col-img-detail">
+          <div class="row row-cols-1">
+            <div class="col pt-3 d-flex justify-content-center" style="height: 85%">
+              <img class="img-fluid" src="{{solarModule.image}}" alt="{{solarModule.name}}">
+            </div>
+            <div class="col pt-3 d-flex justify-content-center" style="height: 15%">
+              <button type="button" class="form_btn m-auto" data-toggle="modal" data-target="#myModal">Datasheet
+              </button>
+              <!-- Modal -->
+              <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                   aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                      <button type="button" class="btn btn-primary">Imprimir Formulário</button>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -61,51 +85,65 @@
         </div>
       </div>
     </div>
-  </div>
-  <hr>
-  <div class="container" id="container2">
-    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="false">
-      <div class="carousel-inner">
-        <div class="carousel-item" id="carousel-item"
-             *ngFor="let item of slides; let id = index;let first = first"
-             [class.active]="first">
+    <div class="col col-align-center"></div>
+    <div class="col order-last col-align-last">
+      <div class="row row-cols-1">
+        <div class="col col-top pt-2">
           <div class="row">
-            <div class="col-sm-4" *ngFor="let sm of item; let id = index">
-              <div class="row" style="margin: 0;height: 100%">
-                <div class="col col-left float-left">
-                  <div class="row">
-                    <div class="col col-top">
-                      <img class="img1_carousel" src="assets/images/solar%20modules/solarModules2.svg" alt=""
-                           width="30%" height="15%">
-                      <h5 style="margin-top: 5%;min-height: 5%;color: #E43D30">{{sm.name}}</h5>
-                      <p style="margin-top: 10%;min-height: 30%">{{sm.resume}}</p>
-                    </div>
-                    <div class="w-100" style="height: 0"></div>
-                    <div class="col col-bottom">
-                      <button (click)="Refresh(sm.id)"><span>+ Info</span></button>
+            <div class="col-2 h-100">
+              <a class="carousel-control-prev" href="#carouselExampleControls" role="button"
+                 data-slide="prev"
+                 [ngStyle]="ArrowStyle()">
+                <img src="assets/arrows/detail-carousel-arrow-left.svg" alt="" width="100%" height="auto">
+                <span class="sr-only">Previous</span>
+              </a>
+            </div>
+            <div class="col-8 h-100"></div>
+            <div class="col-2 h-100">
+              <a class="carousel-control-next" href="#carouselExampleControls" role="button"
+                 data-slide="next"
+                 [ngStyle]="ArrowStyle()">
+                <img src="assets/arrows/detail-carousel-arrow-right.svg" alt="" width="100%" height="auto">
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col col-bottom">
+          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="false">
+            <div class="carousel-inner">
+              <div class="carousel-item" *ngFor="let item of slides; let id = index;let first = first"
+                   [class.active]="first">
+                <div class="row">
+                  <div class="col pt-3" *ngFor="let sm of item; let id = index">
+                    <div class="row row-cols-2">
+                      <div class="col col-left float-left">
+                        <div class="row row-cols-1">
+                          <div class="col">
+                            <img class="img1" src="assets/images/solar%20modules/solarModules2.svg" alt=""
+                                 width="30%" height="15%">
+                            <h6>{{sm.name}}</h6>
+                            <p>{{sm.resume}}</p>
+                          </div>
+                          <div class="col align-self-end">
+                            <button routerLink="/product_detail"
+                                    [state]="{data: {data1: sm.id, data2: 'solarModules'}}">
+                              <span>+ Info</span></button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col col-right float-right">
+                        <img class="img-fluid" style="cursor: pointer" src="{{sm.image}}" alt="{{sm.name}}"
+                             (click)="Refresh(sm.id)">
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="col col-right float-right">
-                  <img class="img2_carousel" style="cursor: pointer" (click)="Refresh(sm.id)" src="{{sm.image}}"
-                       alt="{{sm.name}}" width="100%"
-                       height="100%">
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev"
-         [ngStyle]="ArrowStyle()">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next"
-         [ngStyle]="ArrowStyle()">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
     </div>
   </div>
 </div>
@@ -191,20 +229,20 @@
     </div>
   </div>
 </div>
-<div class="container" id="container6">
-  <div class="container" id="container6_in">
-    <div class="row">
-      <div class="col">
-        <div class="text">
-          <h2>we are not just a supplier, we are a partner!</h2>
-          <p>Increase your business with at SUNWABLE.</p>
-          <p>We have more than 10 years of experience and knowledge in the development of energy solutions.We invite you
-            to
-            be a part of it.</p>
+<div class="container-full" id="container6-full">
+  <div class="container-lg h-100" id="container6">
+    <div class="row row-cols-2 text-white">
+      <div class="col h-100 d-flex">
+        <div class="text m-auto text-left">
+          <h3>we are not just a supplier,<br> we are a partner!</h3>
+          <p class="d-none d-md-block">Increase your business with at SUNWABLE.<br>We have more than 10 years of
+            experience and knowledge in the
+            development of energy solutions.We invite you to be a part of it.</p>
         </div>
       </div>
-      <div class="col">
-        <button><span>become an installer</span></button>
+      <div class="col h-100 d-flex justify-content-center">
+        <button class="btn m-auto position-absolute bg-transparent">
+          <span class="font-weight-bold bg-transparent text-white">become an installer</span></button>
       </div>
     </div>
   </div>

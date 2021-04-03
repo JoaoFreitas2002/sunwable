@@ -1,8 +1,10 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, HostListener, OnInit} from '@angular/core';
 
 import {SolarModule} from "../services/solarModule";
 import {Inverter} from "../services/inverter";
 import {ProductsService} from "../services/products.service";
+import {Characteristic} from "../services/website/characteristic";
+import {WebsiteService} from "../services/website/website.service";
 
 @Component({
   selector: 'app-product-detail',
@@ -11,11 +13,13 @@ import {ProductsService} from "../services/products.service";
 })
 export class ProductDetailComponent implements OnInit {
 
-  constructor(private productSrv: ProductsService) {
+  constructor(private productSrv: ProductsService,
+              private websiteSrv: WebsiteService) {
   }
 
   solarModule: SolarModule;
   solarModules: SolarModule[] = [];
+  characteristic: Characteristic;
 
   inverter: Inverter;
   inverters: Inverter[] = [];
@@ -36,6 +40,7 @@ export class ProductDetailComponent implements OnInit {
       arr.splice(index, 1);
     }
     for (let i = 0, len = arr.length; i < len; i += chunkSize) {
+      console.log(chunkSize);
       R.push(arr.slice(i, i + chunkSize));
     }
     return R;
@@ -43,6 +48,7 @@ export class ProductDetailComponent implements OnInit {
 
   ngOnInit(): void {
     this.SeeProductType();
+    this.characteristic = new Characteristic();
   }
 
   SeeProductType() {
@@ -59,6 +65,7 @@ export class ProductDetailComponent implements OnInit {
       this.solarModule = new SolarModule();
       this.GetAllSolarModules();
       this.GetSolarModule();
+      this.GetCharacteristics();
     } else if (this.productType === 'inverters') {
       this.inverter = new Inverter();
       this.GetAllInverters();
@@ -73,8 +80,26 @@ export class ProductDetailComponent implements OnInit {
   GetSolarModule() {
     this.productSrv.getSolarModule(this.id).subscribe(data => {
       this.solarModule = data;
-      this.slides = this.chunk(this.solarModules, 3, this.solarModule);
+      this.OnWindowWidth();
     });
+  }
+
+  @HostListener('window:resize', [])
+  OnWindowWidth() {
+    const ScreanWidth = window.screen.width;
+    let size: number;
+    if (ScreanWidth >= 576 && ScreanWidth < 768) {
+      size = 2;
+    } else if (ScreanWidth >= 768) {
+      size = 3;
+    } else if (ScreanWidth < 576) {
+      size = 1;
+    }
+    this.slides = this.chunk(this.solarModules, size, this.solarModule);
+  }
+
+  GetCharacteristics() {
+    this.websiteSrv.GetCharacteristic().subscribe(data => this.characteristic = data[0]);
   }
 
   GetAllInverters() {

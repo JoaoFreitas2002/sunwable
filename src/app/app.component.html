@@ -1,8 +1,8 @@
-<nav class="navbar navbar-expand-lg fixed-top" id="nav" [ngClass]="HeaderStyle">
+<nav class="navbar navbar-expand-lg fixed-top" id="nav" [ngClass]="HeaderStyle()">
   <a class="navbar-brand w-50 h-100" routerLink="/">
     <img class="float-left" src="assets/images/logo.svg" alt="" width="auto" height="100%">
   </a>
-  <button class="navbar-toggler" type="button" (click)="StyleForCollapse()" data-toggle="collapse"
+  <button class="navbar-toggler" type="button" data-toggle="collapse"
           data-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <i class="bi bi-list" style="font-size: 3rem; color: white"></i>
@@ -50,36 +50,30 @@
 <router-outlet></router-outlet>
 <div class="container" id="container2">
   <div class="row row-cols-1 row-cols-sm-3">
-    <div class="col pt-3">
+    <div class="col pt-3 pt-sm-5">
       <div class="row row-cols-1">
-        <div class="col align-self-center">
-          <h6 class="text-uppercase font-weight-bold">company</h6>
+        <div class="col align-self-start social_media px-md-5">
+          <h6 class="text-uppercase font-weight-bold pb-md-5">company</h6>
           <p>SUNWABLE <br>Solutions Unipessoal, Lda</p>
-        </div>
-        <div class="col social_media align-self-start px-3">
           <a class="px-1"><i class="bi-facebook"></i></a>
           <a class="px-1"><i class="bi-linkedin"></i></a>
           <a class="px-1"><i class="bi-instagram"></i></a>
         </div>
       </div>
     </div>
-    <div class="col pt-3">
+    <div class="col pt-3 pt-sm-5">
       <div class="row row-cols-1">
-        <div class="col align-self-center">
-          <h6 class="text-uppercase font-weight-bold">CONTACT INFO</h6>
+        <div class="col align-self-start px-md-5">
+          <h6 class="text-uppercase font-weight-bold pb-md-5">CONTACT INFO</h6>
           <p>Rua Brito Limpo, nº 31, 1 DRT <br>4755-056 Barcelinhos - PORTUGAL</p>
-        </div>
-        <div class="col align-self-start">
           <p>Phone: +351 900 000 000 <br>Email: info@sunwable.com</p>
         </div>
       </div>
     </div>
-    <div class="col pt-3">
+    <div class="col pt-3 pt-sm-5">
       <div class="row row-cols-1">
-        <div class="col align-self-center">
-          <h6 class="text-uppercase font-weight-bold">QUICK LINKS</h6>
-        </div>
-        <div class="col align-self-start">
+        <div class="col align-self-start px-md-5">
+          <h6 class="text-uppercase font-weight-bold pb-md-5">QUICK LINKS</h6>
           <ul class="px-0">
             <li class="pb-3"><a>Company</a></li>
             <li class="pb-3"><a>Terms of Use</a></li>

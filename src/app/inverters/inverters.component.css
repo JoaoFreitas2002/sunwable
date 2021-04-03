@@ -1,153 +1,122 @@
 /*---------------------------  global  --------------------------------*/
 .row {
-  padding: 0;
   height: 100%;
 }
 
-p {
-  margin-bottom: 0;
+h1 {
+  color: #E43D30;
 }
 
-h5 {
-  margin-bottom: 0;
-}
-
-.col-top {
-  height: 80%;
-}
-
-.col-bottom {
-  height: 20%;
-}
-
-.col-bottom, .col-left, .col-right {
-  padding: 0;
-}
-
-.col-bottom button {
-  color: white;
-  background-color: rgb(228, 61, 48);
-  border: 0;
-  width: 50%;
-  height: 50%;
+.colTop {
+  min-height: 50%;
 }
 
 /*---------------------------  container1  --------------------------------*/
 #container1 {
-  padding: 0;
-  height: 500px;
+  height: 400px;
   background: #E43D30;
-}
-
-#container1 h1 {
-  font-size: 4rem;
-  margin: 0 auto;
-  width: fit-content;
-  color: white;
-  text-transform: uppercase;
-}
-
-#container1 .col-top {
-  height: 88%;
-}
-
-#container1 .col-bottom {
-  height: 12%;
 }
 
 /*---------------------------  container2  --------------------------------*/
 #container2 {
-  height: 1100px;
-  padding: 0;
-  background: white;
+  height: 2500px;
 }
 
-#container2 .col-sm-4 {
-  height: 30%;
-  margin-top: 3.3%;
+#container2 h6 {
+  color: #E43D30;
 }
 
-.col-right {
-  height: auto;
-  margin: auto;
-}
-
-#container2 .col-top {
-  padding: 0;
+#container2 button {
+  border: 0.2rem solid #E43D30;
+  background-color: #E43D30;
+  color: white;
 }
 
 /*---------------------------  container3  --------------------------------*/
-#container3 {
-  margin: 0;
-  padding: 0;
-  height: 450px;
-  max-width: 100%;
+#container3-full {
+  height: 350px;
   background: url("../../assets/images/container3_image.svg") right no-repeat, #E43D30;
 }
 
-#container3_in {
-  height: 100%;
-  color: white;
-  padding: 0;
-}
-
-#container3 .col {
-  padding: 0;
-  height: 100%;
-}
-
-#container3 h2 {
-  width: 70%;
-  min-height: 20%;
-}
-
-#container3 p {
-  margin-bottom: 0;
-  min-height: 5%;
-}
-
-#container3 span {
-  background-color: transparent;
-  font-size: 1.15rem;
-  color: white;
-  padding: 0;
-}
-
-#container3 button {
-  height: 15%;
-  background-color: transparent;
+#container3 .btn {
+  width: 45%;
+  height: 30%;
   border: 0.2rem solid white;
-  width: 40%;
-  max-width: 40%;
-  min-width: 30%;
-  position: absolute;
-  margin: 34%;
+  top: 35%;
 }
 
-#container3 .text {
-  margin: 20% 0;
-  min-height: 50%;
-}
 
 /*---------------------------  media  --------------------------------*/
-/*Medium devices (tablets)*/
-@media (min-width: 768px) and (max-width: 992px) {
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
   /*---------------------------  container1 --------------------------------*/
-  #container1 {
-    height: 350px;
+  #container1 img {
+    width: 25%;
   }
 
-  #container1 .row img {
-    margin-top: 15% !important;
-  }
-
-  /*---------------------------  container2 --------------------------------*/
+  /*---------------------------  container2  --------------------------------*/
   #container2 {
-    height: 700px;
+    height: 1500px;
   }
 
   /*---------------------------  container3  --------------------------------*/
-  #container3 {
-    height: 300px;
+  #container3 .btn {
+    width: auto;
+    height: auto;
+    top: 45%;
+  }
+
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+  /*---------------------------  container1 --------------------------------*/
+  #container1 {
+    height: 450px;
+  }
+
+  /*---------------------------  container2  --------------------------------*/
+  #container2 {
+    height: 1700px;
+  }
+
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+  /*---------------------------  container1 --------------------------------*/
+  #container1 {
+    height: 500px;
+  }
+
+  #container1 h1 {
+    font-size: 4rem;
+  }
+
+  #container1 img {
+    width: 20%;
+  }
+
+  /*---------------------------  container2  --------------------------------*/
+  #container2 {
+    height: 900px;
+  }
+
+  /*---------------------------  container3  --------------------------------*/
+  #container3-full {
+    height: 450px;
+  }
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+  /*---------------------------  container1 --------------------------------*/
+  #container1 {
+    height: 700px;
+  }
+
+  /*---------------------------  container2  --------------------------------*/
+  #container2 {
+    height: 1100px;
   }
 }

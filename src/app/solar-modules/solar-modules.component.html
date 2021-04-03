@@ -1,57 +1,56 @@
 <div class="container-fluid" id="container1">
-  <div class="row">
-    <div class="col col-top">
-      <img src="assets/images/solar%20modules/solarModules.svg" alt="Solar Modules" width="30%"
-           height="30%" style="display: block;margin: 11% auto">
+  <div class="row row-cols-1">
+    <div class="col align-self-start" style="height: 80px"></div>
+    <div class="col d-flex justify-content-center align-self-center">
+      <img class="m-auto" src="assets/images/solar%20modules/solarModules.svg" alt="" width="50%"
+           height="auto">
     </div>
-    <div class="w-100" style="height: 0"></div>
-    <div class="col col-bottom">
-      <h1>Solar Modules</h1>
+    <div class="col align-self-end">
+      <h1 class="text-white text-uppercase text-center mb-n2 mb-lg-n3">solar modules</h1>
     </div>
   </div>
 </div>
-<div class="container" id="container2">
-  <div class="row">
-    <div class="col-sm-4" *ngFor="let sm of solarModules">
-      <div class="row" style="margin: 0;height: 100%">
+<div class="container-xl" id="container2">
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3">
+    <div class="col pt-3 h-auto" *ngFor="let sm of solarModules">
+      <div class="row row-cols-2">
         <div class="col col-left float-left">
-          <div class="row">
-            <div class="col col-top">
+          <div class="row row-cols-1">
+            <div class="col">
               <img class="img1" src="assets/images/solar%20modules/solarModules2.svg" alt=""
                    width="30%" height="15%">
-              <h5 style="margin-top: 5%;min-height: 5%;color: #E43D30">{{sm.name}}</h5>
-              <p style="margin-top: 10%;min-height: 30%">{{sm.resume}}</p>
+              <h6>{{sm.name}}</h6>
+              <p>{{sm.resume}}</p>
             </div>
-            <div class="w-100" style="height: 0"></div>
-            <div class="col col-bottom">
+            <div class="col">
               <button routerLink="/product_detail" [state]="{data: {data1: sm.id, data2: 'solarModules'}}">
                 <span>+ Info</span></button>
             </div>
           </div>
         </div>
         <div class="col col-right float-right">
-          <img class="img2" style="cursor: pointer" src="{{sm.image}}"
-               alt="{{sm.name}}" width="100%"
-               height="100%" routerLink="/product_detail" [state]="{data: {data1: sm.id, data2: 'solarModules'}}">
+          <img class="img-fluid" style="cursor: pointer" src="{{sm.image}}"
+               alt="{{sm.name}}" routerLink="/product_detail"
+               [state]="{data: {data1: sm.id, data2: 'solarModules'}}">
         </div>
       </div>
     </div>
   </div>
 </div>
-<div class="container" id="container3">
-  <div class="container" id="container3_in">
-    <div class="row">
-      <div class="col">
-        <div class="text">
-          <h2>we are not just a supplier, we are a partner!</h2>
-          <p>Increase your business with at SUNWABLE.</p>
-          <p>We have more than 10 years of experience and knowledge in the development of energy solutions.We invite you
-            to
-            be a part of it.</p>
+<div class="container-full" id="container3-full">
+  <div class="container-xl h-100" id="container3">
+    <div class="row row-cols-2 text-white">
+      <div class="col h-100 d-flex">
+        <div class="text m-auto text-left">
+          <h3>we are not just a supplier,<br> we are a partner!</h3>
+          <p class="d-none d-md-block">Increase your business with at SUNWABLE.<br>We have more than 10 years of
+            experience and knowledge in the
+            development of energy solutions.We invite you to be a part of it.</p>
         </div>
       </div>
-      <div class="col">
-        <button><span>become an installer</span></button>
+      <div class="col h-100 d-flex justify-content-center">
+        <button class="btn m-auto position-absolute bg-transparent">
+          <span class="font-weight-bold bg-transparent text-white">become an installer</span></button>
       </div>
     </div>
   </div>
