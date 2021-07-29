@@ -50,6 +50,10 @@
   color: #E43D30;
 }
 
+.container2-1 {
+  margin: 0 10px;
+}
+
 .col-charac {
   background-color: #f4f4f4;
   height: 24%;
@@ -161,7 +165,7 @@
 /*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
   .container1-apresen, .container4 {
-    height: 435px;
+    height: 350px;
   }
 
   .carousel-item {

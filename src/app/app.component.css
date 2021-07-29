@@ -1,24 +1,33 @@
-/*---------------------------  global  --------------------------------*/
-.row {
-  height: 100%;
+.navbar-brand {
+  width: 55%;
 }
 
-/*---------------------------  navbar  --------------------------------*/
-nav {
-  padding-top: 1rem;
-  transition: 1000ms ease;
-  background: transparent;
-  height: 90px;
+@media (min-width: 768px) {
+  .navbar-brand {
+    width: 30%;
+  }
 }
 
-nav a {
-  text-transform: uppercase;
+@media (min-width: 992px) {
+  .navbar-brand {
+    width: 25%;
+  }
+}
+
+.navbar-nav .nav-link,
+.dropdown-item {
   color: white;
-  text-align: center;
 }
+/*---------------------------  COMPONENTS  --------------------------------*/
+/*---------------------------  COMPONENTS  --------------------------------*/
+/*---------------------------  COMPONENTS  --------------------------------*/
 
-#navbar-nav li {
-  margin: auto;
+
+/*---------------------------  NAV  --------------------------------*/
+/*---------------------------  NAV  --------------------------------*/
+nav {
+  background-color: transparent;
+  height: 90px;
 }
 
 .dropdown-item:hover {
@@ -39,8 +48,13 @@ nav a {
   margin-top: 0;
 }
 
-/*---------------------------  container2  --------------------------------*/
-#container2 {
+.language {
+  cursor: pointer;
+}
+
+/*---------------------------  CONTAINER-LINKS  --------------------------------*/
+/*---------------------------  CONTAINER-LINKS  --------------------------------*/
+.container-links {
   height: 600px;
 }
 
@@ -49,27 +63,30 @@ nav a {
   font-size: 2rem;
 }
 
-#container2 h6 {
+h6 {
   color: #E43D30;
 }
 
-#container2 p, #container2 a {
+.container-links p, .container-links a {
   color: #706F6F;
 }
 
-/*---------------------------  footer  --------------------------------*/
-#footer {
+
+/*---------------------------  FOOTER  --------------------------------*/
+/*---------------------------  FOOTER  --------------------------------*/
+.footer {
   height: 80px;
   background-color: #E43D30;
 }
 
-#footer h6, #footer a {
+.footer h6, .footer a {
   color: white;
   margin: auto;
 }
 
-/*---------------------------  media  --------------------------------*/
-/*my own*/
+/*---------------------------  MEDIA  --------------------------------*/
+/*---------------------------  MEDIA  --------------------------------*/
+/*---------------------------  MEDIA  --------------------------------*/
 @media (max-width: 1023px) {
   #navbarNav, .dropdown-menu {
     max-width: 50%;
@@ -79,7 +96,7 @@ nav a {
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
 
-  #container2 {
+  .container-links {
     height: 400px;
   }
 }

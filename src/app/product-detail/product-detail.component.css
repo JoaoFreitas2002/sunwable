@@ -24,7 +24,7 @@
 }
 
 .col-first {
-  height: 80%;
+  height: 70%;
 }
 
 .col-align-center {
@@ -40,7 +40,7 @@
 }
 
 .col-align-last {
-  height: 19%;
+  height: 310px;
 }
 
 .col-left button {
@@ -179,6 +179,6 @@ h1, .potencia {
 @media (min-width: 1200px) {
   /*---------------------------  container1  --------------------------------*/
   .container-detail {
-    height: 1500px;
+    height: 1600px;
   }
 }

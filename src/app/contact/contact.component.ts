@@ -1,5 +1,4 @@
 import {Component, OnInit} from '@angular/core';
-import {HttpClient} from "@angular/common/http";
 
 import {WebsiteService} from "../services/website/website.service";
 import {Shedule} from "../services/website/shedule";
@@ -11,8 +10,7 @@ import {Shedule} from "../services/website/shedule";
 })
 export class ContactComponent implements OnInit {
 
-  constructor(private http: HttpClient,
-              private websiteSrv: WebsiteService) {
+  constructor(private websiteSrv: WebsiteService) {
   }
 
   shedule: Shedule;
@@ -39,7 +37,7 @@ export class ContactComponent implements OnInit {
   }
 
   SendEmail() {
-    this.http.post('http://127.0.0.1:8000/website/mail/', this.EmailForm).subscribe(data => console.log(data));
+    this.websiteSrv.SendEmail(this.EmailForm).subscribe();
   }
 
   GetAll() {

@@ -40,7 +40,6 @@ export class ProductDetailComponent implements OnInit {
       arr.splice(index, 1);
     }
     for (let i = 0, len = arr.length; i < len; i += chunkSize) {
-      console.log(chunkSize);
       R.push(arr.slice(i, i + chunkSize));
     }
     return R;

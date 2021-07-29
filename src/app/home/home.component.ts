@@ -52,25 +52,22 @@ export class HomeComponent implements OnInit {
 
   @HostListener('window:scroll', [])
   onWindowScroll() {
-    // tslint:disable-next-line:variable-name
-    const number = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
-    const number2 = window.screen.width;
-    console.log(number);
-    console.log(number2);
-    if (number2 >= 768 && number2 <= 1024) {
-      if (number > 922) {
+    const height = window.pageYOffset;
+    const width = window.screen.width;
+    if (width >= 768 && width <= 1024) {
+      if (height > 922) {
         this.countUp = true;
       } else {
         this.countUp = false;
       }
-    } else if (number2 >= 1372) {
-      if (number >= 1364 && number <= 2641) {
+    } else if (width >= 1372) {
+      if (height >= 1364 && height <= 2641) {
         this.countUp = true;
       } else {
         this.countUp = false;
       }
-    } else if (number2 > 1024 && number2 < 1372) {
-      if (number >= 1950 && number <= 2552) {
+    } else if (width > 1024 && width < 1372) {
+      if (height >= 1950 && height <= 2552) {
         this.countUp = true;
       } else {
         this.countUp = false;
